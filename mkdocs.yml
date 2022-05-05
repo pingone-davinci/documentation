@@ -49,9 +49,6 @@ markdown_extensions:
 plugins:
   - search:
         separator: '[\s\-\.]+'
-  - redirects:
-     redirect_maps:
-       deployment/deployPdgPap.md: "deployment/deployPazPap.md"
 
 nav:
   - Partner Connectors:
