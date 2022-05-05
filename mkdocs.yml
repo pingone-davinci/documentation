@@ -1,7 +1,7 @@
 site_name: PingOne DaVinci Partner Connectors
 repo_name: pingone-davinci/connector-docs
 repo_url: https://github.com/pingone-davinci/connector-docs
-site_url: https://pingone-davinci.github.io
+site_url: https://pingone-davinci.github.io/connector-docs/
 copyright: © Copyright 2022 Ping Identity
 extra_css:
   - mkdocs/overrides/stylesheets/extra.css
