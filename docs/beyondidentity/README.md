@@ -1,8 +1,6 @@
 # Beyond Identity Connector
 
 
-## Doc draft
-
 Author: Suresh Bhandarkar
 
 
