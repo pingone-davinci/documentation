@@ -1,7 +1,5 @@
 # Circle Access Connector
 
-## Doc draft
-
 Author: Circle Systems
 
 # Introduction
