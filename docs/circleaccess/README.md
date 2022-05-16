@@ -37,7 +37,7 @@ We have to go back to https://console.gocircle.ai/ to get the field values (clic
 
 ![alt text](images/field_settings.png)
 
-## [Use case]
+## Use cases
 
 ![alt text](images/flow.png)
 
