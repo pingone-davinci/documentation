@@ -12,7 +12,7 @@ theme:
   favicon: images/favicon.png
 
   features:
-    - navigation.tabs
+#    - navigation.tabs
     - instant
 
   palette:
