@@ -50,7 +50,7 @@ plugins:
   - search:
         separator: '[\s\-\.]+'
 
-nav:
+#nav:
 #  - Partner Connectors:
 #      - Beyond Identity: "beyondidentity/README.md"
 #      - Circle Access: "circleaccess/README.md"
