@@ -51,5 +51,5 @@ plugins:
         separator: '[\s\-\.]+'
 
 nav:
-  - Overview:
+  - Overview: "README.md"
  
