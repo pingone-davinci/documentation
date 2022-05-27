@@ -38,8 +38,7 @@ To use the connector, you'll need:
 
 
 1. Create an Acuant Connector in your PingOne DaVinci Environment
-2. Add the redirect URL from your Acuant Connection into the Integration AcuantGo Customer Journey into your connector
-!(integration.png)
+2. Add the redirect URL from your Acuant Connection into the Integration AcuantGo Customer Journey into your connector ![integration](integration.png)
 3. For each result, add a query parameter for Accept, Deny, or Review at the end of your PingOne DaVinci redirect URL, depending on the result. e.g. ?result=deny (see screenshot above)
 4. Add the connection to a PingOne DaVinci Flow
 5. Configure the Redirect to Journey capability with the AcuantGO Journey URL
