@@ -53,12 +53,12 @@ To use the connector, you'll need:
 You can use the connector in a variety of use cases, such as:
 
 
-## [Identity Verification]
+## Identity Verification
 
 The connector can be used in a workflow to verify an identity as part of a workflow
 
 
-## [Onboarding]
+## Onboarding
 
 User data collection and identity verification as part of an onboarding flow
 
