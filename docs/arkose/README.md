@@ -21,7 +21,7 @@ and for many similar use cases.
 For information and setup help, see the following sections of the Arkose Labs documentation:
 
 
-## [Calling the Verify API](https://developer.arkoselabs.com/docs/server-side-instructions-v4#calling-the-verify-api)
+[Calling the Verify API](https://developer.arkoselabs.com/docs/server-side-instructions-v4#calling-the-verify-api)
 
 
 ## Requirements
