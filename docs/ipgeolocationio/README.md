@@ -1,6 +1,5 @@
 # IPGeoLocation.io Connector
 
-## Doc draft
 Author: arno@pingidentity.com
 
 
@@ -25,7 +24,7 @@ API Key: you can get the API Key once you have signed up by logging in to your i
 # Using the connector in a flow
 TO use the connector in a flow, you can pass it the global.ip variable or another IP address obtained from another connection.
 
-## [Use case]
+## Use case
 IP Geolocation is a technique used to find out the geographical location of the user using his IP address. Wherever in the world, you use the internet, you will be assigned an IP address. This IP address contains your network identity and your location information. This information is used by online businesses to recognize their visitors and offer a more local experience such as displaying prices in local currency , calculating shipping cost based on the detected conutry or copmuting time differences with the detected timezone.
 
 # Capabilities
