@@ -2,7 +2,7 @@
 
 Author: Brandon Runkel, Senior Customer Success Engineer @ Deduce (brandon.runkel@deduce.com)
 
-# Deduce Intelligent MFA
+## Deduce Intelligent MFA
 This guide details how to install and use the Deduce Intelligent MFA connector for your Ping DaVinci flow. This no-code solution leverages our Deduce Identity Insights API and is configurable to more accurately determine when to present a challenge or trust a user at the moment of login.
 
 ## Requirements
