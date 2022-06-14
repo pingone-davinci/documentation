@@ -1,3 +1,5 @@
+# Deduce Insights Connector
+
 Author: Brandon Runkel, Senior Customer Success Engineer @ Deduce (brandon.runkel@deduce.com)
 
 # Deduce Intelligent MFA
