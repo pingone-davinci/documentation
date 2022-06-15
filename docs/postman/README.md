@@ -35,7 +35,7 @@ A Postman Collection uses environment variables to be more flexible. Export your
 
 ## Setting up the connector
 
-In SDavinci, add a **Postman** connection. For help, see [Adding a connection](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
+In Davinci, add a **Postman** connection. For help, see [Adding a connection](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
 
 ### Connector settings
 
