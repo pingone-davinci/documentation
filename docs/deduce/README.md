@@ -1,9 +1,7 @@
-# Deduce Insights Connector
-
 Author: Brandon Runkel, Senior Customer Success Engineer @ Deduce (brandon.runkel@deduce.com)
 
-## Deduce Intelligent MFA
-This guide details how to install and use the Deduce Intelligent MFA connector for your Ping DaVinci flow. This no-code solution leverages our Deduce Identity Insights API and is configurable to more accurately determine when to present a challenge or trust a user at the moment of login.
+# Deduce Intelligent MFA
+This guide details how to install and use the Deduce Intelligent MFA connector for your PingOne DaVinci flow. This no-code solution leverages our Deduce Identity Insights API and is configurable to more accurately determine when to present a challenge or trust a user at the moment of login.
 
 ## Requirements
 To set up the Deduce Intelligent MFA connector, you'll need the following:
@@ -30,7 +28,7 @@ The Deduce Intelligent MFA connector can be added without any action being taken
 
 To enable Passthrough Mode, with the capability selected, enable the toggle for "Passthrough" under "General -> Passthrough".
 
-This will result in Ping DaVinci user data being sent to the API and insights being returned but no action taken on the data returned.
+This will result in PingOne DaVinci user data being sent to the API and insights being returned but no action taken on the data returned.
 
 ## Production
 In order to allow Deduce Intelligent MFA decisioning to impact the user flow, Passthrough Mode must be disabled. To disable Passthrough Mode, in the "General" section, select **&quot;Disable&quot;** in the Passthrough Mode toggle under the capability settings.
