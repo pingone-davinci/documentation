@@ -6,14 +6,6 @@ Author: Terry Sigle <terrysigle@pingidentity.com>
 
 CloudMailin delivers your transactional email with confidence, security and transparency.
 
-# Setup
-
-## Resources
-
-For information and setup help, see the following sections of the [service name] documentation:
-
-## [Link to resources from the service documentation
-
 ## Requirements
 
 To use the connector, you'll need:
