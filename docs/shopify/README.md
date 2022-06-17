@@ -49,10 +49,6 @@ In Davinci, add a **Shopify** connection via the "Connections" tab in your Davin
 
 ### Connector settings
 
-[List and explain the connector settings that appear when the connection is opened from the **Connections** page. If you did not cover it earlier in the **Setup** section, tell the user how to complete each configuration field or where to get the information they need.
-
-These typically on the **General** tab, but some connectors have a different name or multiple configuration tabs. Don't document **Capabilities**, or **In Flows**.]
-
 Once you've added the connection click on it's logo, or click the "**·****·****·**"  button and edit. 
 You will see the connector's details pop-up. On the GENERAL tab, enter in your 
 1) API Version number 
