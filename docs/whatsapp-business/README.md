@@ -54,6 +54,8 @@ In Singular Key, add a **PingOne SSO** connection. For help, see [Adding a conne
 
 ## WhatsApp Connector General Settings
 * Navigate to the WhatsApp connector via the connections tab.
+* Select "New Connection" in the upper right-hand corner
+* Search for the desired connector (in this case, WhatsApp).
 * Click on the WhatsApp connector.
 * From here you will see two text fields: Access Token and Version
    * Access Token:
@@ -67,21 +69,27 @@ In Singular Key, add a **PingOne SSO** connection. For help, see [Adding a conne
 * You must have a working permanent access token.
 * You must have the current version of the graph API.
 * You must have a valid and approved message template.
+* You must have valid **to** and **from** WhatsApp phone numbes in order to send messages.
 ---
 
 # Using the connector in a flow
 
-[Describe how to use the connector after it has been set up.]
+Once the connector is properly configured and added to the flow studio sandbox you will have the ability to send templated messsages to yout WhatsApp customers (**all messages use cases directly rely upon the users created message templates.**).
 
-You can use the connector in a variety of use cases, such as:
+[ To add a connector to the flow studio click the plus(+) button in the bottom left-hand corner of the screen and search for the desired connector. ]
+
+You can use the WhatsApp connector in a variety of use cases, such as:
+* Sending customers an automated, personal welcome/goodbye message.
+* Sending customers a confirmation message regarding a purchased product.
+* Sending customers reminders about current or upcoming deals and promotions.
+
+**The WhatsApp connector must have a trigger block before it will send any messages to the WhatsApp API.**
+
+## Text Message Template
 
 
-## [Use case]
 
-[Describe how to use the connector in this use case. Does it come with a related flow template? Is there a generic use case flow to follow in the Singular Key core documentation?]
-
-
-## [Use case]
+## Media Message Template
 
 [Describe how to use the connector in this use case. Does it come with a related flow template? Is there a generic use case flow to follow in the Singular Key core documentation?]
 
@@ -91,17 +99,9 @@ You can use the connector in a variety of use cases, such as:
 Leave this section blank: it will be generated automatically
 
 
-# Troubleshooting
-
-[Optional section]
-
-
 ## Common solutions
 
 [Describe solutions to common problems the user might encounter when setting up or using the connector. If there are any required steps, include them in the **Setup** section.]
-
-
-## Troubleshooting resources
 
 
 ### [Resource description]
@@ -113,10 +113,6 @@ Leave this section blank: it will be generated automatically
 
 You can test each capability individually. For help, see [Testing capabilities](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
 
-
-# Limitations
-
-[Optional section]
 
 [Describe any issues or limitations.]
 
