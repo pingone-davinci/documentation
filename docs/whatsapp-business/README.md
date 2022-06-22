@@ -159,7 +159,7 @@ In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the b
 7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
    - In this case the type would be _**Interactive messsage template**_
 8. In the next text field labeled _**Interactive Message Template Name**_ copy and paste the message template name you created in the Facebook WhatsApp Developer Dashboard.
-9. 
+9. The URL button is handled during the creation of the message template thus does not require implementation within the connector.
 10. Now fill out the variables you except in the template
     - _**Variable Name**_ = arbitrary user-created, camel-Case name of your variable
       - Example: customerName
@@ -168,6 +168,8 @@ In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the b
     - _**Data Type**_ = depends on what the value of your variable is
       - Example: String
 11. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables
+
+### The interactive message template can only send URLs at the moment (this is subject to change)
 
 #### Run the flow:
 ```
