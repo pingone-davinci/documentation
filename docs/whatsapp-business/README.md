@@ -87,7 +87,7 @@ You can use the WhatsApp connector to send: <br>
 
 ```
 Once the WhatsApp connector is properly configured and added to the flow studio sandbox you will be ready to start 
-sending templated messsages to your WhatsApp customers (all message use cases directly rely upon the users created 
+sending templated messsages to your WhatsApp customers (all message use cases directly rely upon the users pre-approved 
 message templates).
 ```
 
@@ -102,7 +102,7 @@ message templates).
 6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message
 7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
    - In this case the type would be _**Text messsage template**_
-8. In the next text field labeled _**Text Message Template Name**_ copy and paste the message template name you created in the Facebook WhatsApp Developer Dashboard.
+8. In the next text field labeled _**Text Message Template Name**_ copy and paste the pre-approved message template name you created in the WhatsApp Facebook Developer Dashboard.
 9. Now fill out the variables you except in the template
    - _**Variable Name**_ = arbitrary user-created, camel-Case name of your variable
       - Example: customerName
@@ -129,7 +129,7 @@ In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the b
 6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message
 7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
    - In this case the type would be _**Media messsage template**_
-8. In the next text field labeled _**Media Message Template Name**_ copy and paste the message template name you created in the Facebook WhatsApp Developer Dashboard.
+8. In the next text field labeled _**Media Message Template Name**_ copy and paste the pre-approved message template name you created in the WhatsApp Facebook Developer Dashboard.
 9. The _**Media Message URL**_ text field is where you copy and paste the header image URL
    -  Use only HTTP/HTTPS URLs
 11. Now fill out the variables you except in the template
