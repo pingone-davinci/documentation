@@ -87,94 +87,128 @@ You can use the WhatsApp connector to send: <br>
 
 ```
 Once the WhatsApp connector is properly configured and added to the flow studio sandbox you will be ready to start 
-sending templated messsages to your WhatsApp customers (all message use cases directly rely upon the users pre-approved 
+sending templated messsages to your WhatsApp customers (all message use cases directly rely upon the users pre-approved
 message templates).
 ```
 
 ## Text Message Template
+```
+Compatible with templates that use:
+- Body variable(s)
+```
+```
+Incompatible with templates that use:
+- Text header variable
+- Media header
+- No body variable(s)
+- Call to action buttons
+- Quick reply buttons
+```
 
 #### Once inside of the flow studio:
-1. Add a Custom HTML Messsage connector to the sandbox
-2. Drag the black circular node on the right-side of the HTML connector out and release
-3. Select the WhatsApp connector
-4. Click on the connector and select the **Send Message** capability
-5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message)
-6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message
-7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
-   - In this case the type would be _**Text messsage template**_
+1. Add a Custom HTML Messsage connector to the sandbox.
+2. Drag the black circular node on the right-side of the HTML connector out and release.
+3. Select the WhatsApp connector.
+4. Click on the connector and select the **Send Message** capability.
+5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message).
+6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message.
+7. Click on the _**Message Type**_ dropdown menu and select the desired message template type.
+   - In this case the type would be _**Text messsage template**_.
 8. In the next text field labeled _**Text Message Template Name**_ copy and paste the pre-approved message template name you created in the WhatsApp Facebook Developer Dashboard.
-9. Now fill out the variables you except in the template
+9. Now fill out the variables you except in the template:
    - _**Variable Name**_ = arbitrary user-created, camel-Case name of your variable
       - Example: customerName
    - _**Value**_ = what you want to be inserted in the message
       - Example: Bob Smith
    - _**Data Type**_ = depends on what the value of your variable is
       - Example: String
-10. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables
+10. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables.
 
 #### Run the flow:
 ```
 Once you have successfully filled out the necessary connector information you are ready to send.   
-In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the blue play button.
+In the upper right-hand corner of the Flow Studio click: Save, Deploy, and the blue play button.
 ```
 
 ## Media Message Template
+```
+Compatible with templates that use:
+- Image header
+- Body variable(s)
+```
+```
+Incompatible with templates that use:
+- No body variable(s)
+- Call to action buttons
+- Quick reply buttons
+```
 
 #### Once inside of the flow studio:
-1. Add a Custom HTML Messsage connector to the sandbox
-2. Drag the black circular node on the right-side of the HTML connector out and release
-3. Select the WhatsApp connector
-4. Click on the connector and select the **Send Message** capability
-5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message)
-6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message
-7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
-   - In this case the type would be _**Media messsage template**_
+1. Add a Custom HTML Messsage connector to the sandbox.
+2. Drag the black circular node on the right-side of the HTML connector out and release.
+3. Select the WhatsApp connector.
+4. Click on the connector and select the **Send Message** capability.
+5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message).
+6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message.
+7. Click on the _**Message Type**_ dropdown menu and select the desired message template type.
+   - In this case the type would be _**Media messsage template**_.
 8. In the next text field labeled _**Media Message Template Name**_ copy and paste the pre-approved message template name you created in the WhatsApp Facebook Developer Dashboard.
-9. The _**Media Message URL**_ text field is where you copy and paste the header image URL
-   -  Use only HTTP/HTTPS URLs
-11. Now fill out the variables you except in the template
+9. The _**Media Message URL**_ text field is where you copy and paste the header image URL.
+   -  Use only HTTP/HTTPS URLs.
+11. Now fill out the variables you except in the template:
     - _**Variable Name**_ = arbitrary user-created, camel-Case name of your variable
       - Example: customerName
     - _**Value**_ = what you want to be inserted in the message
       - Example: Bob Smith
     - _**Data Type**_ = depends on what the value of your variable is
       - Example: String
-12. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables
+12. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables.
 
 #### Run the flow:
 ```
 Once you have successfully filled out the necessary connector information you are ready to send.   
-In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the blue play button.
+In the upper right-hand corner of the Flow Studio click: Save, Deploy, and the blue play button.
 ```
 
 ## Interactive Message Template
+```
+Compatible with templates that use:
+- Body variable(s)
+- Call to action buttons (either/both)
+```
+```
+Incompatible with templates that use:
+- Text header variable
+- Media header
+- No body variable(s)
+- Quick reply buttons
+```
 
 #### Once inside of the flow studio:
-1. Add a Custom HTML Messsage connector to the sandbox
-2. Drag the black circular node on the right-side of the HTML connector out and release
-3. Select the WhatsApp connector
-4. Click on the connector and select the **Send Message** capability
-5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message)
-6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message
-7. Click on the _**Message Type**_ dropdown menu and select the desired message template type
-   - In this case the type would be _**Interactive messsage template**_
+1. Add a Custom HTML Messsage connector to the sandbox.
+2. Drag the black circular node on the right-side of the HTML connector out and release.
+3. Select the WhatsApp connector.
+4. Click on the connector and select the **Send Message** capability.
+5. In the _**Recipient**_ text field insert the desired WhatsApp phone number (the number of the account that will be receiving the message).
+6. In the _**From Phone Number ID**_ enter the phone number ID of the device sending the message.
+7. Click on the _**Message Type**_ dropdown menu and select the desired message template type.
+   - In this case the type would be _**Interactive messsage template**_.
 8. In the next text field labeled _**Interactive Message Template Name**_ copy and paste the message template name you created in the Facebook WhatsApp Developer Dashboard.
-9. The URL button is handled during the creation of the message template thus does not require implementation within the connector.
-10. Now fill out the variables you except in the template
+9. The _**Visit Website**_ button is handled during the creation of the message template, thus no configuration is required within the connector.
+   - The same rules apply to the _**Call phone number**_ button, no configuration is required inside of the WhatsApp connector.
+10. Now fill out the variables you except in the template:
     - _**Variable Name**_ = arbitrary user-created, camel-Case name of your variable
       - Example: customerName
     - _**Value**_ = what you want to be inserted in the message
       - Example: Bob Smith
     - _**Data Type**_ = depends on what the value of your variable is
       - Example: String
-11. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables
-
-### The interactive message template can only send URLs at the moment (this is subject to change)
+11. The final _**Add**_ and _**Edit**_ buttons are used to add/manipulate variables.
 
 #### Run the flow:
 ```
 Once you have successfully filled out the necessary connector information you are ready to send.   
-In the upper right-hand corner of the Flow Studio click: Save, Deplay, and the blue play button.
+In the upper right-hand corner of the Flow Studio click: Save, Deploy, and the blue play button.
 ```
 
 # Capabilities
