@@ -17,7 +17,6 @@ The Clearbit connector currently only has one capability that allows the user to
 
 #### For information and additional help, see the following sections of the Clearbit API documentation:
 * Clearbit API Documentation:
-   * [API Versioning](https://dashboard.clearbit.com/docs#versioning) 
    * [Enrichment API](https://dashboard.clearbit.com/docs#enrichment-api)
       * [Combined API](https://dashboard.clearbit.com/docs#enrichment-api-combined-api)
       * [Person API](https://dashboard.clearbit.com/docs#enrichment-api-person-api)
@@ -34,6 +33,7 @@ The Clearbit connector currently only has one capability that allows the user to
 #### To use the Clearbit connector:
 * [Create a clearbit account](https://dashboard.clearbit.com/signup)
 * [Account API key](https://dashboard.clearbit.com/docs#authentication)
+* [API Version](https://dashboard.clearbit.com/docs#versioning)
 
 
 ## Setting up the connector
@@ -44,11 +44,13 @@ The Clearbit connector currently only has one capability that allows the user to
 * Search for the desired connector (in this case, Clearbit).
 * Select the Clearbit connector.
 * Once the Clearbit connector has been added the _**Your Connections**_ list, click on Clearbit
-* From here you will see a single text field labeled _**API Key**_
+* From here you will see two text fields labeled _**API Key**_ and _**Version**_
    * API Key:
       * Copy and paste your Clearbit API key into the corresponding text field.
-      * Click Apply
-
+   * Version:
+      * This field is already filled out
+         * Only change if API version is out dated
+    * Click Apply
 
 # Using the connector in a flow
 
