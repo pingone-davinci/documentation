@@ -7,7 +7,15 @@ Author: Matthew Teets
 
 The Clearbit connector allows users to auto-fill registration forms and look up general information about people/businesses.
 
-The Clearbit connector currently only has one capability that allows the user to insert an email address and, from the Clearbit API response, retrieve the following information: givenName(first name), familyName(last name), email, city, state, and country of that individual. If business information is wanted from the inserted email, printing the connectors rawResponse output parameter will display all additional data that clearbit has available.
+The Clearbit connector currently has one capability that allows the user to insert a person's email address and, from the Clearbit API response, return the following information about the individual: 
+- givenName (first name)
+- familyName (last name)
+- email
+- city
+- state
+- country
+
+If business information is wanted from the inserted email, printing the connectors 'rawResponse' output parameter will display all additional data that clearbit has available about that individual.
 
 
 # Setup
@@ -49,7 +57,7 @@ The Clearbit connector currently only has one capability that allows the user to
       * Copy and paste your Clearbit API key into the corresponding text field.
    * Version:
       * This field is already filled out
-         * Only change if API version is out dated
+         * Only change if API version is out of date
     * Click Apply
 
 # Using the connector in a flow
@@ -57,20 +65,23 @@ The Clearbit connector currently only has one capability that allows the user to
 ### Some Clearbit connector use cases:
 * Auto-fill registration forms
    * Or any other kind of form that requires personal information
-* Retrieve information on almost any person/business
+* Retrieve information on a potential customers business
+* Retrieve information on a competitors business
 
 ### Get All User Information:
-* The Clearbit connector has one capability level property which can be filled out one of 2 ways:
+* The Clearbit connector has one capability level property which can be filled out 1 of 2 ways:
    * Manually inserting the email into the text field.
    * Selecting the appropriate output variable from the previous connector.
 * The Clearbit connector does not generate any output on its own.
-   * To see any output from the Clearbit connector you can do the following:
+   * To see the output from the Clearbit connector you can do the following:
       * Add an HTML block after your Clearbit connector.  
       * Click on the Custom HTML Message capability
       * In the _**Message**_ text area select the circular angel bracket button ( **{}** )
          * From the dropdown, select the Clearbit connector
          * Choose from any of the offered output variables
-
+            * Repeat as many times as desired
+      * Click apply
+* In the upper right hand corner click Save, Deploy, and Run
 
 # Capabilities
 
@@ -81,7 +92,7 @@ Leave this section blank: it will be generated automatically
 
 ```
 Clearbit doesn't have information on every email address. There will be instances where no information will be 
-available for the Clearbit API. In this case Clearbit will return a 404 response status code. No need to worry 
+available from the Clearbit API. In this case Clearbit will return a 404 response status code. No need to worry 
 because the Clearbit connector is fully equipped to gracefully handle these instances by simply returning empty 
 person values.
 ```
