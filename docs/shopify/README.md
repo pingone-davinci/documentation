@@ -34,7 +34,8 @@ To use the connector, you'll need:
 
 
 * A Shopify store
-* Your store's [Access Token](https://www.shopify.ca/partners/blog/17056443-how-to-generate-a-shopify-api-token "Shopify doc")
+* Your store's [Admin API Access Token](https://www.shopify.ca/partners/blog/17056443-how-to-generate-a-shopify-api-token "Shopify doc")
+	* Go to your store's admin page -> Settings (bottom left corner) -> Apps and Sales Channels -> Develop Apps for your store -> click the store/sales channel you want an API token for -> API Credentials
 * An API Version Number (as of June 15, 2022 we recommend "2022-04")
 	* [Shopify versioning documentation](https://shopify.dev/api/usage/versioning "Shopify doc")
 * Your Shopify store name (as appears in your {{storename}}.myshopify.com domain)
