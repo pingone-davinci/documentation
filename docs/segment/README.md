@@ -6,16 +6,16 @@ Author: Matthew Teets
 
 # Introduction
 
-Using the software and API from Segment, this connector collects, organizes, and cleans your customer data.
+Using the software and APIs from Segment, this connector collects, organizes, and cleans your customer data.
        
 The Segment connector comes loaded with 7 capabilities that the user is able to start operating out of the box.
 
 ### Capabilities:
 * `Identify`
+* `Group`
 * `Track`
 * `Page`
 * `Screen`
-* `Group`
 * `Alias`
 * `Make Custom API Call`
 
@@ -78,8 +78,17 @@ The Segment connector comes loaded with 7 capabilities that the user is able to 
 * Collect data on what buttons are being pressed on a website.
 * Collect data on what webpages are being viewed on a website.
 * Collect data on what screens are being viewed in a mobile app.
-* Collect data on what groups/teams a specific user is involved in.
+* Collect data on what groups/teams a specific user is in.
 * Create/Update/Combine user traits and characteristics.
+
+### Segment API Request Requirements:
+* The User ID is required to send successful requests.
+* Each capability has a specific characteristic that must be filled out.
+   * `Track User` must have an Event string or character.
+   * `Page User Is On` must have a Page Name string or character.
+   * `Screen User Is On` must have a Screen Name string or character.
+   * `Identify User's Group` must have a Group ID string or character.
+   * `Alias` must have a Previous User ID string or character and a User ID string or character.
 
 ---
 
@@ -90,15 +99,19 @@ The Segment connector comes loaded with 7 capabilities that the user is able to 
 * Once inside the flow sandbox add the Segment connector and choose the `Identify User` capability.
 * This Segment connector capability has two capability level properties that can be filled out 1 of 2 ways:
    * Manually inserting the desired values into the fields.
-   * Selecting the appropriate output variable from a previous connector.
+   * Selecting the appropriate output variable from a previous connector via the angle bracket button ( **{}** ).
       * E.g. an HTTP connector with an HTML form that prompts the user for the desired values.
 * The `User ID` is a custom, user-defined string that is used to identify a specific user.
    * E.g. 1, 001, #0001, etc.
       * All characters are acceptable.
-* The `Key Value List` is used as to define traits about the user.
-   * Clicking on the `+` button adds a key value field.
-      * **Key**: key of a key-value pair in the traits object.
-      * **Value**: value of a key-value pair in the traits object.
+* The `Key-Value List` is used to define traits about the user.
+   * E.g. 
+        |     Key     |           Value           |  
+        | --- | --- |
+        |    email    |     example@email.com     |
+   * Clicking on the `+` button adds a key-value field.
+      * **Key**: key of a key-value pair in the Segment traits object.
+      * **Value**: value of a key-value pair in the Segment traits object.
 * The Segment connector does not generate any output on its own.
    * To see the HTTP response object sent by Segment you can do the following:
       * Add an HTTP block after your Segment connector.  
@@ -110,7 +123,7 @@ The Segment connector comes loaded with 7 capabilities that the user is able to 
 * In the upper right hand corner click Save, Deploy, and Run.
 
 ```
-This connector can now be used to define a user that can be tracked through a flow.
+This connector can now be used to define/update information about a user as they navigate through a flow.
 ```
 
 ---
@@ -122,17 +135,20 @@ This connector can now be used to define a user that can be tracked through a fl
 * Once inside the flow sandbox add the Segment connector and choose the `Track User` capability.
 * This Segment connector capability has three capability level properties that can be filled out 1 of 2 ways:
    * Manually inserting the desired values into the fields.
-   * Selecting the appropriate output variable from a previous connector.
+   * Selecting the appropriate output variable from a previous connector via the angle bracket button ( **{}** ).
       * E.g. an HTTP connector with an HTML form that prompts the user for the desired values.
 * The `User ID` is a custom, user-defined string that is used to identify a specific user.
    * E.g. 1, 001, #0001, etc.
       * All characters are acceptable.
-   * `In most cases this will be a user that has already been created.`
+   * In most cases this will be a user that has already been created.
 * The `Event` field is a user-defined string that is used to identify a specific event.
-   * E.g. Button Clicked, Item Purchased, Added Item to Cart, etc...
+   * E.g. Button Clicked, Item Purchased, Item Added to Cart, etc...
       * These are events triggered by user interaction
 * The `Key Value List` is used as to define properties about the event.
-   * E.g. | key = item | value = Chocolate Bar |
+   * E.g. 
+        |     Key     |      Value      |  
+        |  --- | ---  |
+        |    item     |     Chocolate Bar |
    * Clicking on the `+` button adds a key value field.
       * **Key**: key of a key-value pair in the traits object.
       * **Value**: value of a key-value pair in the traits object.
@@ -150,54 +166,69 @@ This connector can now be used to define a user that can be tracked through a fl
 This connector can now be used to track the frequency of certain events through a flow.
 ```
 
----
-
-`FINISH THIS USE CASE`       
+---   
            
-### Use Case - track what webpages a user visits through a flow:
+### Use Case - create custom API call:
 * Navigate to the flow studio and in the upper right-hand corner select _**Create New Flow**_
 * Insert the desired name and description and click next.
 * Select Blank Flow then click save.
-* Once inside the flow sandbox add the Segment connector and choose the `Track User` capability.
-* This Segment connector capability has three capability level properties that can be filled out 1 of 2 ways:
-   * Manually inserting the desired values into the fields.
-   * Selecting the appropriate output variable from a previous connector.
-      * E.g. an HTTP connector with an HTML form that prompts the user for the desired values.
-* The `User ID` is a custom, user-defined string that is used to identify a specific user.
-   * E.g. 1, 001, #0001, etc.
-      * All characters are acceptable.
-   * `In most cases this will be a user that has already been created.`
-* The `Event` field is a user-defined string that is used to identify a specific event.
-   * E.g. Button Clicked, Item Purchased, Added Item to Cart, etc...
-      * These are events triggered by user interaction
-* The `Key Value List` is used as to define properties about the event.
-   * E.g. | key = item | value = Chocolate Bar |
-   * Clicking on the `+` button adds a key value field.
-      * **Key**: key of a key-value pair in the traits object.
-      * **Value**: value of a key-value pair in the traits object.
+* Once inside the flow sandbox add the Clearbit connector and choose the `Make Custom API Call` capability.
+* This Segment connector capability has 4 capability level properties that can be manually filled out:
+   * **Endpoint**:  
+      * Used to call a specific operation from inside the Segment API.
+         * E.g. `identify, group, track, page, screen, alias`
+   * **Method**:    
+      * Specifies the HTTP CRUD request.
+         * E.g. `GET, POST, PUT, DELETE, PATCH.`
+   * **Parameters**:    
+      * The kye-value pairs that appear in the Segment traits and properties objects.
+         * E.g. `email=usename@mail.com, name=John Smith, company=PingIdentity`.
+      * This is also where you must specify the required key-value pairs for each endpoint. 
+      * The following key names must be used for the corresponding endpoint.
+         * E.g. 
+          * group:
+               |     Key     |      Value      |  
+               |  --- | ---  |
+               |    `groupId`     |     5     |
+          * track:
+               |     Key     |      Value      |  
+               |  --- | ---  |
+               |    `event`     |     Purchase Button Clicked     |
+          * page:
+               |     Key     |      Value      |  
+               |  --- | ---  |
+               |    `name`     |     Home Page     |
+          * screen:
+               |     Key     |      Value      |  
+               |  --- | ---  |
+               |    `name`     |     Home Screen     |
+          * alias:
+               |     Key     |      Value      |  
+               |  --- | ---  |
+               |    `previousId`     |    0001     |
+      * Once the required endpoint key-value pair is setup you can add as many additional descriptor pairs as desired.
+         * The only endpoint that doesn't have a required pair is the identify endpoint.
+   * **Headers**:    
+      * Key-value pairs that represent the meta-data associated with the Segment API request and response.
+         * E.g. ` Content-Type: application/json`
+            * These aren't visible frrom the Segment request object found in the Segment workspace 
+   * **Body**:   
+      * Used to manually craft a JSON request body for the Segment API.
 * The Segment connector does not generate any output on its own.
-   * To see the HTTP response object sent by Segment you can do the following:
+   * To see the information retrieved by the Segment connector you can do the following:
       * Add an HTTP block after your Segment connector.  
       * Click on the Custom HTML Message capability.
       * In the _**Message**_ text area select the circular angel bracket button ( **{}** )
          * From the dropdown, select the Segment connector.
-         * Choose the `output (object)` by clicking `(+)`.
+         * Choose from any of the offered successful response output variables.
+            * rawResponse
+            * statusCode
+            * headers
       * `Click apply`
 * In the upper right hand corner click Save, Deploy, and Run.
-
-```
-This connector can now be used to track the frequency of certain events through a flow.
-```
 
 ---
 
 # Capabilities
 
 Leave this section blank: it will be generated automatically
-
-
-# Limitations
-
-```
-
-```
