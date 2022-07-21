@@ -1,0 +1,407 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Brandon Runkel, Senior Customer Success Engineer @ Deduce (brandon.runkel@deduce.com)">
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/deduce/">
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Deduce Intelligent MFA - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deduce-intelligent-mfa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deduce Intelligent MFA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="deduce-intelligent-mfa">Deduce Intelligent MFA<a class="headerlink" href="#deduce-intelligent-mfa" title="Permanent link"> ¶</a></h1>
+<p>This guide details how to install and use the Deduce Intelligent MFA connector for your PingOne DaVinci flow. This no-code solution leverages our Deduce Identity Insights API and is configurable to more accurately determine when to present a challenge or trust a user at the moment of login.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<p>To set up the Deduce Intelligent MFA connector, you'll need the following:
+1. Deduce Insights API Key
+2. Deduce Insights Site ID</p>
+<h1 id="integrate-setup-in-flow-studio">Integrate &amp; Setup in Flow Studio<a class="headerlink" href="#integrate-setup-in-flow-studio" title="Permanent link"> ¶</a></h1>
+<ol>
+<li>Select Add Integration (using the "+" symbol) at the bottom left corner of the Flow Studio.</li>
+<li>With the connector present in the workflow, click on the Deduce step and select the blue pencil icon at the top of the panel. This is where you will input your API Key and Site ID (required) for making requests to the Deduce Insights endpoint.</li>
+<li>The Connectors capabilities are available as a list at the connector level (under the text "Choose a Trigger or Action from the list"). Select the "Call Insights" capability from the list to set up your request.</li>
+<li>With the "Call Insights" capability selected, you should see multiple tabs at the top of the modal. Select "General" to begin setting up how the request values will be passed to the Insights connector.</li>
+<li>Parameters are made available to the Deduce connector from the global flow scope. Select the object brackets ("{}") at the right of the form input and select from "Global" scope to pass dynamic values into the Insights request. For example, for the IP field, it is recommended that you select "Global -&gt; IP (string)" to pass in the users IP address value at the time the flow executes. For other values where the object brackets are not present, the option to pass dynamic values are not available. <strong>NOTE:</strong> Consult the table "Capability Configuration Reference" table below for additional information about the options and requirements for the Deduce Insights request.</li>
+<li>The <strong>Action</strong> section should contain values based on implementation context. In the event a user is successful with login, the Deduce Intelligent MFA connector should use a value reflective of this result. In this particular example, the Deduce Intelligent MFA connector should be added to the flow with an action value of <strong>auth.success.iam</strong>. The same configuration can be used in a login failure case, to test for account cycling behavior (the value would of the action would be <strong>auth.failure.iam</strong>)</li>
+<li>Once you have set up your Deduce Intelligent MFA connector with the "Call Insights" capability, click "Apply" to save your connector configuration.</li>
+</ol>
+<h2 id="capability-configuration-reference">Capability Configuration Reference<a class="headerlink" href="#capability-configuration-reference" title="Permanent link"> ¶</a></h2>
+<p>The following table should be used to set required parameters for the Deduce Intelligent MFA request based on global environment variables:
+<strong>IP</strong> = Global -&gt; IP (string)
+<strong>User Agent</strong> = Global -&gt; UserAgent (string)
+<strong>Action</strong> = Hard-coded based on context</p>
+<h2 id="passthrough-mode">Passthrough Mode<a class="headerlink" href="#passthrough-mode" title="Permanent link"> ¶</a></h2>
+<p>The Deduce Intelligent MFA connector can be added without any action being taken in order to log responses based on data sent to the API.</p>
+<p>To enable Passthrough Mode, with the capability selected, enable the toggle for "Passthrough" under "General -&gt; Passthrough".</p>
+<p>This will result in PingOne DaVinci user data being sent to the API and insights being returned but no action taken on the data returned.</p>
+<h2 id="production">Production<a class="headerlink" href="#production" title="Permanent link"> ¶</a></h2>
+<p>In order to allow Deduce Intelligent MFA decisioning to impact the user flow, Passthrough Mode must be disabled. To disable Passthrough Mode, in the "General" section, select <strong>&quot;Disable&quot;</strong> in the Passthrough Mode toggle under the capability settings.</p>
+<h2 id="insights-signals">Insights Signals<a class="headerlink" href="#insights-signals" title="Permanent link"> ¶</a></h2>
+<p>When users interact online, they create a digital fingerprint that characterizes their typical patterns of behavior. The networks, devices, geographies, and more all factor into our understanding of account identity. Deduce Identity Insights leverages this understanding and generates signals which are leveraged to help companies make security decisions that are uniquely tailored to them.</p>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<p>You can use the Deduce Intelligent MFA connector in a variety of use cases, such as:</p>
+<h2 id="login-successfailure">Login - Success/Failure<a class="headerlink" href="#login-successfailure" title="Permanent link"> ¶</a></h2>
+<p>The Deduce Intelligent MFA connector can be leveraged at the point of login, to analyze user details and conditions around specific outcomes, in order to better mitigate risk associated with user fraud and account takeover. When an authentication request responds with an outcome, you can plug in the contextual action values to the Deduce Insights request to gain a better understanding of this user/account observed behavior, and if the Deduce Identity Network deems this action to be a risk. </p>
+<h1 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h1>
+<h3 id="call-insights-callinsights">Call Insights (callInsights)<a class="headerlink" href="#call-insights-callinsights" title="Permanent link"> ¶</a></h3>
+<p>Request signal data from Deduce Insights</p>
+<h4 id="ip-textfield-required">IP <code>textField</code> <code>required</code><a class="headerlink" href="#ip-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>The IP address for the user connection</p>
+<h4 id="email-textfield-required">Email <code>textField</code> <code>required</code><a class="headerlink" href="#email-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>The email address for the user profile</p>
+<h4 id="user-agent-textfield-required">User Agent <code>textField</code> <code>required</code><a class="headerlink" href="#user-agent-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>The user agent details for the user connection</p>
+<h4 id="action-textfield-required">Action <code>textField</code> <code>required</code><a class="headerlink" href="#action-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>The resulting action from the auth flow</p>
+<h4 id="passthrough-mode-toggleswitch-required">Passthrough Mode <code>toggleSwitch</code> <code>required</code><a class="headerlink" href="#passthrough-mode-toggleswitch-required" title="Permanent link"> ¶</a></h4>
+<p>For testing purposes</p>
+<hr />
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link"> ¶</a></h1>
+<p>The following section describes troubleshooting techniques/suggestions for common errors:</p>
+<p>(1) Request Time-Out -- check environment credentials (site ID / API key) -- if the request times out, it is likely that the connector is attempting to access a resource that either doesn't exist or is not available. Make sure your environment credentials are accurate and correspond to the correct Deduce Insights endpoint.</p>
+<p>(2) Bad Request (Status 400) -- malformed JSON, missing or incorrectly formatted parameters -- if the request returns a "Bad Request - Status 400", this is likely due to the request body being incorrectly formatted. In this case, check how required parameters are being passed to the connector to ensure that they are formatted correctly in terms of type (these values should be type "string").</p>
+<p>(3) Unauthorized (Status 401) -- incorrect credentials, endpoint not provisioned -- if the request returns an "Unauthorized - Status 401", verify that your credentials are correct and if the issue still persists, contact your Deduce representative for support.</p>
+<h3 id="testing-capabilities">Testing capabilities<a class="headerlink" href="#testing-capabilities" title="Permanent link"> ¶</a></h3>
+<p>You can test each capability individually. For help, see <a href="https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#">Testing capabilities</a>.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

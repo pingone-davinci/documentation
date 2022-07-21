@@ -1,0 +1,661 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/saviynt/">
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Saviynt Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#saviynt-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Saviynt Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="saviynt-connector">Saviynt Connector<a class="headerlink" href="#saviynt-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Ping Identity</p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h1>
+<p>Saviynt connector can be used for account creation and provisioning for users created in Saviynt account. This connector allows you to:</p>
+<ol>
+<li>Create User</li>
+<li>Update User</li>
+<li>Get Account Details</li>
+<li>Update User Request</li>
+<li>Fetch Request History</li>
+<li>Approve-Reject Request</li>
+<li>Get Request Approval Details</li>
+<li>Get Pending Requests</li>
+<li>Create user request with approval</li>
+<li>Remove Role</li>
+<li>Get Role Details</li>
+<li>Add Role</li>
+<li>Inactive user</li>
+<li>Get User Details</li>
+</ol>
+<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h1>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h2>
+<p>For information and setup help, see the following sections of the Saviynt API documentation:</p>
+<ul>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#2117ad42-4129-47bb-8268-04b463da32db">Get Authorization Token</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#2ee1eb47-d65a-4b82-b25c-adc7e91d1b1b">Create User</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#33026188-3e79-4612-a76c-c1455c5b81a9">Update User</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#03c67f69-ab92-4528-8c29-8d0024503245">Get Account Details</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#4ef1a6b5-a2c0-468b-9293-20568a0c3f8f">Update User Request</a></li>
+<li>
+<p><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#179c7142-675e-4f50-a8c8-4be699e539e3">Fetch Request History</a></p>
+</li>
+<li>
+<p><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#c1518440-2f00-430b-aed4-4bb9a61ea56d">Approve-Reject request</a></p>
+</li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#27a9d653-7ae8-4a13-99a1-27914dbb8416">Get Request approval details</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#e9aaa65a-bf5c-4d74-80b2-e89b51506b29">Get Pending Requests</a></li>
+<li>
+<p><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#2ee1eb47-d65a-4b82-b25c-adc7e91d1b1b">Create User request</a></p>
+</li>
+<li>
+<p><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#b3b548e1-4e84-4289-aa04-ae809f7efc0f">Remove Role</a></p>
+</li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#98691765-9b0b-4907-9c43-9d22331e4f93">Get Role Details</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#140feb81-cc65-4090-baf0-66af64b0c895">Add Role</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#33026188-3e79-4612-a76c-c1455c5b81a9">Inactive User</a></li>
+<li><a href="https://documenter.getpostman.com/view/1797923/RWaLwo21?version=latest#1eee7b3c-d581-412f-9049-d9bbb70fb3f4">Get User Details</a></li>
+</ul>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<p>To use the connector, you'll need:</p>
+<ul>
+<li>Saviynt Admin User Account Access</li>
+<li>Saviynt API Domain url and path</li>
+</ul>
+<h2 id="setting-up-the-connector">Setting up the connector<a class="headerlink" href="#setting-up-the-connector" title="Permanent link"> ¶</a></h2>
+<p>In Davinci, add a <strong>Saviynt User Non-Approval Flow</strong> connection via the "Connections" tab in your Davinci Environment. For help, see <a href="https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#">Adding a connection</a>.</p>
+<h3 id="connector-settings">Connector Settings<a class="headerlink" href="#connector-settings" title="Permanent link"> ¶</a></h3>
+<p>Once you've added the Saviynt User Non-Approval Flow connection click on it's logo, or click the "···" button and edit. You will see the connector's details pop-up. On the GENERAL tab, enter in your Saviynt account details below to get Authorization Token</p>
+<ol>
+<li>Saviynt Domain url</li>
+<li>Saviynt Path</li>
+<li>Saviynt Admin Username</li>
+<li>Saviynt Admin Password</li>
+</ol>
+<p>and click apply. This ensures that whenever you use this connector you will not have to reenter this information and username and password is used for generated Token passed as input to Authorise below connector in flow.</p>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<h2 id="create-user">Create User<a class="headerlink" href="#create-user" title="Permanent link"> ¶</a></h2>
+<p>To create user in the savinyt add a Saviynt connector in the flow studio. Then choose the Create User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Create User Flow" src="Createuser.PNG" /></p>
+<h2 id="update-user-details">Update user details<a class="headerlink" href="#update-user-details" title="Permanent link"> ¶</a></h2>
+<p>To update user attributes saved in the savinyt add a Saviynt connector in the flow studio. Then choose the Update User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Update User Attributes" src="UpdateUser.PNG" /></p>
+<h2 id="get-account-details">Get Account Details<a class="headerlink" href="#get-account-details" title="Permanent link"> ¶</a></h2>
+<p>To get account details of user in the savinyt add a Saviynt connector in the flow studio. Then choose the Get account details capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Get Account Details" src="GetAccountDetails.PNG" /></p>
+<h2 id="update-user-request">Update User Request<a class="headerlink" href="#update-user-request" title="Permanent link"> ¶</a></h2>
+<p>To update user request in the savinyt add a Saviynt connector in the flow studio. Then choose the Update User Request capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Update User Request" src="UpdateUserRequest.PNG" /></p>
+<h2 id="fetch-request-history">Fetch Request History<a class="headerlink" href="#fetch-request-history" title="Permanent link"> ¶</a></h2>
+<p>To fetch request history in the savinyt add a Saviynt connector in the flow studio. Then choose the Fetch Request History capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Fetch Request History" src="FetchRequestHistory.PNG" /></p>
+<h2 id="approve-reject-request">Approve-Reject Request<a class="headerlink" href="#approve-reject-request" title="Permanent link"> ¶</a></h2>
+<p>To get the lists the existing user details based on search parameter provided add a Saviynt connector in the flow studio. Then choose the userdetails capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of users based on filter criteria/username submitted.</p>
+<p><img alt="Approve Reject" src="Approve-RejectRequest.PNG" /></p>
+<h2 id="get-request-approval-details">Get Request Approval Details<a class="headerlink" href="#get-request-approval-details" title="Permanent link"> ¶</a></h2>
+<p>To Get Request Approval Details saved in the savinyt add a Saviynt User Approval Flow connector in the flow studio. Then choose the Get Request Approval Details capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
+<img alt="Get Request Approval details" src="GetRequestApprovalDetails.PNG" /></p>
+<h2 id="get-pending-requests">Get Pending Requests<a class="headerlink" href="#get-pending-requests" title="Permanent link"> ¶</a></h2>
+<p>To inactivate the exsting savinyt user add a Saviynt connector in the flow studio. Then choose the Inactivate User capability. Provide the username parameters from previous nodes in the flow (HTML form) to modify the user status.
+<img alt="Get Pending Request" src="GetPendingRequests.PNG" /></p>
+<h2 id="create-user-with-approval">Create User with approval<a class="headerlink" href="#create-user-with-approval" title="Permanent link"> ¶</a></h2>
+<p>To create user in the savinyt add a Saviynt User Approval Flow connector in the flow studio. Then choose the Create User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
+<img alt="Create User request" src="Createuserrequestwithapproval.PNG" /></p>
+<h2 id="remove-role">Remove Role<a class="headerlink" href="#remove-role" title="Permanent link"> ¶</a></h2>
+<p>To remove role added for an existing saviynt user add a Saviynt connector in the flow studio. Then choose the Remove Role capability. Provide the input parameters(username &amp; rolename) from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Remove Role Flow" src="RemoveRole.PNG" /></p>
+<h2 id="get-role-details">Get Role Details<a class="headerlink" href="#get-role-details" title="Permanent link"> ¶</a></h2>
+<p>To get role details saved add a Saviynt connector in the flow studio. Then choose the Get Role Details For User capability. Provide the input parameters from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Get Role Details Flow" src="GetRoleDetails.PNG" /></p>
+<h2 id="add-role">Add Role<a class="headerlink" href="#add-role" title="Permanent link"> ¶</a></h2>
+<p>To add role to the existing saviynt user add a Saviynt connector in the flow studio. Then choose the Add role to an user capability. Provide the input parameters(username &amp; rolename) from previous nodes in the flow (HTML form) and submit the details.</p>
+<p><img alt="Add Role Flow" src="AddRole.PNG" /></p>
+<h2 id="inactive-user">Inactive user<a class="headerlink" href="#inactive-user" title="Permanent link"> ¶</a></h2>
+<p>To inactivate the exsting savinyt user add a Saviynt connector in the flow studio. Then choose the Inactivate User capability. Provide the username parameters from previous nodes in the flow (HTML form) to modify the user status.</p>
+<p><img alt="Inactivate User Flow" src="Inactiveuser.PNG" /></p>
+<h2 id="get-user-details">Get User Details<a class="headerlink" href="#get-user-details" title="Permanent link"> ¶</a></h2>
+<p>To get the lists the existing user details based on search parameter provided add a Saviynt connector in the flow studio. Then choose the userdetails capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of users based on filter criteria/username submitted.</p>
+<p><img alt="Get User Details Flow" src="GetUserDetails.PNG" /></p>
+<h1 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h1>
+<h3 id="create-user-createuser">Create User (createUser)<a class="headerlink" href="#create-user-createuser" title="Permanent link"> ¶</a></h3>
+<p>Create an user in saviynt</p>
+<h4 id="first-name-textfield-required">First Name <code>textField</code> <code>required</code><a class="headerlink" href="#first-name-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>First Name of the user</p>
+<h4 id="middle-name-textfield">Middle Name <code>textField</code><a class="headerlink" href="#middle-name-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your middle name</p>
+<h4 id="username-textfield-required">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="last-name-textfield-required">Last Name <code>textField</code> <code>required</code><a class="headerlink" href="#last-name-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Last Name of the user</p>
+<h4 id="email-textfield-required">Email <code>textField</code> <code>required</code><a class="headerlink" href="#email-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Email of the user</p>
+<h4 id="employee-type-dropdownwithcreate">Employee Type <code>dropdownWithCreate</code><a class="headerlink" href="#employee-type-dropdownwithcreate" title="Permanent link"> ¶</a></h4>
+<p>Select any employee type</p>
+<ul>
+<li>Tester</li>
+<li>Manager</li>
+<li>TeamLead</li>
+<li>Developer</li>
+</ul>
+<h4 id="start-date-textfield-required">Start Date <code>textField</code> <code>required</code><a class="headerlink" href="#start-date-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Start Date of the user</p>
+<h4 id="end-date-textfield-required">End Date <code>textField</code> <code>required</code><a class="headerlink" href="#end-date-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Provide last date of the user</p>
+<h4 id="city-textfield">City <code>textField</code><a class="headerlink" href="#city-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your city name</p>
+<h4 id="state-textfield">State <code>textField</code><a class="headerlink" href="#state-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your state name</p>
+<h4 id="phone-number-textfield">Phone Number <code>textField</code><a class="headerlink" href="#phone-number-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your phone number</p>
+<h4 id="country-textfield">Country <code>textField</code><a class="headerlink" href="#country-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your country name</p>
+<h4 id="company-name-textfield">Company Name <code>textField</code><a class="headerlink" href="#company-name-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your company name</p>
+<h4 id="other-attributes-variableinputlist">Other Attributes <code>variableInputList</code><a class="headerlink" href="#other-attributes-variableinputlist" title="Permanent link"> ¶</a></h4>
+<p>Add other attributes and their values.</p>
+<hr />
+<h3 id="update-user-updateuser">Update User (updateUser)<a class="headerlink" href="#update-user-updateuser" title="Permanent link"> ¶</a></h3>
+<p>Update an user in saviynt</p>
+<h4 id="first-name-textfield-required_1">First Name <code>textField</code> <code>required</code><a class="headerlink" href="#first-name-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>First Name of the user</p>
+<h4 id="middle-name-textfield_1">Middle Name <code>textField</code><a class="headerlink" href="#middle-name-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your middle name</p>
+<h4 id="username-textfield-required_1">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="last-name-textfield-required_1">Last Name <code>textField</code> <code>required</code><a class="headerlink" href="#last-name-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Last Name of the user</p>
+<h4 id="statuskey-toggleswitch">StatusKey <code>toggleSwitch</code><a class="headerlink" href="#statuskey-toggleswitch" title="Permanent link"> ¶</a></h4>
+<p>Statuskey of the user</p>
+<h4 id="email-textfield-required_1">Email <code>textField</code> <code>required</code><a class="headerlink" href="#email-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Email of the user</p>
+<h4 id="employee-type-dropdownwithcreate_1">Employee Type <code>dropdownWithCreate</code><a class="headerlink" href="#employee-type-dropdownwithcreate_1" title="Permanent link"> ¶</a></h4>
+<p>Select any employee type</p>
+<ul>
+<li>Tester</li>
+<li>Manager</li>
+<li>TeamLead</li>
+<li>Developer</li>
+</ul>
+<h4 id="start-date-textfield-required_1">Start Date <code>textField</code> <code>required</code><a class="headerlink" href="#start-date-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Start Date of the user</p>
+<h4 id="end-date-textfield-required_1">End Date <code>textField</code> <code>required</code><a class="headerlink" href="#end-date-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Provide last date of the user</p>
+<h4 id="city-textfield_1">City <code>textField</code><a class="headerlink" href="#city-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your city name</p>
+<h4 id="state-textfield_1">State <code>textField</code><a class="headerlink" href="#state-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your state name</p>
+<h4 id="phone-number-textfield_1">Phone Number <code>textField</code><a class="headerlink" href="#phone-number-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your phone number</p>
+<h4 id="country-textfield_1">Country <code>textField</code><a class="headerlink" href="#country-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your country name</p>
+<h4 id="company-name-textfield_1">Company Name <code>textField</code><a class="headerlink" href="#company-name-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Provide your company name</p>
+<h4 id="other-attributes-variableinputlist_1">Other Attributes <code>variableInputList</code><a class="headerlink" href="#other-attributes-variableinputlist_1" title="Permanent link"> ¶</a></h4>
+<p>Add other attributes and their values.</p>
+<hr />
+<h3 id="inactivate-user-inactivateuser">Inactivate User (inactivateUser)<a class="headerlink" href="#inactivate-user-inactivateuser" title="Permanent link"> ¶</a></h3>
+<p>Inactivate an user in saviynt</p>
+<h4 id="username-textfield-required_2">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<hr />
+<h3 id="get-user-details-getuserdetails">Get User Details (getUserDetails)<a class="headerlink" href="#get-user-details-getuserdetails" title="Permanent link"> ¶</a></h3>
+<p>Get an user details from saviynt</p>
+<h4 id="username-textfield-required_3">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_3" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="response-fields-textfield">Response Fields <code>textField</code><a class="headerlink" href="#response-fields-textfield" title="Permanent link"> ¶</a></h4>
+<p>User attributes which you want to see in the response</p>
+<h4 id="filter-criteria-textfield">Filter Criteria <code>textField</code><a class="headerlink" href="#filter-criteria-textfield" title="Permanent link"> ¶</a></h4>
+<p>User fields based on which you want to get the user attribute details(including userkey)</p>
+<h4 id="search-criteria-textfield">Search Criteria <code>textField</code><a class="headerlink" href="#search-criteria-textfield" title="Permanent link"> ¶</a></h4>
+<p>search for a user based on the string passed (eg - “<em>ab</em>” or “<em>ab” or “ab</em>”) in their firstname, lastname, displayname and username only, example - "ab*" - This will return all users with firstname or lastname or username starting with "ab"</p>
+<h4 id="advance-search-criteria-textfield">Advance Search Criteria <code>textField</code><a class="headerlink" href="#advance-search-criteria-textfield" title="Permanent link"> ¶</a></h4>
+<p>search for a user based on the string passed (eg - “<em>ab</em>” or “<em>ab” or “ab</em>”), example - {"username":"a<em>", "firstname":"</em>b"} - This will return all users with username starting with "a" AND firstname ending with "b". Exact match search is applicable for types boolean, users, customer. Date can be entered in format - yyyy-MM-dd.</p>
+<h4 id="maximum-number-of-requests-textfield">Maximum number of requests <code>textField</code><a class="headerlink" href="#maximum-number-of-requests-textfield" title="Permanent link"> ¶</a></h4>
+<p>Maximum number of requests</p>
+<h4 id="offset-textfield">Offset <code>textField</code><a class="headerlink" href="#offset-textfield" title="Permanent link"> ¶</a></h4>
+<p>Offset</p>
+<h4 id="sort-textfield">Sort <code>textField</code><a class="headerlink" href="#sort-textfield" title="Permanent link"> ¶</a></h4>
+<p>Sort</p>
+<h4 id="order-textfield">Order <code>textField</code><a class="headerlink" href="#order-textfield" title="Permanent link"> ¶</a></h4>
+<p>asc/desc</p>
+<h4 id="manager-textfield-required">Manager <code>textField</code> <code>required</code><a class="headerlink" href="#manager-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Manager of the user</p>
+<h4 id="show-security-answers-textfield">Show Security Answers <code>textField</code><a class="headerlink" href="#show-security-answers-textfield" title="Permanent link"> ¶</a></h4>
+<p>"0"/"1" to display encrypted security answers for the user</p>
+<hr />
+<h3 id="add-role-to-user-addroletouser">Add Role To User (addRoleToUser)<a class="headerlink" href="#add-role-to-user-addroletouser" title="Permanent link"> ¶</a></h3>
+<p>This will add existing role to an user</p>
+<h4 id="username-textfield-required_4">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_4" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="role-name-textfield-required">Role Name <code>textField</code> <code>required</code><a class="headerlink" href="#role-name-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Provide a role name</p>
+<hr />
+<h3 id="get-role-details-of-user-getroledetailsofuser">Get Role Details Of User (getRoleDetailsOfUser)<a class="headerlink" href="#get-role-details-of-user-getroledetailsofuser" title="Permanent link"> ¶</a></h3>
+<p>This will fetch all roles of an user</p>
+<h4 id="username-textfield-required_5">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_5" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<hr />
+<h3 id="remove-role-from-user-removerolefromuser">Remove Role From User (removeRoleFromUser)<a class="headerlink" href="#remove-role-from-user-removerolefromuser" title="Permanent link"> ¶</a></h3>
+<p>This will remove role from an user</p>
+<h4 id="username-textfield-required_6">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_6" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="role-name-textfield-required_1">Role Name <code>textField</code> <code>required</code><a class="headerlink" href="#role-name-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Provide a role name</p>
+<hr />
+<h3 id="create-user-with-approval-createuserwithapproval">Create User With Approval (createUserWithApproval)<a class="headerlink" href="#create-user-with-approval-createuserwithapproval" title="Permanent link"> ¶</a></h3>
+<p>Create User</p>
+<h4 id="first-name-textfield-required_2">First Name <code>textField</code> <code>required</code><a class="headerlink" href="#first-name-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>First Name of the user</p>
+<h4 id="last-name-textfield-required_2">Last Name <code>textField</code> <code>required</code><a class="headerlink" href="#last-name-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>Last Name of the user</p>
+<h4 id="roles-textfield-required">Roles <code>textField</code> <code>required</code><a class="headerlink" href="#roles-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Roles of the user</p>
+<h4 id="employee-type-dropdownwithcreate_2">Employee Type <code>dropdownWithCreate</code><a class="headerlink" href="#employee-type-dropdownwithcreate_2" title="Permanent link"> ¶</a></h4>
+<p>Select any employee type</p>
+<ul>
+<li>Tester</li>
+<li>Manager</li>
+<li>TeamLead</li>
+<li>Developer</li>
+</ul>
+<h4 id="start-date-textfield-required_2">Start Date <code>textField</code> <code>required</code><a class="headerlink" href="#start-date-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>Start Date of the user</p>
+<h4 id="status-toggleswitch-required">Status <code>toggleSwitch</code> <code>required</code><a class="headerlink" href="#status-toggleswitch-required" title="Permanent link"> ¶</a></h4>
+<p>Status of the user</p>
+<h4 id="statuskey-toggleswitch_1">StatusKey <code>toggleSwitch</code><a class="headerlink" href="#statuskey-toggleswitch_1" title="Permanent link"> ¶</a></h4>
+<p>Statuskey of the user</p>
+<h4 id="manager-textfield-required_1">Manager <code>textField</code> <code>required</code><a class="headerlink" href="#manager-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Manager of the user</p>
+<h4 id="email-textfield-required_2">Email <code>textField</code> <code>required</code><a class="headerlink" href="#email-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>Email of the user</p>
+<h4 id="system-username-textfield-required">System Username <code>textField</code> <code>required</code><a class="headerlink" href="#system-username-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>System username of the user</p>
+<h4 id="enabled-textfield-required">Enabled <code>textField</code> <code>required</code><a class="headerlink" href="#enabled-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>To enable disable the user</p>
+<h4 id="username-textfield-required_7">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_7" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<hr />
+<h3 id="get-pending-requests-getpendingrequests">Get Pending Requests (getPendingRequests)<a class="headerlink" href="#get-pending-requests-getpendingrequests" title="Permanent link"> ¶</a></h3>
+<p>Get Pending Requests</p>
+<h4 id="maximum-number-of-requests-textfield_1">Maximum number of requests <code>textField</code><a class="headerlink" href="#maximum-number-of-requests-textfield_1" title="Permanent link"> ¶</a></h4>
+<p>Maximum number of requests</p>
+<h4 id="request-key-textfield-required">Request Key <code>textField</code> <code>required</code><a class="headerlink" href="#request-key-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Request Key of the pending request</p>
+<hr />
+<h3 id="get-request-approval-details-getrequestapprovaldetails">Get Request Approval Details (getRequestApprovalDetails)<a class="headerlink" href="#get-request-approval-details-getrequestapprovaldetails" title="Permanent link"> ¶</a></h3>
+<p>Get Request Approval Details</p>
+<h4 id="request-key-textfield-required_1">Request Key <code>textField</code> <code>required</code><a class="headerlink" href="#request-key-textfield-required_1" title="Permanent link"> ¶</a></h4>
+<p>Request Key of the pending request</p>
+<hr />
+<h3 id="approve-reject-request-approverejectrequest">Approve-Reject Request (approveRejectRequest)<a class="headerlink" href="#approve-reject-request-approverejectrequest" title="Permanent link"> ¶</a></h3>
+<p>Approve-Reject Request</p>
+<h4 id="request-key-textfield-required_2">Request Key <code>textField</code> <code>required</code><a class="headerlink" href="#request-key-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>Request Key of the pending request</p>
+<h4 id="request-id-textfield-required">Request ID <code>textField</code> <code>required</code><a class="headerlink" href="#request-id-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Request ID of pending request to approve/reject</p>
+<h4 id="request-action-textfield-required">Request Action <code>textField</code> <code>required</code><a class="headerlink" href="#request-action-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>it will take the value either 1 or 2 for approve/reject respectively</p>
+<h4 id="comments-textfield">Comments <code>textField</code><a class="headerlink" href="#comments-textfield" title="Permanent link"> ¶</a></h4>
+<p>Comments by approver for particular request</p>
+<hr />
+<h3 id="fetch-request-history-fetchrequesthistory">Fetch Request History (fetchRequestHistory)<a class="headerlink" href="#fetch-request-history-fetchrequesthistory" title="Permanent link"> ¶</a></h3>
+<p>Fetch Request History</p>
+<h4 id="status-toggleswitch-required_1">Status <code>toggleSwitch</code> <code>required</code><a class="headerlink" href="#status-toggleswitch-required_1" title="Permanent link"> ¶</a></h4>
+<p>Status of the user</p>
+<h4 id="maximum-number-of-requests-textfield_2">Maximum number of requests <code>textField</code><a class="headerlink" href="#maximum-number-of-requests-textfield_2" title="Permanent link"> ¶</a></h4>
+<p>Maximum number of requests</p>
+<hr />
+<h3 id="update-user-request-updateuserrequest">Update User Request (updateUserRequest)<a class="headerlink" href="#update-user-request-updateuserrequest" title="Permanent link"> ¶</a></h3>
+<p>Update User Request</p>
+<h4 id="username-textfield-required_8">Username <code>textField</code> <code>required</code><a class="headerlink" href="#username-textfield-required_8" title="Permanent link"> ¶</a></h4>
+<p>username for the create user</p>
+<h4 id="first-name-textfield-required_3">First Name <code>textField</code> <code>required</code><a class="headerlink" href="#first-name-textfield-required_3" title="Permanent link"> ¶</a></h4>
+<p>First Name of the user</p>
+<h4 id="last-name-textfield-required_3">Last Name <code>textField</code> <code>required</code><a class="headerlink" href="#last-name-textfield-required_3" title="Permanent link"> ¶</a></h4>
+<p>Last Name of the user</p>
+<h4 id="designation-textfield">Designation <code>textField</code><a class="headerlink" href="#designation-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide designation</p>
+<h4 id="manager-textfield-required_2">Manager <code>textField</code> <code>required</code><a class="headerlink" href="#manager-textfield-required_2" title="Permanent link"> ¶</a></h4>
+<p>Manager of the user</p>
+<hr />
+<h3 id="get-account-details-getaccountdetails">Get Account Details (getAccountDetails)<a class="headerlink" href="#get-account-details-getaccountdetails" title="Permanent link"> ¶</a></h3>
+<p>Get Account Details</p>
+<h4 id="status-toggleswitch-required_2">Status <code>toggleSwitch</code> <code>required</code><a class="headerlink" href="#status-toggleswitch-required_2" title="Permanent link"> ¶</a></h4>
+<p>Status of the user</p>
+<h4 id="name-textfield">Name <code>textField</code><a class="headerlink" href="#name-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide your name</p>
+<h4 id="type-textfield-required">Type <code>textField</code> <code>required</code><a class="headerlink" href="#type-textfield-required" title="Permanent link"> ¶</a></h4>
+<p>Provide type</p>
+<h4 id="value-textfield">Value <code>textField</code><a class="headerlink" href="#value-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide value</p>
+<h4 id="rank-textfield">Rank <code>textField</code><a class="headerlink" href="#rank-textfield" title="Permanent link"> ¶</a></h4>
+<p>Provide rank</p>
+<hr />
+<h1 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link"> ¶</a></h1>
+<p>Use of connector is limited by the availability of Saviynt API and account access.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

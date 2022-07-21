@@ -1,0 +1,381 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/opswat/">
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>OPSWAT MetaAccess Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#opswat-metaaccess-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OPSWAT MetaAccess Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="opswat-metaaccess-connector">OPSWAT MetaAccess Connector<a class="headerlink" href="#opswat-metaaccess-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Josh Porth, Jerold Lodge</p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h1>
+<p>OPSWAT's MetaAccess provides zero trust access to applications by ensuring endpoints are compliant as part of attempting to authenticate with an IdP like Ping Federation or an authentication flow builder like Ping DaVinci.</p>
+<p>As part of the authentication process, the connector consults with MetaAccess to confirm if the device is compliant based on the policies your organization configures in MetaAccess. If the device is compliant, then the device gains access as it normally would, if the device is not compliant, the user will either be just warned or fully blocked (based on configuration), until the device is brought into compliance. The user is provided detailed instructions on how to self-remediate.</p>
+<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h1>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h2>
+<p>For information and setup help, see the following sections of the MetaAccess documentation:</p>
+<p>About MetaAccess:</p>
+<ul>
+<li>MetaAccess Platform Overview: https://www.opswat.com/products/metaaccess</li>
+<li>Getting Started: https://docs.opswat.com/macloud-sdp/configuration---management</li>
+</ul>
+<p>Integrating with Ping Identity's Davinci:<br />
+https://docs.opswat.com/macloud-sdp/integrations/ping-davinci-guide</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<p>To use the connector, you'll need:</p>
+<ul>
+<li>A free MetaAccess account, you can create one <a href="https://id.opswat.com/register?SAMLRequest=nZPNbtswEIRfReBdskTblU1YDlwHQQ30R0jUHnpjyHVDQCJV7ip2376UrLQq0BpBbwQ5nB1%2Bu9zcnJs6egaPxtmCZUnKIrDKaWO%2FFexzdRev2M12g7KpW7Hr6Mnew%2FcOkKJwz6IYDgrWeSucRIPCygZQkBIPuw%2FvBU9S0XpHTrmaRXfOKxhMCnaUNQKLDrcFM%2Fox5av1ERbximsdL6TMwirnMV%2Fky3kmpZ7nb4IWS4lonuH3bcQODhZJWioYTzmP02WcrqssF%2BlSZHmyXs6%2FsqgcI7w19vKwa3kfLyIU76qqjMtPDxWLvrwACgJ2wcHFUN1PQPDrxiE8eAo2bPtE1KKYzYxOXIsnSYlyzWY29R2rtOJjMDrclq426se02Kux7%2BranfYeJAVy5DsYOtFIum7Q7xgdHwepaHsCSGCJzX5FG2cB9NDUvbMEZ%2FqvjHvXtNIb7BnDWSoaKYup874OCO%2FhOKnwauJXZUqo3jps9xN2cl73EwMqvKzy0mLrPF2689c827Fz%2FwAyHv%2F5f7Y%2FAQ%3D%3D&amp;app=appMA0001&amp;redirect=https://gears.opswat.com">here</a></li>
+</ul>
+<h2 id="create-oauth-application">Create OAuth Application<a class="headerlink" href="#create-oauth-application" title="Permanent link"> ¶</a></h2>
+<p>Once your account is created, you can proceed with <a href="https://gears.opswat.com/o/app/register">registering your application</a>. Following submission, applications are confirmed and Client Key and Client Secret strings are provided. These keys are unique and should remain confidential.</p>
+<h2 id="enable-cross-domain-api">Enable Cross-Domain API<a class="headerlink" href="#enable-cross-domain-api" title="Permanent link"> ¶</a></h2>
+<p>Enable Cross-domain API settings, in <strong>Settings &gt; Integrations</strong>, on your MetaAccess account.</p>
+<p>Once the cross-domain API setting is enabled, MetaAccess agent tries to open a cross-domain API at the configured port on an endpoint. Please make sure that the configured port is valid and not used by any existing applications running on the same endpoint.</p>
+<h2 id="setting-up-the-connector">Setting up the connector<a class="headerlink" href="#setting-up-the-connector" title="Permanent link"> ¶</a></h2>
+<p>In Ping DaVinci, add a <strong>OPSWAT MetaAccess</strong> connection. For help, see <a href="https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#">Adding a connection</a>.</p>
+<h3 id="connector-settings">Connector settings<a class="headerlink" href="#connector-settings" title="Permanent link"> ¶</a></h3>
+<h4 id="oauth-client-id">Oauth Client ID<a class="headerlink" href="#oauth-client-id" title="Permanent link"> ¶</a></h4>
+<p>The Oauth Client Key obtained from creating an Oauth Application in MetaAccess. Copy and paste the Client Key from the Oauth Application in <a href="https://console.metaaccess-b.opswat.com/o/app">MetaAccess</a>.</p>
+<h4 id="oauth-client-secret">Oauth Client Secret<a class="headerlink" href="#oauth-client-secret" title="Permanent link"> ¶</a></h4>
+<p>The Oauth Client Secret obtained from creating an Oauth Application in MetaAccess. Copy and paste the Client Secret from the Oauth Application in <a href="https://console.metaaccess-b.opswat.com/o/app">MetaAccess</a>.</p>
+<h4 id="metaaccess-domain-optional">MetaAccess Domain (Optional)<a class="headerlink" href="#metaaccess-domain-optional" title="Permanent link"> ¶</a></h4>
+<p>The MetaAccess domain used for making API calls to MetaAccess. In almost all cases the default value (<code>gears.opswat.com</code>) is correct. If you are using a different tenant, for example, the Beta tenant, then the value should be changed to <code>gears-beta.opswat.com</code>.</p>
+<h4 id="cross-domain-api-port-optional">Cross-Domain API Port (Optional)<a class="headerlink" href="#cross-domain-api-port-optional" title="Permanent link"> ¶</a></h4>
+<p>The port number of Cross-Domain API. The default value of <code>11369</code> should be correct if you did not customize the port number when enabling the Cross-Domain API. Verify the Cross-Domain API port number in MetaAccess under <strong>Settings &gt; Integrations</strong>.</p>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<p>The OPSWAT MetaAccess connector is designed to help DaVinci flow builders limit a user's progress in a flow based on the user's devices compliance status with MetaAccess. The OPSWAT MetaAccess connector provides device compliance and access control functionality within Ping DaVinci Flows.</p>
+<h2 id="blocking-non-compliant-devices">Blocking non-compliant devices<a class="headerlink" href="#blocking-non-compliant-devices" title="Permanent link"> ¶</a></h2>
+<p>Blocking non-compliant devices is the primary use case of the MetaAccess Conector. Simply putting the connector inline with your flow, effectily limiting the progress of non-compliant devices at the point where the MetaAccess Connector is placed.</p>
+<p>For example, placing the MetaAccess Connector immediately after a PingOne SSO Connector will allow all users to authenticate, but will only allow compliant devices to continure past the MetaAccess Connector. Users progressing beyond the MetaAccess connector must have successfully authenticated with PingOne SSO and passed the MetaAccess compliance check.</p>
+<h1 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h1>
+<h3 id="compliance-check-compliancecheck">Compliance Check (complianceCheck)<a class="headerlink" href="#compliance-check-compliancecheck" title="Permanent link"> ¶</a></h3>
+<p>Check device's compliance</p>
+<hr />
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
