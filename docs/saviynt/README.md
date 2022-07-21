@@ -73,82 +73,82 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To create user in the savinyt add a Saviynt connector in the flow studio. Then choose the Create User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Create User Flow](../assets/Createuser.PNG)
+![Create User Flow](Createuser.PNG)
 
 ## Update user details
 
 To update user attributes saved in the savinyt add a Saviynt connector in the flow studio. Then choose the Update User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Update User Attributes](../assets/UpdateUser.PNG)
+![Update User Attributes](UpdateUser.PNG)
 
 ## Get Account Details
 
 To get account details of user in the savinyt add a Saviynt connector in the flow studio. Then choose the Get account details capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Get Account Details](../assets/GetAccountDetails.PNG)
+![Get Account Details](GetAccountDetails.PNG)
 
 ## Update User Request
 
 To update user request in the savinyt add a Saviynt connector in the flow studio. Then choose the Update User Request capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Update User Request](../assets/UpdateUserRequest.PNG)
+![Update User Request](UpdateUserRequest.PNG)
 
 ## Fetch Request History
 
 To fetch request history in the savinyt add a Saviynt connector in the flow studio. Then choose the Fetch Request History capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Fetch Request History](../assets/FetchRequestHistory.PNG)
+![Fetch Request History](FetchRequestHistory.PNG)
 
 ## Approve-Reject Request
 
 To get the lists the existing user details based on search parameter provided add a Saviynt connector in the flow studio. Then choose the userdetails capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of users based on filter criteria/username submitted.
 
-![Approve Reject](../assets/Approve-RejectRequest.PNG)
+![Approve Reject](Approve-RejectRequest.PNG)
 
 ## Get Request Approval Details
 
 To Get Request Approval Details saved in the savinyt add a Saviynt User Approval Flow connector in the flow studio. Then choose the Get Request Approval Details capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
-![Get Request Approval details](../assets/GetRequestApprovalDetails.PNG)
+![Get Request Approval details](GetRequestApprovalDetails.PNG)
 
 ## Get Pending Requests
 
 To inactivate the exsting savinyt user add a Saviynt connector in the flow studio. Then choose the Inactivate User capability. Provide the username parameters from previous nodes in the flow (HTML form) to modify the user status.
-![Get Pending Request](../assets/GetPendingRequests.PNG)
+![Get Pending Request](GetPendingRequests.PNG)
 
 ## Create User with approval
 
 To create user in the savinyt add a Saviynt User Approval Flow connector in the flow studio. Then choose the Create User capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
-![Create User request](../assets/Createuserrequestwithapproval.PNG)
+![Create User request](Createuserrequestwithapproval.PNG)
 
 ## Remove Role
 
 To remove role added for an existing saviynt user add a Saviynt connector in the flow studio. Then choose the Remove Role capability. Provide the input parameters(username & rolename) from previous nodes in the flow (HTML form) and submit the details.
 
-![Remove Role Flow](../assets/RemoveRole.PNG)
+![Remove Role Flow](RemoveRole.PNG)
 
 ## Get Role Details
 
 To get role details saved add a Saviynt connector in the flow studio. Then choose the Get Role Details For User capability. Provide the input parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Get Role Details Flow](../assets/GetRoleDetails.PNG)
+![Get Role Details Flow](GetRoleDetails.PNG)
 
 ## Add Role
 
 To add role to the existing saviynt user add a Saviynt connector in the flow studio. Then choose the Add role to an user capability. Provide the input parameters(username & rolename) from previous nodes in the flow (HTML form) and submit the details.
 
-![Add Role Flow](../assets/AddRole.PNG)
+![Add Role Flow](AddRole.PNG)
 
 ## Inactive user
 
 To inactivate the exsting savinyt user add a Saviynt connector in the flow studio. Then choose the Inactivate User capability. Provide the username parameters from previous nodes in the flow (HTML form) to modify the user status.
 
-![Inactivate User Flow](../assets/Inactiveuser.PNG)
+![Inactivate User Flow](Inactiveuser.PNG)
 
 ## Get User Details
 
 To get the lists the existing user details based on search parameter provided add a Saviynt connector in the flow studio. Then choose the userdetails capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of users based on filter criteria/username submitted.
 
-![Get User Details Flow](../assets/GetUserDetails.PNG)
+![Get User Details Flow](GetUserDetails.PNG)
 
 # Capabilities
 
