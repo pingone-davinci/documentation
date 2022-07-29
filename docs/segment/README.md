@@ -25,7 +25,7 @@ The Segment connector comes loaded with 7 capabilities that the user is able to 
 ## Resources
 
 #### For information and additional help, see the following sections of the Segment API documentation:
-* Segmet API Documentation:
+* Segment Capabilities API Documentation:
    * [HTTP Tracking API Source](https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/)
       * [Identify](https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/#identify)
       * [Group](https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/#group)
@@ -173,7 +173,7 @@ This connector can now be used to track the frequency of certain events through 
 * Insert the desired name and description and click next.
 * Select Blank Flow then click save.
 * Once inside the flow sandbox add the Clearbit connector and choose the `Make Custom API Call` capability.
-* This Segment connector capability has 4 capability level properties that can be manually filled out:
+* This Segment connector capability has 5 capability level properties that can be manually filled out:
    * **Endpoint**:  
       * Used to call a specific operation from inside the Segment API.
          * E.g. `identify, group, track, page, screen, alias`
