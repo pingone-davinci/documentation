@@ -51,49 +51,49 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To create user add a Zscaler User Flow Connector in the flow studio. Then choose the Create User - Zscaler capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Create User Flow](ZscalerCreateUserFlow.png)
+![Create User Flow](zscalerCreateUserFlow.png)
 
 ## Update User Flow
 
 To update user attributes saved add a Zscaler User Flow Connector in the flow studio. Then choose the Update User - Zscaler capability. Provide the input parameters to be updated from previous nodes in the flow (HTML form) and submit the details.
 
-![Update User Flow](ZscalerUpdateUserFlow.png)
+![Update User Flow](zscalerUpdateUserFlow.png)
 
 ## Delete User Flow
 
 To inactivate the exsting user add a Zscaler User Flow Connector in the flow studio. Then choose the Update User - Zscaler capability. Provide the username parameters from previous nodes in the flow (HTML form) to delete the existing user.
 
-![Delete User Flow](ZscalerDeleteUserFlow.png)
+![Delete User Flow](zscalerDeleteUserFlow.png)
 
 ## Get User Flow
 
 To get the lists the existing user details based on search parameter provided add a Zscaler User Flow Connector in the flow studio. Then choose the Get User capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of users based on filter criteria submitted.
 
-![Get User Flow](ZscalerGetUserFlow.png)
+![Get User Flow](zscalerGetUserFlow.png)
 
 ## Get All Groups
 
 To get list of Groups add a Zscaler User Flow Connector in the flow studio. Then choose the Get All Groups - Zscaler capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of Groups available based on search query submitted.
 
-![Get All Groups](ZscalerGetAllGroupsFlow.png)
+![Get All Groups](zscalerGetAllGroupsFlow.png)
 
 ## Get Group By ID
 
 To get groups by user ID add a Zscaler User Flow Connector in the flow studio. Then choose the Get Group by ID - Zscaler capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the Group details based on Group ID.
 
-![Get Group By ID](ZscalerGetGroupByIDFlow.png)
+![Get Group By ID](zscalerGetGroupByIDFlow.png)
 
 ## Get All Departments
 
 To get list of Departments add a Zscaler User Flow Connector in the flow studio. Then choose the Get All Departments - Zscaler capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the list of Departments available based on search query submitted.
 
-![Get All Departments](ZscalerGetAllDepartmentsFlow.png)
+![Get All Departments](zscalerGetAllDepartmentsFlow.png)
 
 ## Get Department by ID
 
 To get Department by user ID add a Zscaler User Flow Connector in the flow studio. Then choose the Get Department by ID - Zscaler capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the Department details based on Department ID.
 
-![Get Department By ID](ZscalerGetDepartmentByIDFlow.png)
+![Get Department By ID](zscalerGetDepartmentByIDFlow.png)
 
 # Capabilities
 
