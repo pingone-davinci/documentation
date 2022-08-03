@@ -1,5 +1,9 @@
 # AWS Lambda Connector
 
+## Doc draft
+
+Author:
+
 # Introduction
 
 AWS Lambda connector can be used to invoke a Lambda function from Ping Connector. This connector allows you to:
@@ -44,7 +48,18 @@ To invoke a Lambda function add a **AWS Lambda** Connector in the flow studio. T
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+### AWS Lambda Invocation (AWSLambdaInvocation)
+
+
+Capability to Invoke AWS Lambda
+
+#### Lambda Function Name `textField`
+
+
+AWS Lambda Function Name to Invoke
+
+---
+
 
 # Limitations
 
