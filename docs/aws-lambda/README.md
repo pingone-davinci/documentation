@@ -44,7 +44,7 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To invoke a Lambda function add a **AWS Lambda** Connector in the flow studio. Then choose the **AWS Lambda** capability. Provide the parameters from previous nodes in the flow (HTML form) to invoke a Lambda function.
 
-![Invoke a Lambda function](../assets/InvokeLambda.PNG)
+![Invoke a Lambda function](InvokeLambda.PNG)
 
 # Capabilities
 
