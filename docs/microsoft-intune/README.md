@@ -46,8 +46,6 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To get the list of devices that are owned by the user add a Microsoft Intune Connector in the flow studio. Then choose the User Device Management capability. Provide the parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![User Device Management](../assets/UserDeviceManagement.png)
-
 ## Make Custom API Call
 
 To make an API call that is not available as a capability in the connector add a Microsoft Intune Connector in the flow studio. Then choose the Custom API Call capability. Provide the below properties from previous nodes in the flow (HTML form) and submit the details.
@@ -57,8 +55,6 @@ To make an API call that is not available as a capability in the connector add a
 - Custom API Request body
 - Custom API Headers
 - Custom API Method
-
-![Custom API Call](../assets/MakeCustomAPICall.png)
 
 # Capabilities
 
