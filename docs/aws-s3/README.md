@@ -1,9 +1,6 @@
 # Amazon S3 Connector
   
 
-## Doc draft
-
-
 Author: Scott Banducci (scottbanducci@pingidentity.com)
 
 
