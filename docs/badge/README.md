@@ -75,7 +75,7 @@ Most deployments should not need to change this from the default value.
 
 ## Authenticating users with Badge
 
-![Example Badge connector flow](../assets/flow.png)
+![Example Badge connector flow](flow.png)
 
 In a new flow, perform the following steps:
 
@@ -121,13 +121,13 @@ In a new flow, perform the following steps:
    2. On the **Sign in** page, enter the username of your Badge test user
       account. Click **Continue**. The browser will redirect to Badge login.
 
-   ![Example sign in page](../assets/signin.png)
+   ![Example sign in page](signin.png)
 
    3. Log in with Badge.
    4. On success, the browser redirects back to DaVinci. Your
       **Custom HTML Message** shows the result from Badge.
 
-   ![Success](../assets/success.png)
+   ![Success](success.png)
 
 For additional help, see the
 [Creating an authentication flow](https://docs.pingidentity.com/csh?context=davinci_use_cases_creating_an_authentication_flow) guide.
