@@ -2,8 +2,6 @@
 # Amazon DynamoDB Connector
   
 
-## Doc draft
-
 
 Author: Scott Banducci (scottbanducci@pingidentity.com)
 
