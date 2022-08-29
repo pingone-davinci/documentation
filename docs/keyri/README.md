@@ -1,4 +1,4 @@
-# Keyr QR Login Connector
+# Keyri QR Login Connector
 
 Author: Keyri, Inc.
 
