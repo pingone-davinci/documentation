@@ -31,8 +31,8 @@ For information and setup help, see the following sections of the Amazon documen
 
 To use the connector, you'll need:
 
-* An Amazon S3 Account
-* Your S3 Account 'Access ID' and 'Secret Access Key'
+* An Amazon S3 Bucket
+* Your AWS API credentials 'Access ID' and 'Secret Access Key'
 	* these can be found by clicking the account username (in the top right of your S3 homepage) -> Security Credentials -> Access Keys
 * The 'AWS Region' you are going to be using
 
