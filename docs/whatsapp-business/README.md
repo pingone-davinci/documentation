@@ -213,5 +213,107 @@ In the upper right-hand corner of the Flow Studio click: Save, Deploy, and the b
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+### Send Message Template (sendMessage)
+
+
+Sends a WhatsApp message template to a phone number.
+
+#### Recipient `textField` `required`
+
+
+Recipient of the WhatsApp message.
+
+#### From Phone Number ID `textField` `required`
+
+
+WhatsApp from phone number ID.
+
+#### Message Type `dropDown` `required`
+
+
+WhatsApp message type
+
+
+ - Text message template
+ - Media message template
+ - Interactive message template
+
+#### Text Message Template Name `textField`
+
+
+WhatsApp text message template name (from WhatsApp dashboard)
+
+#### Media Message Template Name `textField`
+
+
+WhatsApp media template name (from WhatsApp dashboard)
+
+#### Media Message URL `textField`
+
+
+Media URL for the image being sent.
+
+#### Interactive Message Template Name `textField`
+
+
+WhatsApp interactive template name (from WhatsApp dashboard)
+
+#### Template Variables `variableInputList`
+
+
+Variables for WhatsApp message template.
+
+---
+
+### Make Custom API Call (makeCustomApiCall)
+
+
+Define a custom API call to WhatsApp Business.
+
+#### Endpoint `textField` `required`
+
+
+The WhatsApp Business API endpoint, such as "/messages/register/deregister/media/request_code".
+
+#### From Phone Number ID `textField` `required`
+
+
+WhatsApp from phone number ID.
+
+#### Method `dropDown` `required`
+
+
+The HTTP Method.
+
+
+ - GET
+ - POST
+ - PUT
+ - DELETE
+ - PATCH
+
+#### Query Parameters `keyValueList`
+
+
+Add query parameters and provide their values.
+
+#### Headers `keyValueList`
+
+
+Add HTTP headers and provide their values.
+
+#### Body `codeEditor`
+
+
+The raw formatted JSON body.
+
+---
+
+### WhatsApp Message Webhook (webhook)
+
+
+Webhook triggered when a message is received or message status has changed.
+
+---
+
 
