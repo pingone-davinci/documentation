@@ -1,9 +1,5 @@
 # Jamf Connector
 
-## Doc draft
-
-Author:
-
 # Introduction
 
 Jamf is a comprehensive management system for Apple macOS computers and iOS devices. Jamf connector developed for Davinci allows you to:
@@ -51,7 +47,7 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To get the list of Mobile/Computer device details that are owned by the user add a Jamf Connector in the flow studio. Then choose the User Device Management capability. Provide the parameters(User ID/Username) from previous nodes in the flow (HTML form) and submit the details.
 
-![User Device Management](../assets/UserDeviceManagement.png)
+![User Device Management](UserDeviceManagement.png)
 
 ## Make Custom API Call
 
@@ -63,7 +59,7 @@ To make an API call that is not available as a capability in the connector add a
 - Custom API Headers
 - Custom API Method
 
-![Make Custom API Call](../assets/MakeCustomAPICall.png)
+![Make Custom API Call](MakeCustomAPICall.png)
 
 # Capabilities
 
