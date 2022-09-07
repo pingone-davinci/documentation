@@ -1,8 +1,5 @@
 # Berbix Connector
 
-## Doc draft
-
-Author:
 
 # Introduction
 
