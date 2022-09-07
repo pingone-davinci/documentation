@@ -50,31 +50,31 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To add a new administrative user add a PaloAlto Prisma Connector in the flow studio. Then choose the Add User Profile capability. Provide the parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Add User Profile](../assets/AddUserProfile.png)
+![Add User Profile](AddUserProfile.png)
 
 ## Get User Profile Details
 
 To retrieve the user profile for the specified email ID add a PaloAlto Prisma Connector in the flow studio. Then choose the Get User Profile Details capability. Provide the parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Get User Profile Details](../assets/GetUserProfile.png)
+![Get User Profile Details](GetUserProfile.png)
 
 ## Update User Details
 
 To update an administrative user's profile add a PaloAlto Prisma Connector in the flow studio. Then choose the Update User capability. Provide the parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Update User Details](../assets/UpdateUserProfile.png)
+![Update User Details](UpdateUserProfile.png)
 
 ## Delete User Profile
 
 To deletes a user or service account profile add a PaloAlto Prisma Connector in the flow studio. Then choose the Delete User capability. Provide the parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Delete User Profile](../assets/DeleteUserProfile.png)
+![Delete User Profile](DeleteUserProfile.png)
 
 ## List SSO Bypass Allowed Users
 
 To get list of users who can log in via both SAML provider and username/password flows add a PaloAlto Prisma Connector in the flow studio. Then choose the List SSO Bypass Allowed Users capability.
 
-![List SSO Bypass Allowed Users](../assets/ListSSOBypassUsers.png)
+![List SSO Bypass Allowed Users](ListSSOBypassUsers.png)
 
 # Capabilities
 
