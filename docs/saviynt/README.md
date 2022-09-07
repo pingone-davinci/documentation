@@ -124,7 +124,7 @@ To create user in the savinyt add a Saviynt User Approval Flow connector in the 
 
 To remove role added for an existing saviynt user add a Saviynt connector in the flow studio. Then choose the Remove Role capability. Provide the input parameters(username & rolename) from previous nodes in the flow (HTML form) and submit the details.
 
-![Remove Role Flow](RemoveRole.PNG)
+![Remove Role Flow](RemoveRole.png)
 
 ## Get Role Details
 
