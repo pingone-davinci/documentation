@@ -1,5 +1,8 @@
-# Palo Alto Prisma Connector
+# PaloAlto Prisma Connector
 
+## Doc draft
+
+Author:
 
 # Introduction
 
@@ -78,7 +81,126 @@ To get list of users who can log in via both SAML provider and username/password
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+### ADD USER PROFILE (addUserProfile)
+
+
+Create User Profile for Prisma Connector
+
+#### accessKeysAllowed `toggleSwitch`
+
+
+Access keys allowed
+
+#### Default Role ID `textField` `required`
+
+
+Default Role ID
+
+#### Email `textField` `required`
+
+
+Email ID
+
+#### First Name `textField` `required`
+
+
+First name. Maximum length is 300 characters
+
+#### Last Name `textField` `required`
+
+
+Last name. Maximum length is 300 characters
+
+#### Role IDs `textField` `required`
+
+
+Role IDs
+
+#### Time Zone `textField` `required`
+
+
+string
+
+---
+
+### getUserProfile (getUserProfile)
+
+
+getUserProfile
+
+#### ID `textField` `required`
+
+
+User email
+
+---
+
+### Delete User Profile (deleteUserProfile)
+
+
+Delete User Profile
+
+#### ID `textField` `required`
+
+
+User email
+
+---
+
+### List SSO Bypass Allowed Users (listSSObypassAlllowedUser)
+
+
+Returns a list of users who can log in via both SAML provider and username/password flows
+
+---
+
+### Update User Profile (updateUserProfile)
+
+
+Update User Profile
+
+#### accessKeysAllowed `toggleSwitch`
+
+
+Access keys allowed
+
+#### Default Role ID `textField` `required`
+
+
+Default Role ID
+
+#### Email `textField` `required`
+
+
+Email ID
+
+#### First Name `textField` `required`
+
+
+First name. Maximum length is 300 characters
+
+#### Last Name `textField` `required`
+
+
+Last name. Maximum length is 300 characters
+
+#### Role IDs `textField` `required`
+
+
+Role IDs
+
+#### Time Zone `textField` `required`
+
+
+string
+
+#### ID `textField` `required`
+
+
+User email
+
+---
+
 
 # Limitations
 
