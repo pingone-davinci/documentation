@@ -46,13 +46,13 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To creates a transaction that is associated with a provided CustomerUID add a Berbix Connector in the flow studio. Then choose the Create Transaction capability. Provide the input parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Create Transaction](../assets/CreateTransaction.png)
+![Create Transaction](CreateTransaction.png)
 
 ## Get Transaction Verifications
 
 To retrieve metadata about the transactions completed verifications add a Berbix Connector in the flow studio. Then choose the Get Transaction Verifications capability. Provide the input parameters from previous nodes in the flow (HTML form) and submit the details.
 
-![Get Transaction Verifications](../assets/GetTransactionVerification.png)
+![Get Transaction Verifications](GetTransactionVerification.png)
 
 ## Make Custom API Call
 
@@ -67,7 +67,7 @@ Update below capability level properties specific to the Custom API to be called
 - Custom API Headers
 - Custom API Method
 
-![Make Custom API Call](../assets/MakeCustomAPICall.png)
+![Make Custom API Call](MakeCustomAPICall.png)
 
 # Capabilities
 
