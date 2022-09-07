@@ -1,9 +1,5 @@
 # PaloAlto Prisma Connector
 
-## Doc draft
-
-Author:
-
 # Introduction
 
 PaloAlto Prisma Connector can be used to manage Prisma Cloud user profiles. This connector allows you to:
