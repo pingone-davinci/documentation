@@ -1,9 +1,5 @@
 # AWS Lambda Connector
 
-## Doc draft
-
-Author:
-
 # Introduction
 
 AWS Lambda connector can be used to invoke a Lambda function from Ping Connector. This connector allows you to:
