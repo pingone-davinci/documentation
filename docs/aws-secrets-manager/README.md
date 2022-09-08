@@ -66,7 +66,7 @@ The "Get Secret" capability of the AWS Secrets Manager DaVinci connector allows 
 
 The resulting data object will contain a "secret" response attribute that can be parsed into the relevant data type (e.g. a string parsed to JSON) and used as a parameter in later nodes.  The "response" response attribute contains the full response from the AWS Secrets Manager, including the secret's stored metadata.
 
-If the secret is a binary secret, the connector will base64 encode the secret first.
+If the secret is a binary secret, the connector will base64 encode the secret value.
 
 Simply add the AWS Secrets Manager node before the HTTP node and use the "secret" output variable of the AWS Secrets Manager in the "Make REST API Call" parameters.
 
