@@ -102,7 +102,7 @@ Limitations include:
 * Managing secret rotation and rotation policy
 * Creating binary secrets
 * Secret versioning
-* Tags
+* Tags for created secrets
 * Regional replication of created secrets
 * Deleting secrets without a recovery period, or setting a custom recovery period
 
