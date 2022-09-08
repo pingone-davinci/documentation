@@ -82,7 +82,6 @@ This request will create a non-employee record.
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
@@ -164,7 +163,6 @@ Approves a non-employee approval request and notifies the next approver.
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
@@ -206,7 +204,6 @@ This endpoint will reject an approval item request and notify user.
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
@@ -292,7 +289,6 @@ This gets a list of non-employee sources.
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
@@ -324,7 +320,6 @@ Notifies IdentityNow of an Out-of-Band account creation
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
@@ -386,7 +381,6 @@ Sets the lifecycle of the identity profile of the user to active
 IdentityNow API Authentication Method
 
 
- - OAuth 2.0 Client Credentials
  - OAuth 2.0 Authorization Code
  - Personal Access Token
 
