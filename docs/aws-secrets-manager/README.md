@@ -1,6 +1,6 @@
 # Amazon Secrets Manager Connector
 
-Author: patrickcowland@pingidentity.com 
+Author: Patrick Cowland (patrickcowland@pingidentity.com) 
 
 # Introduction
 
