@@ -46,7 +46,8 @@ You will see the connector's details pop-up. On the GENERAL tab, enter in your
 1) AWS Access Key
 2) AWS Access Secret
 3) AWS Region
-and click apply. This ensures that whenever you use this connector in a flow you will not have to reenter enter this information.
+
+Click apply to finish. This ensures that whenever you use this connector in a flow you will not have to reenter enter this information.
 
 
 # Using the connector in a flow
@@ -55,7 +56,7 @@ You can use the AWS Secrets Manager connector to inject external secrets into fl
 
 Once configured, simply add the AWS Secrets Manager into the flow and choose the desired capability.  The following are example use cases:
 
-## Fetching Secrets for use in the Make REST API Call Capability of the HTTP Connector
+## Fetching Secrets for use in the "Make REST API Call" Capability of the HTTP Connector
 
 Unless using a public/unauthenticated API endpoint, the "Make REST API Call" capability of the HTTP Connector requires you to configure API authorization/authentication details into the headers or query/body parameters.  This may include an API Key, a Username/Password for HTTP basic authentication or a client ID/client secret combination.
 
@@ -64,6 +65,8 @@ While these can be stored as sensitive variables in DaVinci, you may want to ext
 The "Get Secret" capability of the AWS Secrets Manager DaVinci connector allows you to reference an external secret for the REST API call, without having to handle or manage the secret yourself.
 
 The resulting data object will contain a "secret" response attribute that can be parsed into the relevant data type (e.g. a string parsed to JSON) and used as a parameter in later nodes.  The "response" response attribute contains the full response from the AWS Secrets Manager, including the secret's stored metadata.
+
+If the secret is a binary secret, the connector will base64 encode the secret first.
 
 Simply add the AWS Secrets Manager node before the HTTP node and use the "secret" output variable of the AWS Secrets Manager in the "Make REST API Call" parameters.
 
@@ -94,6 +97,14 @@ If you have issues with the AWS Secrets Manager connector, you can check the fol
 # Limitations
 
 This connector has limited capabilities compared to the full extent of the Amazon Secrets Manager SDK.
+
+Limitations include:
+* Managing secret rotation and rotation policy
+* Creating binary secrets
+* Secret versioning
+* Tags
+* Regional replication of created secrets
+* Deleting secrets without a recovery period, or setting a custom recovery period
 
 If you'd like to see more capabilities added or have other suggestions, please let your Ping contact know.
 
