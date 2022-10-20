@@ -59,61 +59,44 @@ and click apply. This ensures that whenever you use this connector you will not 
 
 To retrieve Geolocation add a Securonix Connector in the flow studio. Then choose the Retrieve Geolocation capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the geolocation details.
 
-![Retrieve Geolocation](../assets/RetrieveGelocation.PNG)
-
 ## Retrieve Activities
 
 To retrieve activites add a Securonix Connector in the flow studio. Then choose the Retrieve Activities capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the activities details.
-
-![Retrieve Activities](../assets/RetrieveActivities.PNG)
 
 ## Risk Score History
 
 To get risk Score History add a Securonix Connector in the flow studio. Then choose the Risk Score History capability. Provide the parameters from previous nodes in the flow (HTML form) to get risk score history details.
 
-![Risk Score History](../assets/RiskScoreHistory.PNG)
-
 ## Retrieve Incident List
 
 To get Retrieve Incident List add a Securonix Connector in the flow studio. Then choose the Retrieve Incident List capability. Provide the parameters from previous nodes in the flow (HTML form) to get Incident List details.
-
-![Retrieve Incident List](../assets/RetrieveIncidentlist.PNG)
 
 ## User Risk Score
 
 To retrieve risk scorecard of all users add a Securonix Connector in the flow studio. Then choose the Get User Risk Score capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the Risk scorecard.
 
-![Get User Risk Score](../assets/GetUserRiskScore.PNG)
 
 ## Get Lookup Data
 
 To retrieve lookup data information add a Securonix Connector in the flow studio. Then choose the Get Lookup Data capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve lookup data information.
 
-![Get Lookup Data](../assets/GetLookupData.PNG)
 
 ## Get Child Incidents
 
 To retrieve Child Incidents associated with Parent Incident add a Securonix Connector in the flow studio. Then choose the Get Child Indidents capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the incident details.
 
-![Get Child Incidents](../assets/GetChildIncident.PNG)
-
 ## User Details
 
 To retrieve user details from SNYPR add a Securonix Connector in the flow studio. Then choose the Get User Details capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the user details using a unique identifier.
-
-![Get User Details](../assets/GetUserDetails.PNG)
 
 ## Third Party Intel Data
 
 To retrieve Third-Party Intel (TPI) data from sources such as DLP, web gateways, proxies, and firewalls add a Securonix Connector in the flow studio. Then choose the Get Third Party Intel capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve the Third Party Intel data.
 
-![Get Third Party Intel](../assets/GetThirdPartyIntel.PNG)
 
 ## Incident Details
 
 To retrieve Incident details add a Securonix Connector in the flow studio. Then choose the Get Third Party Intel capability. Provide the parameters from previous nodes in the flow (HTML form) to retrieve incident details.
-
-![Incident Details](../assets/IncidentDetails.PNG)
 
 # Capabilities
 
