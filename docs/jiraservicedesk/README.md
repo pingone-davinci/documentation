@@ -30,8 +30,6 @@ Importing a flow from the Flow Library: https://docs.pingidentity.com/csh?contex
 
 To use the connector, you'll need:
 
-## [Task name]
-
 1. A JIRA Service Management Application URL.
 2. The Token for accessing the JIRA Service Management Application
 
