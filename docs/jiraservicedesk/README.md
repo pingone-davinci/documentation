@@ -33,11 +33,6 @@ To use the connector, you'll need:
 1. A JIRA Service Management Application URL.
 2. The Token for accessing the JIRA Service Management Application
 
-### Connector settings
-
-[List and explain the connector settings that appear when the connection is opened from the **Connections** page. If you did not cover it earlier in the **Setup** section, tell the user how to complete each configuration field or where to get the information they need.
-
-These typically on the **General** tab, but some connectors have a different name or multiple configuration tabs. Don't document **Capabilities**, or **In Flows**.]
 
 # Using the connector in a flow
 
