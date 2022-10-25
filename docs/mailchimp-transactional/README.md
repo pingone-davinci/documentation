@@ -152,7 +152,7 @@ This Mailchimp connector allows the user to configure recipient settings, monito
 * Navigate to the flow studio and in the upper right-hand corner select _**Create New Flow**_
 * Insert the desired name and description and click next.
 * Select Blank Flow then click save.
-* Once inside the flow sandbox add the Clearbit connector and choose the `Make Custom API Call` capability.
+* Once inside the flow sandbox add the Mailchimp connector and choose the `Make Custom API Call` capability.
 * This Mailchimp connector capability has 4 capability level properties that can be manually filled out:
    * **Endpoint**:
       * Used to call a specific operation from inside the Mailchimp Transactional API.
