@@ -20,10 +20,14 @@ Custom API Action
 ## Resources
 
 For information and setup help, see the following documentation:
-JIRA Service Management
+
+### JIRA Service Management
+
 Jira service management documentation: https://www.atlassian.com/software/jira/service-management
-DaVinci documentation:
+
+### DaVinci documentation:
 Adding a connection: https://docs.pingidentity.com/csh?context=davinci_adding_a_connection
+
 Importing a flow from the Flow Library: https://docs.pingidentity.com/csh?context=davinci_importing_a_flow_from_the_flow_library
 
 ## Requirements
