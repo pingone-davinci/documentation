@@ -176,7 +176,3 @@ The raw JSON body, such as "{ "Username": "jsmith@example.com", "ProfileId": "00
 
 ---
 
-
-### Testing capabilities
-
-You can test each capability individually. For help, see [Testing capabilities](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
