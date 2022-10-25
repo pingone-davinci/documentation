@@ -140,7 +140,7 @@ The Clearbit connector comes with 3 capabilities that the user is able to start 
       * Specifies the HTTP CRUD request.
          * E.g. `GET, POST, PUT, DELETE, PATCH.`
    * **Query Parameters**:
-      * The kye-value pairs that appear after the question mark in the URL.
+      * The key-value pairs that appear after the question mark in the URL.
          * E.g. `email=usename@mail.com, name=John Smith, company=PingIdentity`.
    * **Headers**:
       * Key-value pairs that represent the meta-data associated with the Clearbit API request and response.
