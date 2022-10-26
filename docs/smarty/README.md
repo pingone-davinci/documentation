@@ -126,7 +126,7 @@ Country value (Brazil)
 
 
 
-### [Resource description]
+### Resource description
 
 Please visit the Methodology page on Smarty's website for additional definitions: https://www.smarty.com/docs/methodology
 
