@@ -229,6 +229,3 @@ The URL of the media content sent via an MMS message.
 ---
 
 
-### Testing capabilities
-
-You can test each capability individually. For help, see [Testing capabilities](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
