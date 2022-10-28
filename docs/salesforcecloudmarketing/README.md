@@ -20,11 +20,11 @@ Salesforce Marketing Cloud is a marketing automation platform. The DaVinci conne
 ## Resources
 
 For information and setup help, see the following documentation:
-Salesforce Marketing Cloud
-Salesforce Marketing Cloud documentation: https://developer.salesforce.com/docs/marketing/marketing-cloud/overview
-DaVinci documentation:
-Adding a connection: https://docs.pingidentity.com/csh?context=davinci_adding_a_connection
-Importing a flow from the Flow Library: https://docs.pingidentity.com/csh?context=davinci_importing_a_flow_from_the_flow_library
+- Salesforce Marketing Cloud
+- Salesforce Marketing Cloud documentation: https://developer.salesforce.com/docs/marketing/marketing-cloud/overview
+- DaVinci documentation:
+- Adding a connection: https://docs.pingidentity.com/csh?context=davinci_adding_a_connection
+- Importing a flow from the Flow Library: https://docs.pingidentity.com/csh?context=davinci_importing_a_flow_from_the_flow_library
 
 ## Requirements
 
@@ -40,13 +40,13 @@ In Singular Key, add a **PingOne SSO** connection. For help, see [Adding a conne
 # Using the connector in a flow
 
 This Salesforce Marketing Cloud is an ITSM (IT Service Management) software and from this connector, you can perform the following:
-Create a new contact in Salesforce Marketing Cloud.
-Update an existing contact in Salesforce Marketing Cloud
-Read an existing contact in Salesforce Marketing Cloud
-Delete a contact in Salesforce Marketing Cloud
-Send a new message to multiple recipients.
-Send a new email message.
-Send a new SMS message to one or more mobile numbers.
+- Create a new contact in Salesforce Marketing Cloud.
+- Update an existing contact in Salesforce Marketing Cloud
+- Read an existing contact in Salesforce Marketing Cloud
+- Delete a contact in Salesforce Marketing Cloud
+- Send a new message to multiple recipients.
+- Send a new email message.
+- Send a new SMS message to one or more mobile numbers.
 
 No special flow configuration is needed. Add the capability you want and populate its properties according to the help text.
 
