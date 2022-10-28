@@ -6,14 +6,14 @@ Author: Balu Nagar
 
 Salesforce Marketing Cloud is a marketing automation platform. The DaVinci connector will allow admins to export user data to Salesforce Marketing Cloud.
 
--You can use this Salesforce Marketing Cloud connector to:
--Create a new contact in Salesforce Marketing Cloud.
--Update an existing contact in Salesforce
--Read an existing contact in Salesforce
--Delete a contact in Salesforce
--Send a new message to multiple recipients.
--Send a new email message.
--Send a new SMS message to one or more mobile numbers.
+- You can use this Salesforce Marketing Cloud connector to:
+- Create a new contact in Salesforce Marketing Cloud.
+- Update an existing contact in Salesforce
+- Read an existing contact in Salesforce
+- Delete a contact in Salesforce
+- Send a new message to multiple recipients.
+- Send a new email message.
+- Send a new SMS message to one or more mobile numbers.
 
 # Setup
 
