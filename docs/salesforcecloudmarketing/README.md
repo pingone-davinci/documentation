@@ -20,9 +20,11 @@ Salesforce Marketing Cloud is a marketing automation platform. The DaVinci conne
 ## Resources
 
 For information and setup help, see the following documentation:
-- Salesforce Marketing Cloud
+
+### Salesforce Marketing Cloud
 - Salesforce Marketing Cloud documentation: https://developer.salesforce.com/docs/marketing/marketing-cloud/overview
-- DaVinci documentation:
+
+### DaVinci documentation:
 - Adding a connection: https://docs.pingidentity.com/csh?context=davinci_adding_a_connection
 - Importing a flow from the Flow Library: https://docs.pingidentity.com/csh?context=davinci_importing_a_flow_from_the_flow_library
 
