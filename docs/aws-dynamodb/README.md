@@ -142,6 +142,135 @@ Finally, use the **Key Condition Expression** field to query the desired fields.
 
 
 # Capabilities
+
+### Put Item (putItem)
+
+
+Writes an Item into a DynamoDB Table
+
+#### Table Name `textField`
+
+
+The name of the Table.
+
+#### Items Key/Value List `keyValueList`
+
+
+A key-value list of the Attribute-Value pairs of the item. NOTE: All values must be strings.
+
+#### Items (JSON format) `codeEditor`
+
+
+A code field to enter JSON object. 
+
+---
+
+### Get Item (getItem)
+
+
+Gets an Item from a DynamoDB Table
+
+#### Table Name `textField`
+
+
+The name of the Table.
+
+#### Key of Item `keyValueList`
+
+
+A key-value list of the Attribute-Value pairs of the item. NOTE: All values must be strings.
+
+#### Key of Item (JSON format) `codeEditor`
+
+
+A code field to enter JSON object. 
+
+---
+
+### Delete Item (deleteItem)
+
+
+Deletes an Item in a DynamoDB table.
+
+#### Table Name `textField`
+
+
+The name of the Table.
+
+#### Key of Item `keyValueList`
+
+
+A key-value list of the Attribute-Value pairs of the item. NOTE: All values must be strings.
+
+#### Key of Item (JSON format) `codeEditor`
+
+
+A code field to enter JSON object. 
+
+---
+
+### Scan a Table (scanTable)
+
+
+Scans a DynamoDB table.
+
+#### Table Name `textField`
+
+
+The name of the Table.
+
+#### Filter Expression `textArea`
+
+
+Conditions applied after a Query but before the data is returned. (See connector documentation for further info on FilterExpression).
+
+#### Expression Attribute Values `codeEditor`
+
+
+One or more values that can be substituted in an expression.
+
+---
+
+### Query a Table (queryTable)
+
+
+Queries a DynamoDB table.
+
+#### Table Name `textField`
+
+
+The name of the Table.
+
+#### Key Condition Expression `textField`
+
+
+The condition that specifies the key values for items to be retrieved by the Query action.
+
+#### Expression Attribute Values `codeEditor`
+
+
+One or more values that can be substituted in an expression.
+
+---
+
+### Make Custom S3 SDK Call (makeCustomSDKCall)
+
+
+Make your own SDK call by passing an S3 SDK command and parameters.
+
+#### SDK Custom Call Command Name `textField`
+
+
+The name of the SDK command you want to call (ex. getObject, createBucket)
+
+#### SDK Custom Call Parameters `keyValueList`
+
+
+A key value list that will create a JSON object that will be passed as the arguments for your custom command
+
+---
+
+
   
 
 # Troubleshooting
