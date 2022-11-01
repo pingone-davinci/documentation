@@ -87,33 +87,33 @@ Authenticate against Verified Access API
   - rawResponse `object`
   - statusCode `number`
   - headers `object`
-  - deviceTrustEnabled boolean
-  - devicePermanentId string
-  - virtualDeviceId string
-  - customerId string
-  - keyTrustLevel string
-deviceSignal object
-browserVersion string
-builtInDnsClientEnabled boolean
-chromeCleanupEnabled boolean
-chromeRemoteDesktopAppBlocked boolean
-deviceAffiliationIds array
-deviceEnrollmentDomain string
-deviceHostName string
-deviceManufacturer string
-diskEncrypted number
-displayName string
-macAddresses array
-os string
-osFirewall number
-osVersion string
-passwordPotectionWarningTrigger number
-profileAffiliationIds array
-realtimeUrlCheckMode number
-safeBrowsingProtectionLevel number
-screenLockSecured number
-secureBootEnabled number
-serialNumber string
-siteIsolationEnabled boolean
-systemDnsServers array
-thirdPartyBlockingEnabled boolean
+  - deviceTrustEnabled `boolean`
+  - devicePermanentId `string`
+  - virtualDeviceId `string`
+  - customerId `string`
+  - keyTrustLevel `string`
+  - deviceSignal `object`
+    - browserVersion `string`
+    - builtInDnsClientEnabled `boolean`
+    - chromeCleanupEnabled `boolean`
+    - chromeRemoteDesktopAppBlocked `boolean`
+    - deviceAffiliationIds `array`
+    - deviceEnrollmentDomain `string`
+    - deviceHostName `string`
+    - deviceManufacturer `string`
+    - diskEncrypted `number`
+    - displayName `string`
+    - macAddresses `array`
+    - os `string`
+    - osFirewall `number`
+    - osVersion `string`
+    - passwordPotectionWarningTrigger `number`
+    - profileAffiliationIds `array`
+    - realtimeUrlCheckMode `number`
+    - safeBrowsingProtectionLevel `number`
+    - screenLockSecured `number`
+    - secureBootEnabled `number`
+    - serialNumber `string`
+    - siteIsolationEnabled `boolean`
+    - systemDnsServers `array`
+  - thirdPartyBlockingEnabled `boolean`
