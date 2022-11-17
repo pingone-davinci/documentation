@@ -20,7 +20,7 @@ To use the connector, you'll need:
 
 ## Setting up the connector
 
-In Singular Key, add a **CloudMailin Connector** connection. For help, see [Adding a connection](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
+In DaVinci, add a **CloudMailin Connector** connection
 
 ### Connector settings
 
