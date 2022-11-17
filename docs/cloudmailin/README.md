@@ -15,7 +15,7 @@ To use the connector, you'll need:
 
 ## Obtain CloudMailin Account
 
-1. Create or use an existing account with [CloudMailin](www.cloudmailin.com).
+1. Create or use an existing account with [CloudMailin](https://www.cloudmailin.com/).
 2. Create an API Username and Key.
 
 ## Setting up the connector
