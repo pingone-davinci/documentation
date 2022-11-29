@@ -13,7 +13,7 @@ Core to the AWS Security Lake mission is simplifying the storage, retrieval, and
 
 ## Requirements
 * PingOne Tenant
-* AWS Lambda Function using index.js from [https://github.com/pingone-davinci/pingone-aws-lake]
+* AWS Lambda Function using index.js from [https://github.com/pingone-davinci/pingone-aws-security-lake]
 * AWS S3 (Two Buckets) 
 
 ## Before you begin
