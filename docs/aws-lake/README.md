@@ -74,15 +74,6 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 
 After the configuration has been completed, PingOne authentication, password resets, user create, update and deletes events will be created in Parquet format in the S3 bucket configured in the AWS Lambda.  
 
-### References:
-
-OCSF events to Apache Parquet
-https://hkdemircan.medium.com/how-can-we-json-css-files-transform-to-parquet-through-aws-glue-465773b43dad
-
-
-
-
-
 
 ### Appendix:
 
