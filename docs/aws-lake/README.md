@@ -3,15 +3,15 @@
 ## Enable PingOne event log integration to AWS Lake
 
 ### AWS Lake Overview
-AWS Lake is a data lake for security logs, built in the customer’s account. The data lake is backed by an S3 bucket, and organizes data as a set of Lake Formation tables. Lake is designed to optimize the cost of storing and querying massive security log sources, while maintaining good query performance and compatibility with a wide variety of analytic infrastructure. Lake
-customers retain low-level ownership of their data. Lake also delivers a set of core AWS-native security logs, minimizing costs and maximizing performance.
+AWS Lake is a data lake for security logs, built in the customer’s account. The data lake is backed by an S3 bucket, and organizes data as a set of AWS Lake Formation tables. AWS Lake is designed to optimize the cost of storing and querying massive security log sources, while maintaining good query performance and compatibility with a wide variety of analytic infrastructure. AWS Lake
+customers retain low-level ownership of their data. AWS Lake also delivers a set of core AWS-native security logs, minimizing costs and maximizing performance.
 
 ### Open Cybersecurity Schema Framework (OCSF)
-Core to the Lake mission is simplifying the storage, retrieval, and consumption of security logs through application of a common schema. The Open Cybersecurity Schema Framework (OCSF) is a collaborative open-source effort between AWS and partners. OCSF includes syntax and semantics for common security log events, defines versioning criteria to facilitate schema evolution, and includes a self-governance process to be maximally inclusive of security log producers and consumers. OCSF source code is homed on Github, and is released under the Apache License version 2.0.
+Core to the AWS Lake mission is simplifying the storage, retrieval, and consumption of security logs through application of a common schema. The Open Cybersecurity Schema Framework (OCSF) is a collaborative open-source effort between AWS and partners. OCSF includes syntax and semantics for common security log events, defines versioning criteria to facilitate schema evolution, and includes a self-governance process to be maximally inclusive of security log producers and consumers. OCSF source code is homed on Github, and is released under the Apache License version 2.0.
 
 ## Requirements
 * PingOne Tenant
-* AWS Lambda Function [https://github.com/pingone-davinci/pingone-aws-lake]
+* AWS Lambda Function using index.js from [https://github.com/pingone-davinci/pingone-aws-lake]
 * AWS S3 (Two Buckets) 
 
 ## Before you begin
@@ -48,11 +48,11 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 3. Configure PingOne Webhooks
 
 4. Create a Webhook from Connections > Webhooks with the following details: 
-  * Name: Ping Lake Webhook
-  * Destination URL: Your AWS Lambda Function URL
+  * **Name**: Ping Lake Webhook
+  * **Destination URL**: Your AWS Lambda Function URL
      * For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
-  * Format: Ping Activity Format (JSON)
-  * Headers: Basic Authentication 
+  * **Format**: Ping Activity Format (JSON)
+  * **Headers**: Basic Authentication 
      * Enter the username and password selected above in the AWS Lambda configuration
 
 
