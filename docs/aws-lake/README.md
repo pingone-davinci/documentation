@@ -29,28 +29,21 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 
 ### Configure AWS Lambda Environment Variables
 
-* Create the following required Environment Variable under Lambda > Functions > Configuration > Environment Variables with the following details:
+1. Create the following required Environment Variable under Lambda > Functions > Configuration > Environment Variables with the following details:
 
-  * *ACCOUNT_ID*: The AWS Account associated with PingOne events
-  * PASSWORD: The PingOne Webhook basic authentication password
-  * REGION: The AWS Region of the Lambda
-  * S3_BUCKET_OCSF:  The name of the S3 bucket created to store the temporary OCSF events
-  * S3_BUCKET_PARQUET:  The name of the S3 bucket created to store the final parquet event files
-  * SOURCE_LOCATION:  Is the location provided by AWS Lake when registering the custom source
-  * USERNAME: The PingOne Webhook basic authentication username
+  * **ACCOUNT_ID**: The AWS Account associated with PingOne events
+  * **PASSWORD**: The PingOne Webhook basic authentication password
+  * **REGION**: The AWS Region of the Lambda
+  * **S3_BUCKET_OCSF**:  The name of the S3 bucket created to store the temporary OCSF events
+  * **S3_BUCKET_PARQUET**:  The name of the S3 bucket created to store the final parquet event files
+  * **SOURCE_LOCATION**:  Is the location provided by AWS Lake when registering the custom source
+  * **USERNAME**: The PingOne Webhook basic authentication username
 
+2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
+  * Auth type: NONE
+  * Configure PingOne Webhooks
 
-
-
-
-
-
-
-Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
-Auth type: NONE
-Configure PingOne Webhooks
-
-Create a Webhook from Connections > Webhooks with the following details: 
+3. Create a Webhook from Connections > Webhooks with the following details: 
 Name: Ping Lake Webhook
 Destination URL: Your AWS Lambda Function URL
 For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
