@@ -41,6 +41,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
 | **SOURCE_LOCATION**   | Is the location provided by AWS Lake when registering the custom source       |
 | **USERNAME**   | The PingOne Webhook basic authentication username        |
 
+(image8.ping)
 
 2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
     - **Auth type**: NONE
