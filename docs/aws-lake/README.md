@@ -31,6 +31,11 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 
 1. Create the following required Environment Variable under Lambda > Functions > Configuration > Environment Variables with the following details:
 
+| Environment Variable | Value |
+| ----------- | ----------- |
+| **ACCOUNT_ID**      | The AWS Account associated with PingOne events       |
+| **PASSWORD**   | The PingOne Webhook basic authentication password        |
+
   * **ACCOUNT_ID**: The AWS Account associated with PingOne events
   * **PASSWORD**: The PingOne Webhook basic authentication password
   * **REGION**: The AWS Region of the Lambda
