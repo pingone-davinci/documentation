@@ -56,13 +56,13 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 
 
 Event Types: 
-Flow Completed
-Flow Updated
-Password Recovery
-Password Reset
-User Created
-User Deleted
-User Updated
+- Flow Completed
+- Flow Updated
+- Password Recovery
+- Password Reset
+- User Created
+- User Deleted
+- User Updated
 
 
 
