@@ -6,6 +6,8 @@
 AWS Lake is a data lake for security logs, built in the customer’s account. The data lake is backed by an S3 bucket, and organizes data as a set of AWS Lake Formation tables. AWS Lake is designed to optimize the cost of storing and querying massive security log sources, while maintaining good query performance and compatibility with a wide variety of analytic infrastructure. AWS Lake
 customers retain low-level ownership of their data. AWS Lake also delivers a set of core AWS-native security logs, minimizing costs and maximizing performance.
 
+![AWS Lake](image4.png)
+
 ### Open Cybersecurity Schema Framework (OCSF)
 Core to the AWS Lake mission is simplifying the storage, retrieval, and consumption of security logs through application of a common schema. The Open Cybersecurity Schema Framework (OCSF) is a collaborative open-source effort between AWS and partners. OCSF includes syntax and semantics for common security log events, defines versioning criteria to facilitate schema evolution, and includes a self-governance process to be maximally inclusive of security log producers and consumers. OCSF source code is homed on Github, and is released under the Apache License version 2.0.
 
@@ -41,7 +43,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
 | **SOURCE_LOCATION**   | Is the location provided by AWS Lake when registering the custom source       |
 | **USERNAME**   | The PingOne Webhook basic authentication username        |
 
-(image8.png)
+![Env Variable Example](image8.png)
 
 2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
     - **Auth type**: NONE
@@ -56,6 +58,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
     - **Headers**: Basic Authentication 
        - Enter the username and password selected above in the AWS Lambda configuration
 
+![PingOne Webhooks](image2.png)
 
     - **Event Types**: 
       - Flow Completed
@@ -66,7 +69,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
       - User Deleted
       - User Updated
 
-
+![Event Types](image1.png)
 
 5. Finally, click Save. 
 
@@ -81,22 +84,24 @@ After the configuration has been completed, PingOne authentication, password res
 PingOne to OCSF Mapping
 Authentication Activity
 
+![Authentication Activity](image9.png)
+
 Password Reset / Recovery
 
-
-
+![Password Reset Activity](image6.png)
 
 
 User Create
 
-
+![Account Create Activity](image5.png)
 
 
 User Update
 
+![Account Change Activity](image3.png)
 
 
 
 User Delete
 
-
+![Account Delete Activity](image7.png)
