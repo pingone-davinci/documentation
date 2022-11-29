@@ -60,7 +60,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
 
 ![PingOne Webhooks](image2.png)
 
-    - **Event Types**: 
+   - **Event Types**: 
       - Flow Completed
       - Flow Updated
       - Password Recovery
@@ -81,27 +81,28 @@ After the configuration has been completed, PingOne authentication, password res
 
 ### Appendix:
 
-PingOne to OCSF Mapping
-Authentication Activity
+#### PingOne to OCSF Mapping
+
+##### Authentication Activity
 
 ![Authentication Activity](image9.png)
 
-Password Reset / Recovery
+##### Password Reset / Recovery
 
 ![Password Reset Activity](image6.png)
 
 
-User Create
+##### User Create
 
 ![Account Create Activity](image5.png)
 
 
-User Update
+##### User Update
 
 ![Account Change Activity](image3.png)
 
 
 
-User Delete
+##### User Delete
 
 ![Account Delete Activity](image7.png)
