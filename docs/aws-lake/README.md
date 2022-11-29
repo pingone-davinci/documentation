@@ -56,7 +56,7 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
      * Enter the username and password selected above in the AWS Lambda configuration
 
 
-  * Event Types: 
+  * **Event Types**: 
     - Flow Completed
     - Flow Updated
     - Password Recovery
