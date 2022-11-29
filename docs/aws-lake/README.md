@@ -43,27 +43,27 @@ Core to the AWS Lake mission is simplifying the storage, retrieval, and consumpt
 
 
 2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
-  * **Auth type**: NONE
+    - **Auth type**: NONE
 
 3. Configure PingOne Webhooks
 
 4. Create a Webhook from Connections > Webhooks with the following details: 
-  * **Name**: Ping Lake Webhook
-  * **Destination URL**: Your AWS Lambda Function URL
-     * For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
-  * **Format**: Ping Activity Format (JSON)
-  * **Headers**: Basic Authentication 
-     * Enter the username and password selected above in the AWS Lambda configuration
+    - **Name**: Ping Lake Webhook
+    - **Destination URL**: Your AWS Lambda Function URL
+       - For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
+    - **Format**: Ping Activity Format (JSON)
+    - **Headers**: Basic Authentication 
+       - Enter the username and password selected above in the AWS Lambda configuration
 
 
-  * **Event Types**: 
-    - Flow Completed
-    - Flow Updated
-    - Password Recovery
-    - Password Reset
-    - User Created
-    - User Deleted
-    - User Updated
+    - **Event Types**: 
+      - Flow Completed
+      - Flow Updated
+      - Password Recovery
+      - Password Reset
+      - User Created
+      - User Deleted
+      - User Updated
 
 
 
