@@ -43,10 +43,11 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 
 
 2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
-  * Auth type: NONE
-  * Configure PingOne Webhooks
+  * **Auth type**: NONE
 
-3. Create a Webhook from Connections > Webhooks with the following details: 
+3. Configure PingOne Webhooks
+
+4. Create a Webhook from Connections > Webhooks with the following details: 
   * Name: Ping Lake Webhook
   * Destination URL: Your AWS Lambda Function URL
      * For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
@@ -55,25 +56,25 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
      * Enter the username and password selected above in the AWS Lambda configuration
 
 
-Event Types: 
-- Flow Completed
-- Flow Updated
-- Password Recovery
-- Password Reset
-- User Created
-- User Deleted
-- User Updated
+  * Event Types: 
+    - Flow Completed
+    - Flow Updated
+    - Password Recovery
+    - Password Reset
+    - User Created
+    - User Deleted
+    - User Updated
 
 
 
-Finally, click Save. 
+5. Finally, click Save. 
 
 
-Summary
+### Summary
 
 After the configuration has been completed, PingOne authentication, password resets, user create, update and deletes events will be created in Parquet format in the S3 bucket configured in the AWS Lambda.  
 
-References:
+### References:
 
 OCSF events to Apache Parquet
 https://hkdemircan.medium.com/how-can-we-json-css-files-transform-to-parquet-through-aws-glue-465773b43dad
@@ -83,7 +84,8 @@ https://hkdemircan.medium.com/how-can-we-json-css-files-transform-to-parquet-thr
 
 
 
-Appendix:
+### Appendix:
+
 PingOne to OCSF Mapping
 Authentication Activity
 
