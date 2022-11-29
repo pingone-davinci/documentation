@@ -42,25 +42,17 @@ Core to the Lake mission is simplifying the storage, retrieval, and consumption 
 | **USERNAME**   | The PingOne Webhook basic authentication username        |
 
 
-  * **ACCOUNT_ID**: The AWS Account associated with PingOne events
-  * **PASSWORD**: The PingOne Webhook basic authentication password
-  * **REGION**: The AWS Region of the Lambda
-  * **S3_BUCKET_OCSF**:  The name of the S3 bucket created to store the temporary OCSF events
-  * **S3_BUCKET_PARQUET**:  The name of the S3 bucket created to store the final parquet event files
-  * **SOURCE_LOCATION**:  Is the location provided by AWS Lake when registering the custom source
-  * **USERNAME**: The PingOne Webhook basic authentication username
-
 2. Create a Function URL under Lambda > Functions > Configuration > Function URL with the following details:
   * Auth type: NONE
   * Configure PingOne Webhooks
 
 3. Create a Webhook from Connections > Webhooks with the following details: 
-Name: Ping Lake Webhook
-Destination URL: Your AWS Lambda Function URL
-For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
-Format: Ping Activity Format (JSON)
-Headers: Basic Authentication 
-Enter the username and password selected above in the AWS Lambda configuration
+ * Name: Ping Lake Webhook
+ * Destination URL: Your AWS Lambda Function URL
+  * For example: https://kgymdwz52ijsjjrh2u2fck2ksq0yosxg.lambda-url.us-east-1.on.aws/
+ * Format: Ping Activity Format (JSON)
+ * Headers: Basic Authentication 
+  * Enter the username and password selected above in the AWS Lambda configuration
 
 
 Event Types: 
