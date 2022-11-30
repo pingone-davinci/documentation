@@ -218,5 +218,180 @@ DaVinci Documentation:
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+### Create Ticket (createTicket)
+
+
+A ticket is an issue raised by a requester that needs to be solved
+
+#### Email `textField` `required`
+
+
+Email address of the requester. If no contact exists with this email address in Freshdesk, it will be added as a new contact
+
+#### Subject `textField` `required`
+
+
+Subject of the Freshdesk ticket
+
+#### Description `textField` `required`
+
+
+HTML content of the ticket
+
+#### Priority `textField` `required`
+
+
+Priority of the ticket. The default value is 1
+
+#### Status `textField` `required`
+
+
+Status of the ticket. The default value is 2
+
+---
+
+### View Ticket (viewTicket)
+
+
+View one existing ticket, or all existing tickets
+
+#### Ticket ID `textField` `required`
+
+
+The numerical ID of the desired ticket. Can be found manually in your Freshdesk portal (i.e. 5 is the ID for “Ticket Title #5”)
+
+---
+
+### Update Ticket (updateTicket)
+
+
+Make updates to an existing ticket
+
+#### Ticket ID `textField` `required`
+
+
+The numerical ID of the desired ticket. Can be found manually in your Freshdesk portal (i.e. 5 is the ID for “Ticket Title #5”)
+
+#### Subject `textField` `required`
+
+
+Subject of the Freshdesk ticket
+
+#### Description `textField` `required`
+
+
+HTML content of the ticket
+
+#### Priority `textField` `required`
+
+
+Priority of the ticket. The default value is 1
+
+#### Status `textField` `required`
+
+
+Status of the ticket. The default value is 2
+
+---
+
+### Delete Ticket (deleteTicket)
+
+
+Delete an existing ticket
+
+#### Ticket ID `textField` `required`
+
+
+The numerical ID of the desired ticket. Can be found manually in your Freshdesk portal (i.e. 5 is the ID for “Ticket Title #5”)
+
+---
+
+### Create Contact (createContact)
+
+
+A contact is a customer or a potential customer who has raised a support ticket through any channel
+
+#### Email `textField` `required`
+
+
+Email address of the requester. If no contact exists with this email address in Freshdesk, it will be added as a new contact
+
+#### Name `textField`
+
+
+First and last name of the new contact
+
+#### Job Title `textField`
+
+
+Job title of the contact
+
+#### Phone Number `textField`
+
+
+Telephone number of the contact
+
+#### Address `textField`
+
+
+Address of the contact
+
+---
+
+### View Contact (viewContact)
+
+
+View a contact who raised a support ticket
+
+#### Contact ID `textField` `required`
+
+
+The "contactId" listed under the output object
+
+---
+
+### Update Contact (updateContact)
+
+
+Update a contact who raised a support ticket
+
+#### Contact ID `textField` `required`
+
+
+The "contactId" listed under the output object
+
+#### Name `textField`
+
+
+First and last name of the new contact
+
+#### Job Title `textField`
+
+
+Job title of the contact
+
+#### Phone Number `textField`
+
+
+Telephone number of the contact
+
+#### Address `textField`
+
+
+Address of the contact
+
+---
+
+### Delete Contact (deleteContact)
+
+
+Hard delete a contact to completely remove it from the portal. Can be used for GDPR compliance
+
+#### Contact ID `textField` `required`
+
+
+The "contactId" listed under the output object
+
+---
+
 
