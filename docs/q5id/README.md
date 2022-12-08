@@ -1,8 +1,6 @@
 # Q5ID Connector
 
 
-## Doc draft
-
 Author: Ryan Curtis 
 
 
