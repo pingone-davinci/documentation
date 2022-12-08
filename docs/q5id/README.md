@@ -6,7 +6,7 @@ Author: Ryan Curtis
 
 # Introduction
 
-Q5ID Simple Authentication can be leveraged in the PingOne DaVinci flow to identify an individual using Q5ID Proven Identity Services.
+The Q5ID connector can be leveraged in the PingOne DaVinci flow to identify an individual using Q5ID Proven Identity Services.
 
 
 # Setup
