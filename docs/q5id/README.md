@@ -15,18 +15,18 @@ The connector is used to submit info to Q5ID and as a callback handler.
 
 ## Connector settings
 
-### Submit Info:
+### Submit Info
 
-**First Name**
+- **First Name**:
 The first name of the individual who would need to be identified and validated by Q5ID
 
-**Phone Number**
+- **Phone Number**:
 The phone number of the individual who would need to be identified and validated by Q5ID
 
-**Q5Id Api Key**
+- **Q5Id Api Key**:
 The Q5ID API Key license key 
 
-**Callback Handler:**
+- **Callback Handler:**
 The webhook would receive the challenge id and the validation result.
 
 # Using the connector in a flow
