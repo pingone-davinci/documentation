@@ -17,7 +17,7 @@ The AbuseIPDB connector identifies IP addresses that have been associated with m
 For background information on the API utilized through this connector, see the following documentation from the AbuseIPDB site:
 
 
-## https://docs.abuseipdb.com/#introduction
+ https://docs.abuseipdb.com/#introduction
 
 
 ## Requirements
