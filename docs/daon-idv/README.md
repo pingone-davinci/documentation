@@ -31,9 +31,7 @@ Once the connector is fully configured, you will then need to copy the “DaVinc
 ## Resources
  
 For information and setup help, see the following sections of the Daon documentation:
- 
- 
-## [Link to resources from the service documentation]
+
  
  
 ## Requirements
