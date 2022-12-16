@@ -6,32 +6,35 @@ Author: Ganesh Raj
 
 With the Tableau Server REST API you can manage and change Tableau Server, Tableau Online site, and Prep Conductor resources programmatically, using this Davinci connector, you can perform the capabilities as mentioned below
 
--Add Data Source to Schedule    Adds a task to refresh a data source to an existing schedule.
--Add Workbook to Schedule    Adds a task to refresh or accelerate a workbook to an existing schedule.
--Cancel Job    Cancels a job specified by job ID.
--Create Schedule    Creates a new schedule on Tableau Server.
--Delete Extract Refresh Task    Deletes an extract refresh task
--Delete Schedule    Deletes the specified schedule.
--Get Extract Refresh Task    Returns information about the specified extract refresh task.
--Get Extract Refresh Tasks in a Schedule    Returns a list of the extract refresh tasks for a specified schedule on the specified site.
--Get Extract Refresh Tasks in a Site    Returns a list of extract refresh tasks for the site.
--Get Schedule    Returns detailed information about the specified schedule.
--Query Job    Returns status information about an asynchronous process that is tracked using a job.
--Query Jobs    Returns a list of active jobs on the specified site.
--Query Schedules    Returns a list of flows, extract and subscription schedules.
--Run Extract Refresh Task    Runs the specified extract refresh task.
--Update Schedule    Modifies settings for the specified schedule, including the name, priority, and frequency details.
+- Add Data Source to Schedule:    Adds a task to refresh a data source to an existing schedule.
+- Add Workbook to Schedule:    Adds a task to refresh or accelerate a workbook to an existing schedule.
+- Cancel Job:    Cancels a job specified by job ID.
+- Create Schedule:    Creates a new schedule on Tableau Server.
+- Delete Extract Refresh Task:    Deletes an extract refresh task
+- Delete Schedule:    Deletes the specified schedule.
+- Get Extract Refresh Task:    Returns information about the specified extract refresh task.
+- Get Extract Refresh Tasks in a Schedule:    Returns a list of the extract refresh tasks for a specified schedule on the specified site.
+- Get Extract Refresh Tasks in a Site:    Returns a list of extract refresh tasks for the site.
+- Get Schedule:    Returns detailed information about the specified schedule.
+- Query Job:    Returns status information about an asynchronous process that is tracked using a job.
+- Query Jobs:    Returns a list of active jobs on the specified site.
+- Query Schedules:    Returns a list of flows, extract and subscription schedules.
+- Run Extract Refresh Task:    Runs the specified extract refresh task.
+- Update Schedule:    Modifies settings for the specified schedule, including the name, priority, and frequency details.
 
 ## Flows
-Capability: Add Flow Permissions
-Capability Subtitle: Add permission to the specified flow for a Tableau Server user or group.
+- Capability: Add Flow Permissions
+- Capability: Subtitle: Add permission to the specified flow for a Tableau Server user or group.
 
 
 ## Users & Groups
-Capability: Add User to Site
-Capability Subtitle:  Adds a user to Tableau and assigns the user to the specified site
-Capability: Get Groups for a User
+
+### Add User to Site
+Subtitle:  Adds a user to Tableau and assigns the user to the specified site
+
+### Capability: Get Groups for a User
 Capability Subtitle: Gets a list of groups of which the specified user is a member.
+
 Capability: Add User to Group
 Capability Subtitle: Adds a user to the specified group
 Capability: Remove User from Group
