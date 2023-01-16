@@ -22,10 +22,6 @@ To set up the connector,  you will need to first create an API account in your P
 For information and setup help, see the following sections of the PRA documentation:
 
 https://www.beyondtrust.com/docs/privileged-remote-access/getting-started/deployment/cloud/index.htm
-
-
-## [Link to resources from the service documentation
-
 https://www.beyondtrust.com/docs/privileged-remote-access/how-to/index.htm
 https://www.beyondtrust.com/docs/integrations/index.htm?prod=Privileged-Remote-Access
 
