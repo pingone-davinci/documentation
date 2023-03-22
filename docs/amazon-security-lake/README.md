@@ -34,12 +34,13 @@ Core to the Amazon Security Lake mission is simplifying the storage, retrieval, 
 | Environment Variable | Value |
 | ----------- | ----------- |
 | **ACCOUNT_ID**      | The AWS Account associated with PingOne events       |
-| **PASSWORD**   | The PingOne Webhook basic authentication password        |
+
 | **REGION**   |  The AWS Region of the Lambda   |
 | **S3_BUCKET_OCSF**   |  The name of the S3 bucket created to store the temporary OCSF events      |
 | **S3_BUCKET_PARQUET**   | The name of the S3 bucket created to store the final parquet event files        |
 | **SOURCE_LOCATION**   | Is the location provided by Amazon Security Lake when registering the custom source       |
 | **USERNAME**   | The PingOne Webhook basic authentication username        |
+| **PASSWORD**   | The PingOne Webhook basic authentication password        |
 
 ![Env Variable Example](image8.png)
 
