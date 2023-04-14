@@ -11,7 +11,7 @@ as well as the hash of emails, that can be used by other connectors for user con
 
 ## Before setting up the connector
 
-Please visit https://console.gocircle.ai/ to register the application.
+Please visit https://console.circlesecurity.ai/ to register the application.
 Click on the **[Add New]** and fill in the fields. Here we used `Circle Ping Demo` as an example:
 
 ![alt text](images/circle_access_console.png)
@@ -31,7 +31,7 @@ Click on the connector to configure these fields:
 
 ![alt text](images/authentication.png)
 
-We have to go back to https://console.gocircle.ai/ to get the field values (click on the App **info icon** - the first icon)
+We have to go back to https://console.circlesecurity.ai/ to get the field values (click on the App **info icon** - the first icon)
 
 ![alt text](images/field_settings.png)
 
