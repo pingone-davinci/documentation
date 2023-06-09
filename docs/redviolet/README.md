@@ -1,3 +1,7 @@
+Authors: Red Violet, Inc.
+
+#Introduction
+
 The IDI coreIDENTITY connector to Ping's Davinci platform serves an integral part of onboarding workflows. Using coreIDENTITY, you can easily perform identity data verification as part of a comprehensive KYC workflow. coreIDENTITY's KYC check can be performed in parallel or as part of a waterfall workflow to verify the consumer's PII data. In addition, the Ping connector can be used to perform attribute verification such as phone number verification, SSN verification, and address verification for workflows that require real-time verification of attributes. IDI has a full suite of Identity Data services to enable you to handle onboarding, transacting, and personalizing your consumer identity data while providing synthetic fraud signals.
 
 # Setup
