@@ -1,12 +1,14 @@
+# Red Violet Connector
+
 Authors: Red Violet, Inc.
 
 # Introduction
 
-The IDI coreIDENTITY connector to Ping's Davinci platform serves an integral part of onboarding workflows. Using coreIDENTITY, you can easily perform identity data verification as part of a comprehensive KYC workflow. coreIDENTITY's KYC check can be performed in parallel or as part of a waterfall workflow to verify the consumer's PII data. In addition, the Ping connector can be used to perform attribute verification such as phone number verification, SSN verification, and address verification for workflows that require real-time verification of attributes. IDI has a full suite of Identity Data services to enable you to handle onboarding, transacting, and personalizing your consumer identity data while providing synthetic fraud signals.
+The coreIDENTITY connector to Ping's Davinci platform serves an integral part of onboarding workflows. Using coreIDENTITY, you can easily perform identity data verification as part of a comprehensive KYC workflow. coreIDENTITY's KYC check can be performed in parallel or as part of a waterfall workflow to verify the consumer's PII data. In addition, the Ping connector can be used to perform attribute verification such as phone number verification, SSN verification, and address verification for workflows that require real-time verification of attributes. IDI has a full suite of Identity Data services to enable you to handle onboarding, transacting, and personalizing your consumer identity data while providing synthetic fraud signals.
 
 # Setup
 
-In DaVinci, add an IDI coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/csh?context=davinci_adding_a_connection).
+In DaVinci, add a coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/csh?context=davinci_adding_a_connection).
 Configure your connector with the following Connector Settings and coreIDENTITY Connector Details in order to successfully setup the coreIDENTITY connector.
 <br>
 
@@ -64,7 +66,41 @@ You can use the coreIDENTITY connector to add identity verification to different
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically.
+### KYC Verification (getKYCVerification)
+
+Calls the KYC Verification endpoint in idiCORE
+
+#### GLBA Selection `textField` `required`
+
+Please enter your GLBA selection
+
+#### DPPA Selection `textField` `required`
+
+Please enter your DPPA selection
+
+#### Raw JSON Payload `codeEditor`
+
+Optional Raw JSON Payload
+
+---
+
+### KYC Refresh (getKYCRefresh)
+
+Calls the KYC Refresh endpoint in idiCORE
+
+#### GLBA Selection `textField` `required`
+
+Please enter your GLBA selection
+
+#### DPPA Selection `textField` `required`
+
+Please enter your DPPA selection
+
+#### Raw JSON Payload `codeEditor`
+
+Optional Raw JSON Payload
+
+---
 
 ## Troubleshooting
 
