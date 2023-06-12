@@ -1,5 +1,5 @@
 
-# BeyondTrust Connector
+# BeyondTrust PRA Connector
 
 
 Author: BeyondTrust
