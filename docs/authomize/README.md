@@ -1,5 +1,6 @@
 # Authomize Connector
-## Authors: Authomize
+
+Author: Steven Riley
 
 # Introduction
 The Authomize connector is based on the Incident API framework outlined in the Authomize documentation. This framework allows for incident processing and management based on policies identefying issues within your IAM/IdP infratsructure framework. Authomize continuously monitors your identities, access privileges, assets, and activities to secure all your apps, cloud services, and IdPs. Authomize allows organizations to mitigate IAM risk with visibility and granular control across all apps and cloud services (IaaS, SaaS, and Data).
