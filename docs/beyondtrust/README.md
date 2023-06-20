@@ -66,6 +66,7 @@ Terminate PRA Jump Session by Hostname
 
 
 Name of the machine for which you would like to terminate all open sessions
+NOTE: This is a case sensitive value
 
 ---
 
@@ -78,6 +79,7 @@ Terminate PRA Jump Session by Username
 
 
 Username for which you would like to terminate all open sessions
+NOTE: This is a case sensitive value
 
 ---
 
