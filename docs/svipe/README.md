@@ -1,6 +1,6 @@
 # Svipe Connector
 
-## Author: Svipe
+Author: Svipe
 
 # Introduction
 You can use the Svipe Connector to create applications with strong authentication, which will improve security by verifying identities of users’ ID credentials from biometric id-documents issued by 145+ countries.
