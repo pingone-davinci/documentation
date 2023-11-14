@@ -31,7 +31,7 @@ Select ‘Code’ as the response type and ‘Authorization code grant’ in gra
 
 If you had selected ‘OpenID’ as a scope, you should select ‘Client Secret Basic’ or ‘Client Secret Post’ as your Token endpoint auth method.
 
-Q[Client Registration](client_reg.png)
+![Client Registration](client_reg.png)
 
 Once it looks good, hit the save button! You should receive your client ID. In order to view more details about the registered client such as your client ID, simply click on the row and a pop up dialog will show you all the information you need!
 
