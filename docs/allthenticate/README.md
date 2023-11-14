@@ -79,7 +79,7 @@ In DaVinci, add an Allthenticate connection. For help, see [Adding a connection]
 
 Note: Before running a flow, click the connector and navigate to the ‘Attribute Mapping’ tab. Make sure that under ‘Allthenticate’ Attributes, there’s a field called ‘sub’, and its equivalent on the ‘DaVinci User Pool Attributes’ is set to username.
 
-![DaVinci Config](davinci_config..png)
+![DaVinci Config](davinci_config.png)
 
 # Using the connector in a flow
 
