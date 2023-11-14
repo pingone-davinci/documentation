@@ -1,9 +1,6 @@
 # Allthenticate Connector
 
-## Doc draft
-
 Author: Tanay Mehra
-
 
 # Introduction
 
