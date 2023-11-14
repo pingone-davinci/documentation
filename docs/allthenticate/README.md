@@ -95,8 +95,7 @@ This screen is optional, here the user can have a simple button that takes the u
 Allthenticate’s Single Sign On Page:
 Here the user should enter their registered email address or username.
 
-Authentication on your phone
+Authentication on your phone:
 The user should get an authentication request on their phone. Shortly after, they would be prompted to use their Biometric or enter their Pin to complete the authentication process.
-
 Successful flow
 Almost instantly, after the successful authentication the user should be redirected to the success page.
