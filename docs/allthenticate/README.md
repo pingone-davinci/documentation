@@ -21,7 +21,7 @@ Once added to the library, click into the Allthenticate connector and copy the R
 
 In another tab or window you'll register your DaVinci environment as a client so that it can use Allthenticate as an external OpenID provider for Single Sign On. Log into the Allthenticate Admin Portal at http://admin.allthenticate.com and go to: SSO → OpenID → Add Client.
 
-(sso_home.png)
+[SSO Home](sso_home.png)
 
 When the dialog box pops up, Enter a name for the DaVinci application, set a suitable client URI and choose any combination of the provided scopes based on your application. Note: If you don’t select OpenID as a scope, your flow will be using Oauth2.0 as an authentication scheme.
 
@@ -31,7 +31,7 @@ Select ‘Code’ as the response type and ‘Authorization code grant’ in gra
 
 If you had selected ‘OpenID’ as a scope, you should select ‘Client Secret Basic’ or ‘Client Secret Post’ as your Token endpoint auth method.
 
-(client_reg.png)
+[Client Registration](client_reg.png)
 
 Once it looks good, hit the save button! You should receive your client ID. In order to view more details about the registered client such as your client ID, simply click on the row and a pop up dialog will show you all the information you need!
 
@@ -53,7 +53,7 @@ Client secret: <The client secret you received earlier or blank>
 
 Scope: <any subset of the scopes you registered with>
 
-(connector_config.png)
+[Connector Config](connector_config.png)
 
 Hit save, and you’re done! Now you can freely use Allthenticate to log into services supporting OIDC or Oauth2.0!
 
@@ -79,7 +79,7 @@ In DaVinci, add an Allthenticate connection. For help, see [Adding a connection]
 
 Note: Before running a flow, click the connector and navigate to the ‘Attribute Mapping’ tab. Make sure that under ‘Allthenticate’ Attributes, there’s a field called ‘sub’, and its equivalent on the ‘DaVinci User Pool Attributes’ is set to username.
 
-(davinci_config..png)
+[DaVinci Config](davinci_config..png)
 
 # Using the connector in a flow
 
@@ -97,17 +97,17 @@ Your test flow will run as follows:
 Initial User Lookup screen / Sign on screen:
 This screen is optional, here the user can have a simple button that takes the user to the Allthenticate Single Sign On page.
 
-(flow_initial.png)
+[Flow Initial](flow_initial.png)
 
 Allthenticate’s Single Sign On Page:
 Here the user should enter their registered email address or username.
 
-(login.png)
+[Login](login.png)
 
 Authentication on your phone:
 The user should get an authentication request on their phone. Shortly after, they would be prompted to use their Biometric or enter their Pin to complete the authentication process.
 
-(auth.png)
+[Auth](auth.png)
 
 Successful flow
 Almost instantly, after the successful authentication the user should be redirected to the success page.
