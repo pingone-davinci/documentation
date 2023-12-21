@@ -17,8 +17,7 @@ You can use the IDmelon connector as part of a PingOne DaVinci flow to enhance t
 
 For information and setup help, see the following sections of the IDmelon documentation:
 
-
-## https://docs.idmelon.com/docs/for_administrators/simple_signon_and_idp_integration/idmelon-connector-for-pingone-davinci/
+https://docs.idmelon.com/docs/for_administrators/simple_signon_and_idp_integration/idmelon-connector-for-pingone-davinci/
 
 
 ## Requirements
