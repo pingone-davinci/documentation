@@ -1,7 +1,5 @@
 # IDmelon Connector
 
-## Doc draft
-
 Author: IDmelon
 
 
