@@ -29,7 +29,7 @@ To use the connector, you'll need:
 * An IDmelon account with administrator access
 * Users with security key for the passwordless experience
 
-## [ Create your IDmelon administration panel]
+## Create your IDmelon administration panel
 
 Visit [panel.idmeon.com](https://panel.idmeon.com) to create or access your account. See [Create your administration panel](https://docs.idmelon.com/docs/for_administrators/get_started/create_your_administration_panel/) for the help.
 
