@@ -46,13 +46,13 @@ In DaVinci, add an IDmelon connection. For help, see [Adding a connection](https
 Enter a custom name for it.
  
 **Auth Type:**
-Chose the Oauth2.
+Chose the Oauth2 type.
  
 **Redirect URL:** 
 Copy this value, we will use this value in the IDmelon Panel.
  
 **Issuer URL:** 
-Empty this value as is.
+Leave this value empty.
  
 **Authorization Endpoint:** 
 https://sso.idmelon.com/api/oidc/idp/authorize/
@@ -78,20 +78,16 @@ See [Adding a connection](https://docs.idmelon.com/docs/for_administrators/simpl
 You can use the connector in a variety of use cases, such as:
 
 
-## [ Smartphone as security key]
+## Smartphone as security key
 
 See [Smartphone as security key](https://docs.idmelon.com/docs/for_administrators/introduction/idmelon_passwordless_orchestration_platform/offering_managed_security_keys/#smartphone-as-security-key)
 
 
 
-## [ Employee badge or access card as security key]
+## Employee badge or access card as security key
 
 See [Employee badge or access card as security key](https://docs.idmelon.com/docs/for_administrators/introduction/idmelon_passwordless_orchestration_platform/offering_managed_security_keys/#employee-badge-or-access-card-as-security-key)
 
-
-# Capabilities
-
-Leave this section blank: it will be generated automatically
 
 
 # Troubleshooting
