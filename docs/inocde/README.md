@@ -18,9 +18,9 @@ Once a user’s real-world identity has been Verified by Incode, you can enable 
 ## Resources
 
 For information and setup help, see the following sections of the Incode documentation:
-*   [Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
-*   [Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
-*   [OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
+* [Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
+* [Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
+* [OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
 
 
 
