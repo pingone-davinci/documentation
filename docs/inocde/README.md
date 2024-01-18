@@ -8,7 +8,7 @@ Author: Karl Persson
 
 The Incode connector enables you to add Incode’s AI-powered Identity Verification and Authentication into your PingOne DaVinci flows and connect verified real-world identity to Ping Identity user profiles.
  
-Incode’s Identity Platform provides fully automated ML-driven document authentication, passive liveness, face recognition matching, and face authentication that can easily and seamlessly be integrated with Ping DaVinci using OpenID Connect (OIDC).
+Incode’s Identity Platform provides fully automated ML-driven document authentication, passive liveness, face recognition matching, and face authentication that can easily and seamlessly be integrated with PingOne DaVinci using OpenID Connect (OIDC).
 For example, you can configure Incode to secure your New User Registration or Account Recovery by ensuring that each user’s real-world identity is verified as part of the process.
 Once a user’s real-world identity has been Verified by Incode, you can enable face authentication to seamlessly confirm the user’s real-world identity.
 
