@@ -29,8 +29,8 @@ For information and setup help, see the following sections of the Incode documen
 To use the connector, you'll need:
  
 1. 	An account with Incode (please contact support@incode.com)
-2. 	At least one workflow setup within the Incode platform (see here)
-3. 	An OIDC configuration within the Incode platform (see here)
+2. 	At least one workflow setup within the Incode platform (see [here](https://developer.incode.com/docs/create-a-standard-workflow))
+3. 	An OIDC configuration within the Incode platform (see [here](https://developer.incode.com/docs/open-id-connect-oidc))
 
 ## Setting up the connector
 
