@@ -18,9 +18,9 @@ Once a user’s real-world identity has been Verified by Incode, you can enable 
 ## Resources
 
 For information and setup help, see the following sections of the Incode documentation:
-* [Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
-* [Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
-* [OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
+*[Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
+*[Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
+*[OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
 
 
 
@@ -39,14 +39,10 @@ In DaVinci, add an Incode connection. For help, see [Adding a connection](https:
 
 ### Connector settings
 
-App ID
-The Client ID from the Incode OIDC Client Configuration
-Client Secret
-Client Secret from the Incode OIDC Client Configuration
-Issuer URL
-        	Issuer URL for Incode’s Authorization Server provided to you by Incode
-Scope
-        	List of space separated scopes (must be exactly those that were configured in the Incode OIDC Client Configuration)
+* App ID - The Client ID from the Incode OIDC Client Configuration
+* Client Secret - Client Secret from the Incode OIDC Client Configuration
+* Issuer URL - Issuer URL for Incode’s Authorization Server provided to you by Incode
+* Scope - List of space separated scopes (must be exactly those that were configured in the Incode OIDC Client Configuration)
 
 
 
