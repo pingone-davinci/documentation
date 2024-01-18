@@ -53,6 +53,7 @@ You can use the connector in a variety of use cases, such as:
 * Account Recovery
 * Password Resets
 * Conditional step-up as an additional authentication factor
+  
 To include verification of a user’s real-world identity using Incode, you must first enroll, or onboard, the user onto Incode’s platform and create an identity. This is ideally done as part of a New User Registration flow in DaVinci when the user’s Ping Identity user profile is first created. 
 Once an Identity exists in Incode’s platform you can configure biometric Face Authentication for any DaVinci flow where validating the real-world identity of a user is required. 
 More information on how to set up OIDC configurations within Incode’s platform can be found here[https://developer.incode.com/docs/open-id-connect-oidc].
