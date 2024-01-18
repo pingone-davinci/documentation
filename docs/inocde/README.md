@@ -18,9 +18,9 @@ Once a user’s real-world identity has been Verified by Incode, you can enable 
 ## Resources
 
 For information and setup help, see the following sections of the Incode documentation:
-*[Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
-*[Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
-*[OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
+* [Key Concepts & Definitions](https://developer.incode.com/docs/key-concepts)
+* [Create a Standard Workflow](https://developer.incode.com/docs/create-a-standard-workflow)
+* [OpenID Connect Configuration](https://developer.incode.com/docs/open-id-connect-oidc)
 
 
 
@@ -64,6 +64,7 @@ More information on how to set up OIDC configurations within Incode’s platform
 * Ensure that the Redirect URI in the Incode OIDC client configuration matches the Redirect URI within the Incode Ping Davinci connector configuration
 * Confirm with your Incode support representative that your account has been provisioned in the correct environment that matches the Issuer URL within the Incode Ping Davinci connector configuration
 * Ensure that the OIDC scopes configured in the connector and in the Incode OIDC Client Configuration match)
+
 ## Troubleshooting resources
 
 Email support@incode.com for any troubleshooting assistance.
