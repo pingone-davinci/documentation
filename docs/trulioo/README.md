@@ -34,17 +34,17 @@ These combined are used to execute an API call to generate a bearer token that w
 
 
 ## Setting up the connector
-* Navigate to the Trulioo connector via the Connections tab in DaVinci.
-* Select New Connection in the upper right-hand corner
-* Search for the desired connector (in this case, Trulioo).
+* Navigate to the **Connections** tab in DaVinci.
+* Select **New Connection** in the upper right-hand corner
+* Search for the desired connector (in this case, **Trulioo**).
 * Click on the Trulioo connector and add it to your connector list.
-* Add in the Client ID and Client Secret from the Requirements section above.
+* Add in the **Client ID** and **Client Secret** from the Requirements section above.
 
 
 
 ## Add connector to the canvas
 
-You can add the connector to a canvas by navigating to Flows > Add Flow > Create New  > Select the black “+” button in the bottom left corner and search for Trulioo. 
+You can add the connector to a canvas by navigating to Flows tab on left hand menu > Add Flow > Create New > Select the black “+” button in the bottom left corner and search for Trulioo. 
 
 For additional help help, see [Adding a connection](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
 
