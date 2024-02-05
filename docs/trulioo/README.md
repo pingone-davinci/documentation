@@ -65,6 +65,7 @@ This capability sends a POST to the Verify endpoint: https://api.trulioo.com/v3/
 
 A sample JSON body is provided below for the country of Great Britain (designated with CountryCode GB). This will vary depending on customer requirements and per country code. Please reference [v3 Verify API documentation](https://developer.trulioo.com/reference/post_v3-verifications-verify) on the Trulioo site for detailed information regarding each field.
 
+```
 {
     "VerboseMode": false,
     "PackageId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
@@ -98,8 +99,7 @@ A sample JSON body is provided below for the country of Great Britain (designate
         ]
     }
 }
-
-
+```
 
 
 ## Make any Trulioo API call
