@@ -39,7 +39,10 @@ You can use the connector in a variety of use cases, such as:
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+Check for Compromised Credential
+* Checks username and password for a compromised credential
+  * Username (required)
+  * Passowrd (required)
 
 
 ### Testing capabilities
