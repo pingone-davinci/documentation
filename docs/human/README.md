@@ -42,7 +42,7 @@ You can use the connector in a variety of use cases, such as:
 Check for Compromised Credential
 * Checks username and password for a compromised credential
   * Username (required)
-  * Passowrd (required)
+  * Password (required)
 
 
 ### Testing capabilities
