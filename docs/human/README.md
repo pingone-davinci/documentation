@@ -1,117 +1,48 @@
-# Human Connector
+# HUMAN Connector
 
-Author: Rick Rosser and Brian Henning
+Author: HUMAN Security
+
 
 # Introduction
 
-The HUMAN Connector is used to identify BOT threats using HUMAN signal data. This decision can used to mitigate BOT threats.
+You can use the Human Security Connector to enable PingOne DaVinci to detect and take action when an end user attempts to create or log in to an account using a compromised credential. Through this integration, a PingOne Davinci administrator can ensure all credentials being used have not been previously compromised using HUMAN Credential Intelligence.
+
+This connector allows you to analyze if the credentials are compromised to safeguard accounts during account login, account creation, and password update. For any of the above flows, we recommend the following actions in case the credentials are compromised: forcing a password reset, requesting a different password on account creation, or password update. This flag can also be used to conditionally initiate an MFA step. This way, the account is not vulnerable to credential-stuffing attacks or to attackers gaining unauthorized access using compromised credentials. 
+
 
 # Setup
 
-## Resources
+Setting up the connector
+In DaVinci, add the Human connector. For help, see Adding a connector.
 
-For information and setup help, see the following sections of the HUMAN documentation:
+Connector settings
+HUMAN Authentication Token
+The token used for authorization with the HUMAN backend.
+HUMAN App ID
+The Human Security application id.
 
-## https://docs.humansecurity.com/index.html
-
-## Requirements
-
-To use the connector, you'll need:
-
-- [HUMAN JS Tag](https://docs.humansecurity.com/detection-tag.html)
-- HUMAN Customer Id
-- HUMAN Mitigation API Token
-- HUMAN Policy Name (Optional)
-
-## Setup form to capture HUMAN signal data.
-
-To use the HUMAN connector, you will first need the HUMAN tag provided by your HUMAN representative. This tag will collect
-and return signal data which will be passed to the HUMAN connector. Signal data is required to receive a bot-or-not decision from the HUMAN connector. 
-
-You can view additional information about the HUMAN tag in the [documentation](https://docs.humansecurity.com/detection-tag.html).
-
-There is also a sample flow template that demonstrates its usage.
-
-## Setting up the connector
-
-In Singular Key, add a **PingOne SSO** connection. For help, see [Adding a connection](https://docs.google.com/document/d/1Sc9tD5tn9dl79qOWup0k3eKk5hrNVI8lZPAdm8loeiA/edit#).
-
-### Connector settings
-
-The following fields are required in the GENERAL tab:
-* HUMAN Customer ID
-  - Provided by your HUMAN representative 
-* HUMAN Authentication Token
-  - Provided by your HUMAN representative 
-* HUMAN Policy Name
-  - Provided by your HUMAN representative 
-  - *This may be an empty string
-* IP Address
-  - Global property 
-* User Agent
-  - Global property 
-* Session
-  - OZ_TC property returned by HUMAN tag
-* Payload
-  - OZ_SG property returned by HUMAN tag
-* DataToken
-  - OZ_DT property returned by HUMAN tag
-
+Both configuration items can be retrieved from the Human Security console. Please contact Human Security for more details.
 # Using the connector in a flow
+
+You can use the Human Security connector to validate whether the credentials entered are flagged as compromised or not, and then act upon the result.
+
+To use the Human Security connector:
+
+Add the connector to your flow by using the Add Connector button.
+Connect the left side of the connector to the submit action of your login form.
+Connect the right side of the connector to both a successful login connector (All Triggers True) and whatever action you would like to take in case the credentials are flagged as compromised, for example, a password reset form (All Triggers False).
+Click on the Human Security Connector, click Configure, and add the Human Security Auth Token and Application Id.
+
 
 You can use the connector in a variety of use cases, such as:
 
-## User Registration/Login
-
-The HUMAN tag should be loaded immediately to begin collecting signal data. Once the user finishes filling out the form and submits, you can retrieve the necessary fields (OZ_TC, OZ_SG, OZ_DT) provided by the HUMAN tag and pass those to their respective fields in the HUMAN connector (session, payload, dataToken). Please see the sample flow template for an example of this use case.
 
 # Capabilities
 
-### HUMAN Verification Engine (verification)
+Leave this section blank: it will be generated automatically
 
 
-Know Who's Real on the Internet.
+### Testing capabilities
 
-#### HUMAN Customer ID `textField`
-
-
-Customer ID from HUMAN
-
-#### HUMAN Authentication Token `textField`
-
-
-Bearer Token from HUMAN
-
-#### HUMAN Policy Name `textField`
-
-
-HUMAN mitigation policy name
-
-#### IP Address `textField`
-
-
-IP address
-
-#### User Agent `textField`
-
-
-User Agent
-
-#### Session `textField`
-
-
-Session Token
-
-#### Payload `textField`
-
-
-Payload Token
-
-#### Data Token `textField`
-
-
-Data Token
-
----
-
+You can test each capability individually. For help, see [Testing credentials](https://edocs.humansecurity.com/docs/credential-intelligence-integration-testing).
 
