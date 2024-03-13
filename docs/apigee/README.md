@@ -18,8 +18,12 @@ To set up the connector you will need the Apigee Edge OAuth2 client created for 
 * Issuer
 * Token Endpoint
 * Client ID
+* Client Secret (for Client Credentials)
+* Signing Algorithm (for JWT)
 * Signing Private key (used to sign the client assertion)
+* Token Endpoint Authentication Method (for Client Credentials)
 * kid (To include in the client assertion)
+* Expiry (for JWT)
 
 
 ## Resources
@@ -58,7 +62,12 @@ The connector gives an organization the ability to terminate all PRA sessions on
 
 # Capabilities
 
-### Get Token
+### Get Token witj JWT
+
+
+Returns the the Apigee Edge token for the specified client
+
+### Get Token with Client Credentials
 
 
 Returns the the Apigee Edge token for the specified client
