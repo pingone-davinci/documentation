@@ -1,5 +1,3 @@
-# Tech doc
-
 # Silverfort Connector
 
 ## Doc draft
