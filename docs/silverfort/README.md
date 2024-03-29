@@ -76,6 +76,6 @@ The 'Update Entity Risk' capability allows Davinci flows to update the risk of a
 
 ## Troubleshooting resources
 
-### [Silverfort Support Desk]
+### Silverfort Support Desk
 
 Email: Support@silverfort.com
