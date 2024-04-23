@@ -107,10 +107,10 @@ This sequence will enable passwordless, CLEAR verified authentication into any r
 
 # Capabilities
 
-Leave this section blank: it will be generated automatically
+This connector performs an OIDC Redirect to the IdRamp platform.
 
 
 ## Troubleshooting resources
 
-For technical support please submit a request to the IdRamp service desk
+For technical support please submit a request to the IdRamp service desk.
 
