@@ -23,19 +23,19 @@ Multi-vendor cloud integration - Ping, Azure, Google, AWS, Oracle and more
 For information and setup help, see the following documentation:
 
 DaVinci documentation:
-Adding a connector
-Using DaVinci flow templates
+* [Adding a connector](https://docs.pingidentity.com/r/dSpJZfsIxOrAFri54JxraA/Mqnwq7T_IhV4rR3cZ02THw)
+* [Using DaVinci flow templates](https://docs.pingidentity.com/r/en-us/davinci/davinci_importing_a_flow_from_the_flow_library)
 
 ## Requirements
 
 To use the connector, you'll need:
 
-IdRamp connector account - (provided by an IdRamp representative)
+* IdRamp [connector account](https://idramp.com/idramp-registration-signup/) - (provided by an IdRamp representative)
 
 
 ## Setting up the connector
 
-Add the IdRamp CLEAR connector in DaVinci as shown in Adding a connector, then configure it as follows.
+Add the IdRamp CLEAR connector in DaVinci as shown in [Adding a connector](https://docs.pingidentity.com/r/dSpJZfsIxOrAFri54JxraA/Mqnwq7T_IhV4rR3cZ02THw), then configure it as follows.
 
 ### Connector settings
 
@@ -112,5 +112,5 @@ This connector performs an OIDC Redirect to the IdRamp platform.
 
 ## Troubleshooting resources
 
-For technical support please submit a request to the IdRamp service desk.
+For technical support please submit a request to the [IdRamp service desk](https://idramp.freshservice.com/).
 
