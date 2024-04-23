@@ -67,7 +67,7 @@ You can use the connector in a variety of use cases, such as:
 
 
 ## Use Case: Add CLEAR identity verification proofing to any authentication or business process flow
-![idramp1](/Users/ryanschafer/Downloads/idramp1.png)
+![idramp1](idramp1.png)
 
 
 This sequence will fortify security with a frictionless, reusable identity verification process that will adapt to any PingOne DaVinci flow. CLEAR Verification options include:
