@@ -89,20 +89,17 @@ IAL- 2 : Support NIST 800-63-3 Identity Assurance Level 2 for partners that requ
 
 
 ## Use Case: Sign-in with CLEAR identity proofing verification 
-
+![idramp2](idramp2.png)
 This sequence will enable passwordless, CLEAR verified authentication into any relying party services or identity providers.
 
 ## Use Case: Sign-in with Biometrics
-
-
-
-
+![idramp3](idramp3.png)
 
 ## Use Case: Sign-in with Verifiable Credentials
-
-
+![idramp4](idramp4.png)
 
 ## Use Case: MFA/FIDO Authentication
+![idramp5](idramp5.png)
 
 ## Use Case: Sign-in with Policy Enforcement
 
