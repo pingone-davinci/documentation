@@ -66,8 +66,7 @@ For additional assistance, see the Ping Identity documentation Adding a connecto
 ## Start with PingOne DaVinci
 1. Log in to your PingOne DaVinci account. Once logged in, navigate to the Connectors page within the DaVinci platform.Click on the "Add Connector" button to initiate the process of adding a new connector
 
-
-
+![privateid1](privateid1.png)
 
 2. Look for the PrivateID Connector option in the list of available connectors. Click + to add the connector.
 
@@ -76,6 +75,7 @@ For additional assistance, see the Ping Identity documentation Adding a connecto
 
 4. Identify the connector created for the integration with PrivateID from the list of connectors. Click on the "Edit" option from the actions menu associated with the created connector.
 
+![privateid2](privateid2.png)
 
 5. Once in the edit mode, locate the Redirect URL field. Copy the Redirect URL provided. This URL will be used in the Orchestration module during the setup process. Save the Redirect URL for later use in the Orchestration module.
 
@@ -85,24 +85,24 @@ Follow these instructions to configure the integration in the Orchestration Hub:
 
 1. Use the provided credentials to log in to the Orchestration module.
 
-
+![privateid3](privateid3.png)
 
 2. Once logged in, navigate to the OIDC Clients section within the Orchestration module. Click on the Create Client button to initiate the process of creating a new OIDC client.
 
-
+![privateid4](privateid4.png)
 
 3. Choose the appropriate organization from the available list for which the integration is being configured.
 
+![privateid5](privateid5.png)
 
 
 4. Fill in the necessary details such as Name, Description, and select "client_secret_basic" as the token endpoint authentication method. Paste the Redirect URI obtained from Step 5 of the DaVinci setup into the respective field. After filling in the required fields, click on the "Save" button to save the configuration.
 
-
-
+![privateid6](privateid6.png)
 
 5. Once the client is created, navigate to the details page. Note down the client_id and client_secret provided for later use in the integration process.
 
-
+![privateid7](privateid7.png)
 
 ## PingOne Davinci
 * Access the configuration settings of the connector previously created for the integration.
@@ -110,7 +110,7 @@ Follow these instructions to configure the integration in the Orchestration Hub:
 * After pasting the Client ID and Client Secret, ensure to save the changes made to the connector configuration.
 * With all other fields populated with default values, your setup will be complete.
 
-
+![privateid8](privateid8.png)
 
 By following these steps, you'll successfully integrate the Client ID and Client Secret obtained from the Orchestration module into PingOne DaVinci. This completes the setup process, and your integration should now be configured to communicate seamlessly between DaVinci and the Orchestration module. If you encounter any difficulties, refer to the documentation or contact the support team for assistance.
 
