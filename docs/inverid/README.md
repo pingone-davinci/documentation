@@ -12,10 +12,15 @@ iOS users can benefit from ReadID Ready App Clips, which eliminate the need for 
 ## Resources
 For information, see the following Inverid documentation:
 *   Trusted-identity-verification - what are NFC chips and how do they work
+
 *   ReadID Ready - overview and animation/screen recording on ReadID Ready
+  
 *   Privacy Policy for ReadID Ready
+  
 *   ReadID Ready FAQ - for users using ReadID Ready
+  
 *   Inverid certifications
+  
 See the following for general DaVinci documentation:
 *   Adding a connector
 *   Using DaVinci flow templates
