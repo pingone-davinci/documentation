@@ -11,15 +11,15 @@ iOS users can benefit from ReadID Ready App Clips, which eliminate the need for 
 # Setup
 ## Resources
 For information, see the following Inverid documentation:
-*   Trusted-identity-verification - what are NFC chips and how do they work
-*   ReadID Ready - overview and animation/screen recording on ReadID Ready
-*   Privacy Policy for ReadID Ready
-*   ReadID Ready FAQ - for users using ReadID Ready
-*   Inverid certifications
+* Trusted-identity-verification - what are NFC chips and how do they work
+* ReadID Ready - overview and animation/screen recording on ReadID Ready
+* Privacy Policy for ReadID Ready
+* ReadID Ready FAQ - for users using ReadID Ready
+* Inverid certifications
   
 See the following for general DaVinci documentation:
-*   Adding a connector
-*   Using DaVinci flow templates
+* Adding a connector
+* Using DaVinci flow templates
 
 # Requirements
 To use the ReadID DaVinci Connector, you'll need:
@@ -45,13 +45,13 @@ Find the Redirect Webhook URI and copy the string. You will need to send this to
  Example: https://auth.pingone.com/231478912347891247891247891247
 2. Inverid will then provide API Keys in return. You will need to add these keys in the configuration page.
 
-Add ReadID Submitter API Key:
+* Add ReadID Submitter API Key:
  Example: 123-456-789
-Add ReadID Viewer API Key:
+* Add ReadID Viewer API Key:
  Example: 123-456-789
-Add ReadID Hostname:
+* Add ReadID Hostname:
  Example: readid.davinci.connector.com
- Time to live for ReadySession:
+* Time to live for ReadySession:
  Set between 30 and 72000
 
 # Using the connector after configuration
