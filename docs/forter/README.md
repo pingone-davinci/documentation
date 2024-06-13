@@ -1,7 +1,5 @@
 # Forter Connector
 
-## Doc draft
-
 Author: Tom Smith, Forter
 
 # Introduction
