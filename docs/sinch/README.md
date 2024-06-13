@@ -1,6 +1,6 @@
 # Sinch Connector
 
-Author: Radosław Kot
+Author: Radosław Kot, Sinch
 
 
 # Introduction
