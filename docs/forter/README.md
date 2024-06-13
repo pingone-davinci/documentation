@@ -6,9 +6,9 @@ Author: Tom Smith, Forter
 
 You can use the Forter connector as part of a PingOne DaVinci flow to make risk-based decisions at major points in the user journey:
 
-sign-up
-sign-in
-profile updates / account changes
+* sign-up
+* sign-in
+* profile updates / account changes
 
 Forter’s extreme precision ensures that good users experience no friction, while suspicious users can be challenged for a 2nd factor or denied altogether.
 
@@ -68,11 +68,11 @@ As with the other points in the user journey, Forter can return a decision of AP
 ## Make Custom API Call
 
 The Forter connector includes a capability to send a custom API call to any Forter endpoint. This is particularly useful in cases where the built-in capabilities do not meet the data you are looking to capture. The Make Custom API Call capability can be used to capture the below custom configurations:
-Endpoint
-Method
-Query Parameters
-Headers
-JSON Body
+* Endpoint
+* Method
+* Query Parameters
+* Headers
+* JSON Body
 
 **Note**: For any custom JSON body that will have parameterized values, you will need to use dot notation to parse through the raw response and find the value you would like to send - EX {{local.`nodeId`.payload.output.`value`}} where `nodeId` is the node whose output you want to reference and `value` is what you would like to pass through from the raw output.
 
@@ -98,8 +98,8 @@ support@forter.com
 
 To test API calls to Forter, you can use one of the following designated ip addresses in the connectionInformation.customerIP field of the API request:
 
-0.0.0.1	APPROVED
-0.0.0.2	DECLINED
-0.0.0.3	NOT_REVIEWED
-0.0.0.4	VERIFICATION_REQUIRED	['EMAIL_VERIFICATION']
-0.0.0.5	VERIFICATION_REQUIRED	['SMS_VERIFICATION']
+* 0.0.0.1	APPROVED
+* 0.0.0.2	DECLINED
+* 0.0.0.3	NOT_REVIEWED
+* 0.0.0.4	VERIFICATION_REQUIRED	['EMAIL_VERIFICATION']
+* 0.0.0.5	VERIFICATION_REQUIRED	['SMS_VERIFICATION']
