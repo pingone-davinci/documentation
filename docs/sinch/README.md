@@ -65,6 +65,10 @@ Review the below fields to configure the Verify Code capability:
 
 This connector serves a single use case: verifying that the user possesses a phone number. It accomplishes this by sending a One Time Password (OTP) to a phone number through either an SMS message or a phone call.
 
+Any flow using the Sinch connector will require a subsequent Functions connector on the back end of the Verify Code capability to properly parse the API response. Choose the A == B (Multiple Conditions) capability. Set Value A to status (select the {} icon, choose the Sinch - Verify Code connector earlier in the flow and find "status" in the list). Set value 1 to SUCCESSFUL, value 2 to PENDING, and value 3 to FAIL. Apply your changes. From the PENDING branch of the Functions connector, drag and release. Add an Error Customize connector and configure the message to your liking. This allows the end user retry their code up to 5 times.
+
+Please reference the below image in the SMS Verification section for reference.
+
 
 ## SMS verification
 
