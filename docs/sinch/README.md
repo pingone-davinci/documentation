@@ -70,7 +70,7 @@ This connector serves a single use case: verifying that the user possesses a pho
 
 Use this flow to deliver OTP via SMS message.
 
-
+![Sinch Flow Image](sinchFlowImage.png)
 
 
 ## Phone call verification
