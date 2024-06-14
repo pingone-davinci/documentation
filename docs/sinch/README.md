@@ -47,8 +47,8 @@ Remaining on the Connectors tab, search for the Sinch connector you just added a
 ### Connector settings
 
 The connector includes two capabilities as outlined below:
-Send Verification Code
-Verify Code
+* Send Verification Code
+* Verify Code
 
 Review the below fields to configure the Send Verification Code capability:
 * Method: Choose SMS or Phone Call. This changes how the code is delivered to the end user.
