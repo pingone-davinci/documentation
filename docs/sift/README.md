@@ -5,7 +5,7 @@ Author:Inayat Shariff Owen Barnes
 
 # Introduction
 
-##  The Sift > Ping Connector can be used to protect your revenue from fraud by leveraging the Sift Score and Decisions API to get accurate risk profiling on your Customers. In addition, the Sift score can be used to create smoother workflows for good Customers by ensuring minimal friction is used for trusted users, both familiar and unfamiliar.
+The Sift > Ping Connector can be used to protect your revenue from fraud by leveraging the Sift Score and Decisions API to get accurate risk profiling on your Customers. In addition, the Sift score can be used to create smoother workflows for good Customers by ensuring minimal friction is used for trusted users, both familiar and unfamiliar.
 
 For example, you can use the Sift connector to retrieve a Sift score to determine the riskiness of a given log-in event. If the score returns low, you can skip additional friction such as certain types of verification or velocity checks on subsequent purchases, while quarantining high score accounts to limit their ability to engage with certain aspects of your business.
 
