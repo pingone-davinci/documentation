@@ -1,6 +1,6 @@
 # Sift Connector
 
-Author:Inayat Shariff Owen Barnes
+Author:Inayat Shariff and Owen Barnes
 
 
 # Introduction
