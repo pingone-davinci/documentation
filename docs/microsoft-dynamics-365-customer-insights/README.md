@@ -59,6 +59,9 @@ These properties can be found in your Microsoft Dynamics 365 client application.
 * Retrieving important information in regards to a contact or lead
 * etc...
 
+> **Note:** When creating or updating Contacts or Leads, the optional `birthdate` property must be in ISO 8601 format (e.g., `YYYY-MM-DD`). Incorrect formatting or leaving it blank will result in an error.
+
+
 ## Retrieving Information about a Contact
 1. **Add the Microsoft Dynamics 365 Connector**
     * Select the `Get Contact` capability
