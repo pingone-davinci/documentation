@@ -89,7 +89,7 @@ Each capability has its own unique configuration, with the exception of these st
 
 See below for the specific configuration required per capability:
 
-###### Record Login Event
+#### Record Login Event
   * Login Status (required): Use Login Status to represent the success or failure of the login attempt. Allowed values are Success or Failure.
   * Failure Reason: Capture the reason for the failure of the login.
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
@@ -101,13 +101,13 @@ See below for the specific configuration required per capability:
   * User Agent: The user agent of the browser that is interacting with your website.
   * Accept Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes. Examples: 'en', 'en-us, de', 'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5', etc.
   * Content Language: The language(s) of the user that the delivered site content is intended for. Use ISO-3166 format for country codes. Examples: 'en', 'en-us, de', 'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5', etc.
-###### Record Logout Event
+#### Record Logout Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * IP Address: IP address of the user that is logging out.
   * User Agent: The user agent of the browser that is interacting with your website.
   * Accept Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes. Examples: 'en', 'en-us, de', 'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5', etc.
   * Content Language:  The language(s) of the user that the delivered site content is intended for. Use ISO-3166 format for country codes. Examples: 'en', 'en-us, de', 'fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5', etc.
-###### Record Create Account Event
+#### Record Create Account Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Session ID: The user's current session ID, used to tie a user's action before and after log in or account creation.
   * Email: Email of the user creating the account. Note: If the user's email is also their account ID in your system, set both the $user_id and $user_email fields to their email address.
@@ -120,7 +120,7 @@ See below for the specific configuration required per capability:
   * User Agent: The user agent of the browser that is interacting with your website.
   * Accept Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes.
   * Content Language: The language(s) of the user that the delivered site content is intended for. Use ISO-3166 format for country codes.
-###### Record Updated Account Event
+#### Record Updated Account Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Changed Password: Track password changes via Update Password. If the user changed their password, set this field and mark as true. Additionally, Sift's recommended approach is to send the Update Password reserved event.
   * Email: Email of the user creating the account. Note: If the user's email is also their account ID in your system, set both the $user_id and $user_email fields to their email address.
@@ -132,7 +132,7 @@ See below for the specific configuration required per capability:
   * User Agent: The user agent of the browser that is interacting with your website.
   * Accept Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes.
   * Content Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes.
-###### Record Password Update Event
+#### Record Password Update Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Session ID (required): The user's current session ID, used to tie a user's action before and after log in or account creation. NOTE: this is required if no $user_id is provided.
   * Status (required): The status of the password update event.
@@ -143,7 +143,7 @@ See below for the specific configuration required per capability:
   * User Agent: The user agent of the browser that is interacting with your website.
   * Accept Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes.
   * Content Language: The language(s) that the client is requesting the site content be delivered in. Use ISO-3166 format for country codes.
-###### Record Verification Event
+#### Record Verification Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Session ID (required): The user's current session ID, used to tie a user's action before and after log in or account creation.
   * Status (required): The status of the verification event.
@@ -151,11 +151,11 @@ See below for the specific configuration required per capability:
   * Verification Type: The type of verification being performed.
   * Verified Value: The phone number, email or question used for verification.
   * IP Address: IP address of the user.
-###### Record Link Session to User Event
+#### Record Link Session to User Event
   * User ID (required): The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Session ID (required): The user's current session ID, used to associate Javascript page events with their REST API counterparts.
   * IP Address: IP address of the request made by the user.
-###### Apply Decision
+#### Apply Decision
   * Account ID: Your Sift Account ID, which can be found in the Sift Console under the Developer Tab
   * User ID: The user's account ID according to your systems. Note that user IDs are case sensitive.
   * Session ID Decision: The user's current session ID, used to associate Javascript page events with their REST API counterparts.
@@ -164,12 +164,12 @@ See below for the specific configuration required per capability:
   * Source (required): The source of this Decision.
   * Analyst: Analyst who applied the Decision, only required when source is set to Manual Review. Does not need to be an email, can be any analyst identifier.
   * Description: A description of the Decision that will be applied.
-###### Get Decision Status
+#### Get Decision Status
   * Decision Type: The Get Decisions API allows you to retrieve Decisions on users or sessions.
   * Account ID (required): Your Sift Account ID, which can be found in the Sift Console under the Developer Tab
   * User ID: The user's account ID according to your systems.
   * Session ID Decision: The user's current session ID, used to tie a user's action before and after log in or account creation.
-###### Make Custom API Call
+#### Make Custom API Call
   * Endpoint (required): API Endpoint
   * Method (required): Method (ex. GET, POST, etc.)
   * Query Parameters
