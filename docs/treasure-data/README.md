@@ -50,6 +50,7 @@ To make the ingest API call, you need the following data:
 * the name of the database that contains the table you want to ingest records into
 * the name of the table
 * a request object that contains the column names and values you want to import. The information in the request object is specified as key-value pairs in JSON, and each entry in the request object will be entered as a new row in the table. Figure 1 below shows the format for ingesting a single record, and Figure 2 shows the format for ingesting multiple records in a single request.
+
 As you create request objects, be aware of the following API behaviors: 
 * The records ingested do not need to match the current table schema; new columns will be added to the table schema on ingest.
 * If you specify a time column, the value must be formatted as Unix timestamp in UTC seconds (not milliseconds). If you do not specify a time column, the system will use the current time.
