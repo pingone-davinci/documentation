@@ -43,7 +43,9 @@ Treasure Data provides an ingest API that allows you to programmatically import 
 * Tokyo Region: https://ap01.records.in.treasuredata.com
 * Korea Region: https://ap02.records.in.treasuredata.com
 * AP03 Region: https://ap03.records.in.treasuredata.com
+
 Choose the endpoint that corresponds to your region.
+
 To make the ingest API call, you need the following data:
 * the name of the database that contains the table you want to ingest records into
 * the name of the table
