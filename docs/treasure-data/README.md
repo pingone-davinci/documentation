@@ -80,31 +80,31 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
   * Key / Value list: Used to capture specific user attributes for the record
 
 **Create Profiles API Token**: Create a Profiles API token
-  * Region: Select the appropriate region. This is used to define the base URL
-  * Token ID: Token to update
-  * Type: Value = ‘token’
-  * Attributes: Properly formatted JSON to capture user Attributes
-  * Relationships: Properly formatted JSON to capture Relationships
+* Region: Select the appropriate region. This is used to define the base URL
+* Token ID: Token to update
+* Type: Value = ‘token’
+* Attributes: Properly formatted JSON to capture user Attributes
+* Relationships: Properly formatted JSON to capture Relationships
 
 **Retrieve List of Profile API Tokens**: Retrieve List of Profile API Tokens associated with a parent segment ID
-  * Region: Select the appropriate region. This is used to define the base URL
-  * Audience ID: Master segment ID of the token
+* Region: Select the appropriate region. This is used to define the base URL
+* Audience ID: Master segment ID of the token
 
 **Update Profiles API Token**: Update a profiles API Token
-  * Token ID: Token to update
-  * Type: Value = ‘token’
-  * Attributes: Properly formatted JSON to capture user Attributes
-  * Relationships: Properly formatted JSON to capture Relationships
+* Token ID: Token to update
+* Type: Value = ‘token’
+* Attributes: Properly formatted JSON to capture user Attributes
+* Relationships: Properly formatted JSON to capture Relationships
 
 **Delete Profiles API Token**: Delete the specified Profiles API token
-  * Token ID: Token to update
+* Token ID: Token to update
 
 **Make Custom API Call**: Define a custom API call to Treasure Data
-  * Endpoint: Add the full API URL
-  * Method: Define the method for the API call (GET, PUT, POST, etc.)
-  * Query Parameters: Define any query parameters for the API call
-  * Headers: Define any headers for the API call
-  * HTTP Body (JSON): Define the the properly formatted JSON body for the API call
+* Endpoint: Add the full API URL
+* Method: Define the method for the API call (GET, PUT, POST, etc.)
+* Query Parameters: Define any query parameters for the API call
+* Headers: Define any headers for the API call
+* HTTP Body (JSON): Define the the properly formatted JSON body for the API call
 
 # Troubleshooting resources
 
