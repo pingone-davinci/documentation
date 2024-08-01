@@ -38,6 +38,7 @@ You can use the connector in a variety of use cases, such as:
 ## Insert a record in Treasure Data
 
 Treasure Data provides an ingest API that allows you to programmatically import rows into existing tables in a TD database. The endpoints you can use for the data ingestion API are:
+
 * US Region: https://us01.records.in.treasuredata.com
 * EU01 Region:  https://eu01.records.in.treasuredata.com
 * Tokyo Region: https://ap01.records.in.treasuredata.com
@@ -74,12 +75,14 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
 # Capabilities
 
 **Insert a Record**: Insert a single record with the ingestion API. Fields captured are listed below:
+
 * Region: Select the appropriate region. This is used to define the base URL
 * Database: Database from your Treasure Data account
 * Table: Table from your Treasure Data account
 * Key / Value list: Used to capture specific user attributes for the record
 
 **Create Profiles API Token**: Create a Profiles API token
+
 * Region: Select the appropriate region. This is used to define the base URL
 * Token ID: Token to update
 * Type: Value = ‘token’
@@ -87,19 +90,23 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
 * Relationships: Properly formatted JSON to capture Relationships
 
 **Retrieve List of Profile API Tokens**: Retrieve List of Profile API Tokens associated with a parent segment ID
+
 * Region: Select the appropriate region. This is used to define the base URL
 * Audience ID: Master segment ID of the token
 
 **Update Profiles API Token**: Update a profiles API Token
+
 * Token ID: Token to update
 * Type: Value = ‘token’
 * Attributes: Properly formatted JSON to capture user Attributes
 * Relationships: Properly formatted JSON to capture Relationships
 
 **Delete Profiles API Token**: Delete the specified Profiles API token
+
 * Token ID: Token to update
 
 **Make Custom API Call**: Define a custom API call to Treasure Data
+
 * Endpoint: Add the full API URL
 * Method: Define the method for the API call (GET, PUT, POST, etc.)
 * Query Parameters: Define any query parameters for the API call
