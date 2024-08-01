@@ -74,10 +74,10 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
 # Capabilities
 
 **Insert a Record**: Insert a single record with the ingestion API. Fields captured are listed below:
-  * Region: Select the appropriate region. This is used to define the base URL
-  * Database: Database from your Treasure Data account
-  * Table: Table from your Treasure Data account
-  * Key / Value list: Used to capture specific user attributes for the record
+* Region: Select the appropriate region. This is used to define the base URL
+* Database: Database from your Treasure Data account
+* Table: Table from your Treasure Data account
+* Key / Value list: Used to capture specific user attributes for the record
 
 **Create Profiles API Token**: Create a Profiles API token
 * Region: Select the appropriate region. This is used to define the base URL
