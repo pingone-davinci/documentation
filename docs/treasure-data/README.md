@@ -73,33 +73,33 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
 
 # Capabilities
 
-1. Insert a Record: Insert a single record with the ingestion API. Fields captured are listed below:
+1. **Insert a Record**: Insert a single record with the ingestion API. Fields captured are listed below:
   * Region: Select the appropriate region. This is used to define the base URL
   * Database: Database from your Treasure Data account
   * Table: Table from your Treasure Data account
   * Key / Value list: Used to capture specific user attributes for the record
 
-2. Create Profiles API Token: Create a Profiles API token
+2. **Create Profiles API Token**: Create a Profiles API token
   * Region: Select the appropriate region. This is used to define the base URL
   * Token ID: Token to update
   * Type: Value = ‘token’
   * Attributes: Properly formatted JSON to capture user Attributes
   * Relationships: Properly formatted JSON to capture Relationships
 
-3. Retrieve List of Profile API Tokens: Retrieve List of Profile API Tokens associated with a parent segment ID
+3. **Retrieve List of Profile API Tokens**: Retrieve List of Profile API Tokens associated with a parent segment ID
   * Region: Select the appropriate region. This is used to define the base URL
   * Audience ID: Master segment ID of the token
 
-4. Update Profiles API Token: Update a profiles API Token
+4. **Update Profiles API Token**: Update a profiles API Token
   * Token ID: Token to update
   * Type: Value = ‘token’
   * Attributes: Properly formatted JSON to capture user Attributes
   * Relationships: Properly formatted JSON to capture Relationships
 
-5. Delete Profiles API Token: Delete the specified Profiles API token
+5. **Delete Profiles API Token**: Delete the specified Profiles API token
   * Token ID: Token to update
 
-6. Make Custom API Call: Define a custom API call to Treasure Data
+6. **Make Custom API Call**: Define a custom API call to Treasure Data
   * Endpoint: Add the full API URL
   * Method: Define the method for the API call (GET, PUT, POST, etc.)
   * Query Parameters: Define any query parameters for the API call
@@ -110,5 +110,5 @@ The use of the Profiles API Token with your tools requires the use of the Treasu
 
 For information and setup help, see the following sections of the Treasure Data documentation:
 
-* (Tokens API)[https://api-docs.treasuredata.com/pages/audience_api_v1/tag/Tokens/]
-* (Insert a Record)[https://docs.treasuredata.com/articles/#!pd/Importing-Table-Records-Using-the-Data-Ingestion-API?_gl=1*6icwb3*_ga*NjQwMjgxMjE5LjE3MTQ3NTYzMzA.*_ga_6E2G020VBJ*MTcxNjU3MzAzMS4xMS4xLjE3MTY1NzM3MTQuMTAuMC4w&_gl=1*6icwb3*_ga*NjQwMjgxMjE5LjE3MTQ3NTYzMzA.*_ga_6E2G020VBJ*MTcxNjU3MzAzMS4xMS4xLjE3MTY1NzM3MTQuMTAuMC4w]
+* [Tokens API](https://api-docs.treasuredata.com/pages/audience_api_v1/tag/Tokens/)
+* [Insert a Record](https://docs.treasuredata.com/articles/#!pd/Importing-Table-Records-Using-the-Data-Ingestion-API?_gl=1*6icwb3*_ga*NjQwMjgxMjE5LjE3MTQ3NTYzMzA.*_ga_6E2G020VBJ*MTcxNjU3MzAzMS4xMS4xLjE3MTY1NzM3MTQuMTAuMC4w&_gl=1*6icwb3*_ga*NjQwMjgxMjE5LjE3MTQ3NTYzMzA.*_ga_6E2G020VBJ*MTcxNjU3MzAzMS4xMS4xLjE3MTY1NzM3MTQuMTAuMC4w)
