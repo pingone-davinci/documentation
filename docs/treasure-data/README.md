@@ -37,7 +37,7 @@ You can use the connector in a variety of use cases, such as:
 
 ## Insert a record in Treasure Data
 
-Treasure Data provides an ingest API that allows you to programmatically import rows into existing tables in a TD database. The endpoints you can use for the data ingestion API are
+Treasure Data provides an ingest API that allows you to programmatically import rows into existing tables in a TD database. The endpoints you can use for the data ingestion API are:
 * US Region: https://us01.records.in.treasuredata.com
 * EU01 Region:  https://eu01.records.in.treasuredata.com
 * Tokyo Region: https://ap01.records.in.treasuredata.com
