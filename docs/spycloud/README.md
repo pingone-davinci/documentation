@@ -11,14 +11,6 @@ The SpyCloud Enterprise Protection connector to Ping's Davinci platform serves a
 # Setup
 
 
-## Resources
-
-For information and setup help, see the following sections of the SpyCloud documentation:
-
-
-##In DaVinci, add a SpyCloud Enterprise Protection connector. For help, see Adding a connector. Configure your connector with your SpyCloud Employee ATO API Key. Make sure to share with SpyCloud that the API key will be for use with Ping DaVinci, so the key can be setup properly. 
-
-
 ## Requirements
 
 To use the connector, you'll need:
