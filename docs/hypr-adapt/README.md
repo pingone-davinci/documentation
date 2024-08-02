@@ -42,7 +42,7 @@ In DaVinci, add a HYPR Adapt connection. For help, see [Adding a connector](http
 
 To configure the connector, provide your Access Token to the connector in the general settings.
 
-![Hypr Adapt 1](hyperadapt1)
+![Hypr Adapt 1](hyperadapt1.png)
 
 # Using the connector in a flow
 
@@ -53,7 +53,7 @@ Username: This will be the username from a prior connector, such as an html temp
 Policy ID: This is the policy you created in HYPR.
 Policy Data: Provide any data here that you would like to evaluate against as part of the policy evaluation. This can include data from other connectors.
 
-![Hypr Adapt 2](hyperadapt1)
+![Hypr Adapt 2](hyperadapt2.png)
 
 You can use the connector in a variety of use cases, such as:
 Evaluate a policy with HYPR’s data and signals
