@@ -191,5 +191,6 @@ Output Schema
 ## Resources
 
 Website: [spycloud.com](https://spycloud.com/)
+
 Please note, API reference documentation is located within the SpyCloud tenant
 
