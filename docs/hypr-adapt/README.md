@@ -68,7 +68,7 @@ Combining HYPR’s data and signals associated with the user’s identity and da
 
 This capability evaluates HYPR policy which returns allowed or denied responses.
 
-Input Schema
+Input Schema:
 
 ```
  "default": {
