@@ -43,7 +43,7 @@ You can use the “Authentication (Verify)”, Custom HTML Template (to render t
 
 See the below flow JSON image for an example. This flow snippet can be downloaded from the iProov Verify - Flow Snippet under the Resources section below.
 
-![iProov Auth](iproovVerify.png)
+![iProov Auth](iproovEnrol.png)
 
 
 ## Setting up the connector
