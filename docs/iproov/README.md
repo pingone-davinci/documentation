@@ -550,10 +550,11 @@ Output Schema:
 
 There is an SDK component that is required to complete a full iProov flow. Please reference the “Using the connector in a flow section” for a flow image that shows where the SDK is rendered as part of a flow snippet.
 
-The templatized HTML, CSS, and Script are located below to copy into the HTTP > Custom HTML Template connector. There are a few important things to note regarding the Script section that **must** be changed for the SDK to process properly:
+The templatized HTML, CSS, and Script are located below to copy into the HTTP > Custom HTML Template connector. There are a few important things to note regarding the Script section that **must** be changed for the SDK to process properly.
 
-* On line 1, replace {{IPROOV URL}} parameter with the SDK URL provided by your iProov representative
-* On line 3 and 31, replace the {{IPROOV TOKEN}} parameter with and source the token that is generated from the “Onboarding (Enrol)” or the “Authentication (Verify)” capabilities.
+* On line 1, replace _**{{IPROOV SDK URL}}**_ parameter with the SDK URL provided by your iProov representative
+* On Line 4, replace _**{{IPROOV BASE URL}}**_ parameter with the base URL provided by your iProov representative
+* On line 3 and 31, replace the _**{{IPROOV TOKEN}}**_ parameter with and source the token that is generated from the “Onboarding (Enrol)” or the “Authentication (Verify)” capabilities.
 
 Please contact your iProov representative for any questions or issues.
 
@@ -578,10 +579,10 @@ CSS:
 Script:
 
 ```
-import("{{IPROOV URL}}").then(function(module) {
+import("{{IPROOV SDK URL}}").then(function(module) {
  const iProovMe = document.createElement("iproov-me")
  iProovMe.setAttribute("token", "{{IPROOV TOKEN}}")
- iProovMe.setAttribute("base_url", "{{IPROOV URL}}")
+ iProovMe.setAttribute("base_url", "{{IPROOV BASE URL}}")
  document.getElementById("iProov-wrapper").appendChild(iProovMe)
 
 
