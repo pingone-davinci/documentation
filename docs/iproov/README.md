@@ -16,7 +16,7 @@ iProov's experience utilizes a secure inherence factor, facial biometrics, suppl
 
 To use the connector, you'll need:
 
-* iProov Tenant: The iProov tenant URL. This can be obtained from your iPortal account. **Do not include the protocol (https://). Please contact support@iproov.com for more information.
+* iProov Tenant: The iProov tenant URL. This can be obtained from your iPortal account. **Do not include the protocol (https://)**. Please contact support@iproov.com for more information.
 * iProov API Key: Your iProov Service Provider API key. This can be obtained from your iPortal account. Please contact support@iproov.com for more information.
 * iProov Secret: Your iProov Service Provider Secret. This can be obtained from your iPortal account. Please contact support@iproov.com for more information.
 * PingOne DaVinci tenant
