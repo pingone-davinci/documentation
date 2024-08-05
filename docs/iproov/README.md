@@ -35,7 +35,7 @@ Furthermore, you can use the “Onboarding (Photo Enrol)” capability to enroll
 
 See the below flow JSON image for an example. This flow snippet can be downloaded from the iProov Enrol - Flow Snippet under the Resources section below.
 
-![iProov Verify](iproovEnrol.png)
+![iProov Verify](iproovAuth.png)
 
 ## Authenticate existing user in iProov
 
@@ -43,7 +43,7 @@ You can use the “Authentication (Verify)”, Custom HTML Template (to render t
 
 See the below flow JSON image for an example. This flow snippet can be downloaded from the iProov Verify - Flow Snippet under the Resources section below.
 
-![iProov Auth](iproovAuth.png)
+![iProov Auth](iproovVerify.png)
 
 
 ## Setting up the connector
