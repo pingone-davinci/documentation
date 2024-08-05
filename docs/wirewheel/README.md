@@ -38,7 +38,9 @@ You can use the connector in a variety of use cases, such as:
 
 Retrieve WireWheel Channel Information
 
-Output Schema
+This capability requires a Channel ID as part of its configuration, which can be obtained from the WireWheel channel settings.
+
+Output Schema:
 
 ```
 {
@@ -57,7 +59,10 @@ Output Schema
 ## Get Existing Consent
 
 Retrieve the existing consent by the username
-Output Schema
+
+This capability requires a Username as part of its configuration, which can be obtained from a user input form earlier in the flow.
+
+Output Schema:
 
 ```
 {
@@ -77,7 +82,16 @@ Output Schema
 
 Displays the WireWheel Consent Form
 
-Output Schema
+This capability has a few different inputs, as defined below:
+
+* Channel ID (required): Channel ID from the WireWheel Channel settings
+* Username (required): Username of the consent record
+* Get Existing Consent (required): Toggle to retrieve existing consent record
+* HTML Template: HTML template (a default template is provided) for the consent screen
+* CSS: Styling for the webpage (a default template is provided)
+* Script: Script to run for the webpage (a default template is provided)
+
+Output Schema:
 
 ```
 {
@@ -102,6 +116,10 @@ Output Schema
 ## Write Consent Data
 
 Saves the consent data to WireWheel
+
+This capabibility requires a properly formatted JSON object for the Consent Payload.
+
+Output Schema:
 
 ```
 {
