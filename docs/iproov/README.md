@@ -21,7 +21,7 @@ To use the connector, you'll need:
 * iProov Secret: Your iProov Service Provider Secret. This can be obtained from your iPortal account. Please contact support@iproov.com for more information.
 * PingOne DaVinci tenant
 
-The iProov details will need to be added to the General configuration tab. You can access this page after you add the connector to the connector library and click into it OR by adding the connector to a flow canvas, clicking into it, and selecting the gear icon next to the connectors name at the top of the connector window.
+The iProov details will need to be added to the General configuration tab from the connector. You can access this page after you add the connector to the connector library and click into it OR by adding the connector to a flow canvas, clicking into it, and selecting the gear icon next to the connectors name at the top of the connector window.
 
 # Using the connector in a flow
 
