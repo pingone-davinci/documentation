@@ -1,7 +1,5 @@
 # IdRamp Connector
 
-## Doc draft
-
 Author: Karl Kneis, IdRamp
 
 # Introduction
