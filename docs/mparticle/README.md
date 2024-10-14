@@ -9,7 +9,7 @@ Author: Ryan Schafer, Ping Identity
 mParticle is a customer data platform (CDP) that helps companies collect, organize, and use customer data to power their marketing and other initiatives. The platform is designed to be easy to integrate and use, and it can help companies make decisions quickly and confidently.
 
 The mParticle connector allows you to manage users in your account through the below capabilities:
-Create an account
+*Create an account
 * Get a single account
 * Update an account
 * Delete an account
