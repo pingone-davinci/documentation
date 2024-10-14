@@ -26,8 +26,8 @@ The mParticle connector allows you to manage users in your account through the b
 For information and setup help, see the following sections of the mParticle API documentation:
 
 
-* (Platform API Overview)[https://docs.mparticle.com/developers/platform/overview/]
-* (Event API)[https://docs.mparticle.com/developers/server/http/]
+* [Platform API Overview](https://docs.mparticle.com/developers/platform/overview/)
+* [Event API](https://docs.mparticle.com/developers/server/http/)
 
 
 ## Requirements
