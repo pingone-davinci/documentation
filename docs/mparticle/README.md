@@ -10,12 +10,12 @@ mParticle is a customer data platform (CDP) that helps companies collect, organi
 
 The mParticle connector allows you to manage users in your account through the below capabilities:
 Create an account
- Get a single account
-Update an account
-Delete an account
-Get all audiences
-Get all calculated attributes
-Upload an event batch
+* Get a single account
+* Update an account
+* Delete an account
+* Get all audiences
+* Get all calculated attributes
+* Upload an event batch
 
 
 # Setup
