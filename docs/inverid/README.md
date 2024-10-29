@@ -26,7 +26,7 @@ To use the ReadID DaVinci Connector, you'll need:
 * Your ReadID application credentials (Submitter and Viewer keys), and hostname (all via Inverid) • To share your webhook URI from the ReadID DaVinci Connector with Inverid 
 
 
-## TALK TO AN EXPERTS
+## TALK TO AN EXPERT
 Sandbox users will need to contact Inverid to obtain sandbox credentials:
 https://www.inverid.com/ping-identity-davinci-connector
 
