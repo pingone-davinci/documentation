@@ -108,7 +108,9 @@ All APIs are marked with an annotation for the output schema . This label define
 Output Schema Result ReadID DaVinci Connector:
 
  EXTERNAL For features and/or API parts that can be used by customers using the ReadID Davinci Connector.
+ 
  INTERNAL For features and/or API parts that are for internal, i.e. ReadID, use only. As such these features may change between ReadID versions without notification.
+ 
  BETA For features and/or API parts which are still in development. These features may change between ReadID versions without notification.
 
 | Output              | Info | Label |
