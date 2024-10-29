@@ -125,7 +125,7 @@ Output Schema Result ReadID DaVinci Connector:
 | documentContent |  Interpreted data captured from the document chip using NFC technology  | EXTERNAL |
 | expiryDate |  Date when this session will be purged from the database. Once this point in time has been passed, the ReadID session will be permanently deleted.   | EXTERNAL |
 | iProovSession |  Face recognition data   | INTERNAL |
-| lib |  Library related data  | INTERNAL - This filed is deprecated as of M109 |
+| lib |  Library related data  | INTERNAL - This field is deprecated as of M109 |
 | nfcSession |  Raw data captured from the contactless chip  | INTERNAL |
 | vizImages |  Images from the Visual Inspection Zone (VIZ)   | INTERNAL |
 
