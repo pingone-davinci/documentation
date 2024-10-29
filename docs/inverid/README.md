@@ -12,11 +12,11 @@ Reading NFC chips requires native access to APIs on Android and iOS. The Ping Da
 iOS users can benefit from ReadID Ready App Clips, which eliminate the need for users to install from the App Store and create a seamless user experience.
 
 For information, see the following Inverid documentation:
-* Trusted-identity-verification - what are NFC chips and how do they work
-* ReadID Ready - overview and animation/screen recording on ReadID Ready
-* Privacy Policy for ReadID Ready
-* ReadID Ready FAQ - for users using ReadID Ready
-* Inverid certifications - overview of Inverid certification
+* [Trusted-identity-verification](https://www.inverid.com/trusted-identity-verification) - what are NFC chips and how do they work
+* [ReadID Ready](https://www.inverid.com/readid-ready/user-page-ready) - overview and animation/screen recording on ReadID Ready
+* [Privacy Policy](https://www.inverid.com/privacy) for ReadID Ready
+* [ReadID Ready FAQ](https://www.inverid.com/readid-ready-faq) - for users using ReadID Ready
+* [Inverid certifications](https://www.inverid.com/certifications) - overview of Inverid certification
 
 # Setup
 ## REQUIREMENTS
