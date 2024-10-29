@@ -119,8 +119,8 @@ Output Schema Result ReadID DaVinci Connector:
 | clientId | Unique identifier for client. This is an opaque identifier that identifies a specific client application. On Android the package name of the application is used  | INTERNAL |
 | consolidatedIdentityData |  Identity data consolidated from different sources applicable for this session   | EXTERNAL |
 | creationDate |  Date when this session was created. Timestamp on the moment when the session was inserted into the database   | EXTERNAL |
-| deviceId |  Unique identifier for a specific device. This value is asserted by the SDK and is on a reasonable effort basis. This value can be used to link multiple ReadID sessions to the same device. - This field is deprecated as of M104  | EXTERNAL |
-| deviceInfo |  Device related data - This field is deprecated as of M104   | INTERNAL |
+| deviceId |  Unique identifier for a specific device. This value is asserted by the SDK and is on a reasonable effort basis. This value can be used to link multiple ReadID sessions to the same device. | EXTERNAL - This field is deprecated as of M104 |
+| deviceInfo |  Device related data  | INTERNAL - This field is deprecated as of M104 |
 | documentContent |  Interpreted data captured from the document chip using NFC technology  | EXTERNAL |
 | expiryDate |  Date when this session will be purged from the database. Once this point in time has been passed, the ReadID session will be permanently deleted.   | EXTERNAL |
 | iProovSession |  Face recognition data   | INTERNAL |
