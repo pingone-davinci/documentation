@@ -77,7 +77,7 @@ Example desktop instructions:
 
 Example mobile insturctions:
 
-![InveridMobileInsturctions](inveridMobileInsturctions.png)
+![InveridMobileInsturctions](inveridMobileInstructions.png)
 
 ## Start the ReadID session
 Follow the instructions in ReadID Ready after scanning the QR code or selecting the Activation link. 
