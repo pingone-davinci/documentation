@@ -41,9 +41,10 @@ From the ReadID DaVinci Connector Details you will find the required information
 
 ![Inverid1](inverid1.png)
 
-#### For ReadID Davinci Sandbox users.
-Find the Redirect Webhook URI and copy the string. You will need to send this to your Inverid onboarding contact so the ReadID sandbox can be configured.
- Example: https://auth.pingone.com/231478912347891247891247891247
+#### For ReadID Davinci Sandbox
+Find the Redirect Webhook URI and copy the URI. You will need to share this to your Inverid onboarding  contact so the ReadID sandbox can be configured to retrieve finished sessions results from the ReadID server.
+
+Example: https://auth.pingone.com/231478912347891247891247891247
 
 #### ReadID API Key
 Inverid will provide API Keys for Submitter and Viewer. You will need to add these keys in the ReadID DaVinci  Connector Details configuration page 
