@@ -2,7 +2,7 @@
 
 Author: Inverid
 
-#Introduction
+# Introduction
 
 The ReadID DaVinci Connector enables you to verify NFC chipped passports and identity documents. You can use the ReadID DaVinci Connector in onboarding, account recovery and/or step-up authentication flows. ReadID will return detailed results on document data integrity, authenticity and anti-cloning checks, alongside official data embedded in the chip, such as name, date of birth, and document number. It will also provide the high-resolution face image direct from the chip that is a high-quality reference for subsequent face matching processes.
 
