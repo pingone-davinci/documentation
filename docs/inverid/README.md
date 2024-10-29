@@ -32,7 +32,7 @@ https://www.inverid.com/ping-identity-davinci-connector
 
 
 ## CONFIGURING THE READID DAVINCI CONNECTOR
-Add the ReadID DaVinci Connector in PingOne DaVinci as shown in Adding a connector, then configure it as follows
+Add the ReadID DaVinci Connector in PingOne DaVinci via the Connectors tab, then configure it as follows:
 
 
 ### READID DAVINCI CONNECTOR CONFIGURATION
