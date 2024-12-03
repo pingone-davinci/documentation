@@ -49,4 +49,191 @@ After setting up the CLEAR connector, you can use it in your flows to:
 
 This capability redirects a user to CLEAR's hosted ID verification UI, then redirects them back into the PingOne DaVinci flow.
 
+Output Schema:
+```
+{
+  "id": "string",
+  "object_name": "verification_session",
+  "authenticated": true,
+  "authentication_methods": [
+    "string"
+  ],
+  "activated_authentication_methods": [
+    "string"
+  ],
+  "checks": [
+    {
+      "name": "string",
+      "value": true,
+      "status": "completed",
+      "additional_details": {
+        "watchlist_hits": {
+          "hits": [
+            {
+              "entity_type": "person",
+              "details": {
+                "name": [
+                  "string"
+                ],
+                "alias": [
+                  "string"
+                ],
+                "country": [
+                  "string"
+                ],
+                "address": [
+                  {
+                    "line1": "string",
+                    "line2": "string",
+                    "city": "string",
+                    "state": "string",
+                    "postal_code": "string",
+                    "country": "string"
+                  }
+                ],
+                "date_of_birth": [
+                  {
+                    "day": 0,
+                    "month": 0,
+                    "year": 0
+                  }
+                ],
+                "date_of_death": [
+                  {
+                    "day": 0,
+                    "month": 0,
+                    "year": 0
+                  }
+                ],
+                "place_of_birth": [
+                  "string"
+                ],
+                "gender": [
+                  "string"
+                ],
+                "nationality": [
+                  "string"
+                ],
+                "position": [
+                  "string"
+                ],
+                "passport_number": [
+                  "string"
+                ],
+                "id_number": [
+                  "string"
+                ],
+                "notes": [
+                  "string"
+                ],
+                "created_at": [
+                  {
+                    "day": 0,
+                    "month": 0,
+                    "year": 0
+                  }
+                ],
+                "modified_at": [
+                  {
+                    "day": 0,
+                    "month": 0,
+                    "year": 0
+                  }
+                ],
+                "source_urls": [
+                  "string"
+                ]
+              },
+              "source_lists": [
+                {
+                  "name": "string",
+                  "summary": "string",
+                  "url": "string"
+                }
+              ],
+              "hit_types": [
+                "sanction"
+              ]
+            }
+          ],
+          "updated_at": 0
+        }
+      },
+      "params": {}
+    }
+  ],
+  "completed_at": 0,
+  "created_at": 0,
+  "email": "string",
+  "expires_at": 0,
+  "fields_to_collect": [
+    "string"
+  ],
+  "ip": [
+    "string"
+  ],
+  "phone": "string",
+  "redirect_url": "string",
+  "status": "success",
+  "token": "string",
+  "updated_at": 0,
+  "user_agent": [
+    "string"
+  ],
+  "user_created": false,
+  "user_id": "string",
+  "traits": {
+    "address": {
+      "line1": "string",
+      "line2": "string",
+      "city": "string",
+      "state": "string",
+      "postal_code": "string",
+      "country": "string"
+    },
+    "dob": {
+      "day": 0,
+      "month": 0,
+      "year": 0
+    },
+    "email": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "middle_name": "string",
+    "second_family_name": "string",
+    "full_last_name": "string",
+    "phone": "string",
+    "ssn4": "string",
+    "ssn9": "string",
+    "identification_number": "string",
+    "identification_type": "string",
+    "document": {
+      "nationality": "string",
+      "document_type": "drivers_license",
+      "issuing_country": "string",
+      "document_number": "string",
+      "date_of_expiry": {
+        "day": 0,
+        "month": 0,
+        "year": 0
+      },
+      "gender": "string",
+      "date_of_birth": {
+        "day": 0,
+        "month": 0,
+        "year": 0
+      },
+      "first_name": "string",
+      "last_name": "string",
+      "middle_name": "string"
+    },
+    "document_front": "string",
+    "document_back": "string",
+    "face_scan_preview": "string"
+  },
+  "project_id": "string",
+  "custom_fields": {}
+}
+```
+
 
