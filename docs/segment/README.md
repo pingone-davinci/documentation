@@ -57,7 +57,7 @@ The Segment connector comes loaded with 7 capabilities that the user is able to 
 ## Setting up the connector
 
 #### Segment Connector General Settings:
-* Navigate to the Clearbit connector via the _**Connections**_ tab in DaVinci.
+* Navigate to the Segment connector via the _**Connections**_ tab in DaVinci.
 * Select _**New Connection**_ in the upper right-hand corner.
 * Search for the desired connector (in this case, Segment).
 * Select the Segment connector.
