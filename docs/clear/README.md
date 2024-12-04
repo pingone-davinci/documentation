@@ -1,7 +1,5 @@
 # CLEAR Connector
 
-**Author:** Matthew Teets
-
 # Introduction
 
 CLEAR is a secure identity verification platform that allows businesses to quickly and accurately verify users. With CLEAR’s hosted ID Verification UI, businesses can enhance user authentication while maintaining the integrity and privacy of sensitive data.
