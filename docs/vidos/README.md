@@ -200,15 +200,13 @@ To integrate the Vidos Verifier to validate verifiable credentials, follow these
 
 - [Vidos Universal Resolver Documentation](https://go.vidos.id/universal-resolver-docs)
 - [Vidos Verifier API Documentation](https://go.vidos.id/docs-api-verifier)
-  **Support**:
+ 
+**Support**:
+
 - For any issues or questions, contact [Vidos Support](https://support.vidos.id).
   This integration ensures seamless handling of decentralized identifiers and verifiable credentials within Ping Identity DaVinci, offering robust security and interoperability with W3C standards.
 
 ---
-
-## Capabilities
-
-Leave this section blank: it will be generated automatically
 
 ## Testing capabilities
 
