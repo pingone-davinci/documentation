@@ -17,8 +17,11 @@ It also empowers users by offering them a frictionless authentication process wi
 For information and setup help, see the following documentation:
 * Akamai MFA Documentation:
   * [Getting started with Akamai MFA](https://techdocs.akamai.com/mfa/docs/set-up-mfa)
-  * [Configure and manage Akamai MFA​](https://techdocs.akamai.com/mfa/docs/manage-mfa) 
+    
+  * [Configure and manage Akamai MFA​](https://techdocs.akamai.com/mfa/docs/manage-mfa)
+    
   * [Set up an OIDC integration](https://techdocs.akamai.com/mfa/docs/oidc-integration)
+    
   * [Enroll devices](https://techdocs.akamai.com/mfa/docs/self-enroll-mfa) and [authenticate](https://techdocs.akamai.com/mfa/docs/auth-mfa) using ​Akamai MFA​
 DaVinci documentation:
   * [PingOne DaVinci Documentation](https://docs.pingidentity.com/davinci/davinci_landing_page.html)
@@ -29,7 +32,9 @@ DaVinci documentation:
 To use the connector, you'll need:
 
 * An Akamai Control Center account with Akamai MFA enabled and configured
+
 * An OIDC integration set up in Akamai MFA
+
 * Akamai user account to use for testing
 
 
