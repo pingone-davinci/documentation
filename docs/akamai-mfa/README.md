@@ -16,7 +16,7 @@ It also empowers users by offering them a frictionless authentication process wi
 # Setup
 For information and setup help, see the following documentation:
 
-* Akamai MFA Documentation:
+Akamai MFA Documentation:
 
   * [Getting started with Akamai MFA](https://techdocs.akamai.com/mfa/docs/set-up-mfa)
     
@@ -26,7 +26,7 @@ For information and setup help, see the following documentation:
     
   * [Enroll devices](https://techdocs.akamai.com/mfa/docs/self-enroll-mfa) and [authenticate](https://techdocs.akamai.com/mfa/docs/auth-mfa) using ​Akamai MFA​
 
-* DaVinci documentation:
+ DaVinci documentation:
 
   * [PingOne DaVinci Documentation](https://docs.pingidentity.com/davinci/davinci_landing_page.html)
 
