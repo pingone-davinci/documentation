@@ -90,6 +90,6 @@ If you run into issues with the connector configuration, please reach out to you
 
 Please review the Akamai MFA Tech Docs page listed [here](https://techdocs.akamai.com/mfa/docs/welcome-mfa) for any additional troubleshooting.
 
-You can review additional information on DaVinci [here](https://docs.pingidentity.com/davinci/davinci_landing_page.html)
+You can review additional information on DaVinci [here](https://docs.pingidentity.com/davinci/davinci_landing_page.html).
 
 
