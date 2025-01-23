@@ -26,7 +26,7 @@ For information and setup help, see the following documentation:
     
   * [Enroll devices](https://techdocs.akamai.com/mfa/docs/self-enroll-mfa) and [authenticate](https://techdocs.akamai.com/mfa/docs/auth-mfa) using ​Akamai MFA​
 
-DaVinci documentation:
+* DaVinci documentation:
 
   * [PingOne DaVinci Documentation](https://docs.pingidentity.com/davinci/davinci_landing_page.html)
 
