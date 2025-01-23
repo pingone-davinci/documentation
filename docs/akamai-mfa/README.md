@@ -25,6 +25,7 @@ For information and setup help, see the following documentation:
   * [Enroll devices](https://techdocs.akamai.com/mfa/docs/self-enroll-mfa) and [authenticate](https://techdocs.akamai.com/mfa/docs/auth-mfa) using ​Akamai MFA​
 
 DaVinci documentation:
+
   * [PingOne DaVinci Documentation](https://docs.pingidentity.com/davinci/davinci_landing_page.html)
 
 
@@ -57,12 +58,19 @@ In DaVinci, add an Akamai MFA connection under the Connectors tab > “+ Add Con
 ### Connector settings
 
 To configure the connector, you will need:
-* Redirect URL: This is required to be configured on the Akamai side and allows the app to redirect back to PingOne DaVinci after authentication completes 
-* Auth Endpoint: Gathered from Akamai Akamai well-known endpoint 
-* Token Endpoint: Gathered from Akamai Akamai well-known endpoint 
-* Integration ID: Generated from app set up on Akamai side 
-* Client Secret: Generated from app set up on Akamai side 
-* Signing Key: Generated from app set up on Akamai side 
+
+* Redirect URL: This is required to be configured on the Akamai side and allows the app to redirect back to PingOne DaVinci after authentication completes
+
+* Auth Endpoint: Gathered from Akamai Akamai well-known endpoint
+
+* Token Endpoint: Gathered from Akamai Akamai well-known endpoint
+
+* Integration ID: Generated from app set up on Akamai side
+
+* Client Secret: Generated from app set up on Akamai side
+
+* Signing Key: Generated from app set up on Akamai side
+
 * Scope: Defaults “openid”
 
 # Use Case
