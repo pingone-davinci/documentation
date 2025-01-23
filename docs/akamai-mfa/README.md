@@ -75,6 +75,27 @@ To configure the connector, you will need:
 
 * Scope: Defaults “openid”
 
+### Input Schema
+
+```
+{
+  "output": {
+    "type": "object",
+    "properties": {
+      "statusCode": {
+        "type": "integer"
+      },
+      "rawResponse": {
+        "type": "object"
+      },
+      "id_token": {
+        "type": "object"
+      }
+    }
+  }
+}
+```
+
 # Use Case
 
 ## Workforce MFA
