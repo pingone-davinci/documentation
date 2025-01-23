@@ -16,6 +16,7 @@ It also empowers users by offering them a frictionless authentication process wi
 # Setup
 For information and setup help, see the following documentation:
 * Akamai MFA Documentation:
+
   * [Getting started with Akamai MFA](https://techdocs.akamai.com/mfa/docs/set-up-mfa)
     
   * [Configure and manage Akamai MFA​](https://techdocs.akamai.com/mfa/docs/manage-mfa)
