@@ -75,7 +75,7 @@ To configure the connector, you will need:
 
 * Scope: Defaults “openid”
 
-### Input Schema
+### Output Schema
 
 ```
 {
