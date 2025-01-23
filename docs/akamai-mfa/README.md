@@ -40,7 +40,7 @@ To use the connector, you'll need:
 3. In Algorithm, select HS256.
 4. Click Save and Deploy.
 
-Note your Integration ID, Client Secret, and Signing Key. You’ll use these credentials in the connector configuration. 
+Note your **Integration ID**, **Client Secret**, and **Signing Key**. You’ll use these credentials in the connector configuration. 
 
 
 ## Setting up the connector
