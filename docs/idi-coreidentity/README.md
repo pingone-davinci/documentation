@@ -1,4 +1,4 @@
-# Red Violet Connector
+# coreIDENTITY Connector
 
 Authors: IDI, LLC.
 
