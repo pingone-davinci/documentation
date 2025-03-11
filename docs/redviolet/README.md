@@ -1,10 +1,14 @@
 # Red Violet Connector
 
-Authors: Red Violet, Inc.
+Authors: IDI, LLC.
 
 # Introduction
 
-The coreIDENTITY connector to Ping's Davinci platform serves an integral part of onboarding workflows. Using coreIDENTITY, you can easily perform identity data verification as part of a comprehensive KYC workflow. coreIDENTITY's KYC check can be performed in parallel or as part of a waterfall workflow to verify the consumer's PII data. In addition, the Ping connector can be used to perform attribute verification such as phone number verification, SSN verification, and address verification for workflows that require real-time verification of attributes. IDI has a full suite of Identity Data services to enable you to handle onboarding, transacting, and personalizing your consumer identity data while providing synthetic fraud signals.
+IDI's coreIDENTITY Connector provides a seamless method to implement low friction identity workflows for your customers. The connector enables input of claimed identity data and returns match results against our authoritative source data. The results include match/no-match/partial-match at the identity and attribute level. In addition, IDI returns synthetic ID and fraud flags which uses our suite of fraud checks and algorithms. The API will also return match scores, reason codes, data source classifications, and OFAC check.
+
+In addition to Identity Verification, the connector also returns current PII information for a claimed identity. Enterprises can use this capability to maintain freshness of consumer information, ensure continual KYC compliance, and implement solutions such as verified pre-fill.
+
+The DaVinci connector easily enables you to implement our KYC API's for Identity Verification or Identity Data Refresh as part of your identity workflows. It can be implemented post doc-verification to address the high 'indeterminant' signals from most doc auth processes. In addition, the API's allow for single attribue verification such as SSN or phone verification to enable step-up authorization or processes such as pre-verified pre-fill.
 
 # Setup
 
@@ -18,20 +22,23 @@ Configure your connector with the following Connector Settings and coreIDENTITY 
 
 There are 2 coreIDENTITY connector actions available:
 
-1. KYC Verification - Select this for identity verification.
-2. KYC Refresh - Select this to receive the most recent data.
+1. KYC Verification - Select this for option to verify consumer identities.
+2. KYC Refresh - Select this to receive the most recent name and contact information (e.g. phone, email, IP address, mailing address) for a given consumer.
 
-**GLBA**
+**GLBA (Gramm-Leach-Billey Act)**
 
-This is a string that specifies which GLBA selection you would like to make. Valid GLBA selections are specified in idiCORE's API documentation.
+The GLBA parameter in your request specifies the GLBA-approved use case that your organization is operating under. Valid GLBA selections are specified in idiCORE's API
+documentation.
 
-**DPPA**
+**DPPA (Drivers Privacy Protection Act)**
 
-This is a string that specifies which DPPA selection you would like to make. Valid DPPA selections are specified in idiCORE's API documentation.
+The DPPA parameter in your request specifies the DPPA-approved use case that your organization is operating under. Valid DPPA selections are specified in idiCORE's API
+documentation.
 
 **Raw JSON Payload**
 
-This is a JSON object used to pass in the data that you have for the customer to the connector. The JSON object should match the format specified in idiCORE's API documentation.
+This is a JSON object used to pass your search parameters (e.g. name, SSN, DOB) to the connector. The JSON object should match the format specified in idiCORE's API
+documentation.
 
 # coreIDENTITY Connector Details
 
