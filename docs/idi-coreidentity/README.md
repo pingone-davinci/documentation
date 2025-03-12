@@ -12,7 +12,7 @@ The DaVinci connector easily enables you to implement our KYC API's for Identity
 
 # Setup
 
-In DaVinci, add a coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/csh?context=davinci_adding_a_connection).
+In DaVinci, add a coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/davinci/connectors/davinci_adding_a_connector.html).
 Configure your connector with the following Connector Settings and coreIDENTITY Connector Details in order to successfully setup the coreIDENTITY connector.
 <br>
 
@@ -64,7 +64,7 @@ This is the Unique URL provided to you by idiCORE. If you haven't received your 
 
 ## Resources
 
-In DaVinci, add a coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/csh?context=davinci_adding_a_connection).  
+In DaVinci, add a coreIDENTITY connector. For help, see [Adding a connector](https://docs.pingidentity.com/davinci/connectors/davinci_adding_a_connector.html).  
 <br>
 
 # Using the connector in a flow
