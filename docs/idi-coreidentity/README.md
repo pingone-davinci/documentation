@@ -8,7 +8,7 @@ IDI's coreIDENTITY Connector provides a seamless method to implement low frictio
 
 In addition to Identity Verification, the connector also returns current PII information for a claimed identity. Enterprises can use this capability to maintain freshness of consumer information, ensure continual KYC compliance, and implement solutions such as verified pre-fill.
 
-The DaVinci connector easily enables you to implement our KYC API's for Identity Verification or Identity Data Refresh as part of your identity workflows. It can be implemented post doc-verification to address the high 'indeterminant' signals from most doc auth processes. In addition, the API's allow for single attribue verification such as SSN or phone verification to enable step-up authorization or processes such as pre-verified pre-fill.
+The DaVinci connector easily enables you to implement our KYC API's for Identity Verification or Identity Data Refresh as part of your identity workflows. It can be implemented post doc-verification to address the high 'indeterminant' signals from most doc auth processes. In addition, the API's allow for single attribute verification such as SSN or phone verification to enable step-up authorization or processes such as pre-verified pre-fill.
 
 # Setup
 
