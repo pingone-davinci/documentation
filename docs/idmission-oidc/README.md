@@ -64,7 +64,9 @@ You can choose to verify physical human identity from your users at any point us
 
 # Capabilities
 
-// Need to complete
+## Redirect to IDmission
+
+This capability performs a standard OIDC redirect to IDmission
 
 Reporting Portal
 
