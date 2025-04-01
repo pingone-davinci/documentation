@@ -13,23 +13,23 @@ The IDmission connector adds facial biometric identification to IAM onboarding a
 
 2. Enable Identity as a Service - this will generate a QRCode that will be used via the IDmission Connector on Ping.
 
-   ![idmission_image1](idmission_image1)
+   ![idmission_image1](idmission_image1.png)
 
 3. In the popup that follows you will be able to upload your Company Logo and a Landing page graphic. Examples are shown in the image below.
 
-   ![idmission_image2](idmission_image2)
+   ![idmission_image2](idmission_image2.png)
 
 4. Go to MyAccount -> OIDC Settings
 
-   ![idmission_image3](idmission_image3)
+   ![idmission_image3](idmission_image3.png)
 
 Check the Enable OIDC Connection box
 
-   ![idmission_image4](idmission_image4)
+   ![idmission_image4](idmission_image4.png)
 
 Enter the Return URL (from Ping Identity). Save your work.
 
-   ![idmission_image5](idmission_image5)
+   ![idmission_image5](idmission_image5.png)
 
 
 ## Resources
@@ -79,7 +79,7 @@ You can test each capability individually.
 
 1. Sign in to https://identity@idmission.com
 
-   ![idmission_image6](idmission_image6)
+   ![idmission_image6](idmission_image6.png)
 
 2. Scan the QR Code and the end user journey will be launched on your phone using a web app.
 3. See the results on the Identity portal https://identity@idmission.com
