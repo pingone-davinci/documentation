@@ -103,72 +103,86 @@ This capability includes one input property, a **HTTP Body (JSON)** that require
 Add the "check" value below to the "checks" array in the API call to return specific data for each type of verification. The more data that is provided on the end user, the more data will be returned to make better decisioning.
 
 **KYXStart IDV**
-check:kycPhoneBasic
+
+check: kycPhoneBasic
 * KYC 1+1 Basic + phone number verification + name-to-phone match
 * Includes fraud analysis (device, email, IP, phone, name)
 
 **KYXStart IDV Advanced**
-check:kycPhoneAdvanced
+
+check: kycPhoneAdvanced
 * KYC 2+2 Basic + phone number verification + name-to-phone match
 * More extensive fraud analysis and digital footprint evaluation
 
 **KYXStart KYC 1+1**
-check:kyc1+1Basic
+
+check: kyc1+1Basic
 * Name must match with at least 1 additional attribute (e.g., DOB, national ID, address) within a single data source
 * No fraud analysis included
 
 **KYXStart KYC 1+1 Advanced**
-check:kyc1+1Advanced
+
+check: kyc1+1Advanced
 * Name must match with at least 2 attributes within a single data source
 * No fraud analysis included
 
 **KYXStart KYC 2+2**
-check:kyc2+2Basic
+
+check: kyc2+2Basic
 * Name must match with at least 2 attributes across 2 distinct data sources
 * Same attributes may be matched in both sources
 * No fraud analysis included
 
 **KYXStart TrustFlow AML**
-check:aml
+
+check: aml
 * Anti-Money Laundering screening
 * Watchlist screening, news media screening, PEP checks
 * Used for regulatory compliance and financial risk mitigation
 
 **KYXStart Fraud Check**
-check:fraud
+
+check: fraud
 * Standalone fraud risk analysis
 * Includes email risk, phone verification, postal validation, IP analysis, fraud scoring
 
 **KYXStart Know Your Payee (KYP)**
-check:kypBasic
+
+check: kypBasic
 * Name must match bank account details (account number, routing number etc)
 * Optionally includes DOB, national ID, address
 * No fraud analysis included
 
 **KYXStart KYP Advanced**
-check:kypAdvanced
+
+check: kypAdvanced
 * Same as KYP Basic but includes comprehensive fraud analysis
 
 **KYXStart KYP Fraud**
-check:kypFraud
+
+check: kypFraud
 * Standalone fraud analysis for user’s bank account
 * No identity match with account required
 
 **KYXStart KYP Phone**
-check:kypPhoneBasic
+
+check: kypPhoneBasic
 * KYP Basic + phone verification + name-to-phone match
 * No fraud analysis included
 
 **KYXStart KYP Phone Advanced**
-check:kypPhoneAdvanced
+
+check: kypPhoneAdvanced
 * KYP Advanced + phone verification + name-to-phone match
 
 **KYXStart KYP Phone Fraud**
-check:kypPhoneFraud
+
+check: kypPhoneFraud
 * KYP Fraud + phone verification + name-to-phone match
 
 **KYXStart ProfileFill**
-* check:prefill Streamlines identity verification by using minimal user input—such as phone number, SSN, or date of birth—to automatically generate complete, verified personal profiles by aggregating data from multiple trusted sources, including social networks and digital services.
+
+* check: prefill Streamlines identity verification by using minimal user input—such as phone number, SSN, or date of birth—to automatically generate complete, verified personal profiles by aggregating data from multiple trusted sources, including social networks and digital services.
 
 ## Common solutions
 
