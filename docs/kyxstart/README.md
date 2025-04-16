@@ -98,6 +98,16 @@ This capability includes one input property, a **HTTP Body (JSON)** that require
     "ipAddress": "99.4.33.103"
 }
 ```
+**Note**: Add the "check" value below to the "checks" array in the API call to return specific data for each type of verification. The more data that is provided on the end user, the more data will be returned to make better decisioning.
+
+### Checks
+
+```
+KYXStart IDV
+check:kycPhoneBasic
+KYC 1+1 Basic + phone number verification + name-to-phone match
+Includes fraud analysis (device, email, IP, phone, name)
+```
 
 ## Common solutions
 
