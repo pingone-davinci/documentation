@@ -102,8 +102,11 @@ This capability includes one input property, a **HTTP Body (JSON)** that require
 ## Common solutions
 
 **Invalid API Key**: Double-check that you have entered the correct API key from your KYXStart account in the connector settings.
+
 **API Connection Issues**: Ensure that your network allows outbound connections to the KYXStart API endpoint.
+
 **Incorrect Input Data**: Verify that the data you are sending to the KYXStart connector in your flow matches the expected format and requirements of the KYXStart API (refer to their API documentation).
+
 **API Rate Limiting**: If you are making a large number of requests in a short period, you might encounter API rate limits imposed by KYXStart. Review their API documentation for information on rate limits and implement appropriate throttling mechanisms in your flow.
 
 ## Troubleshooting resources
