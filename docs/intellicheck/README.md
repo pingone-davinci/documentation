@@ -1074,4 +1074,4 @@ Output Schema:
 There is no configuration for this capability, however, you will need to download the standard [DaVinci flow](https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet) here (Select "Download Integration" on this listing and import it into your DaVinci environment). This flow MUST be used with the Intellicheck connector as it handles the polling and Challenge components for the webhook.
 
 # Support
-Please contact tap-global@pingidentity.com for support on the Intellicheck connector.
+Please contact tap-global@pingidentity.com for technical support on the Intellicheck connector.
