@@ -21,6 +21,7 @@ Before you begin, take a few moments to familiarize yourself with the developer 
 
 ## Requirements 
 To use the connector, you will need the following: 
+
 * Your Intellicheck API key
 * Your unique Intellicheck customer ID 
 
