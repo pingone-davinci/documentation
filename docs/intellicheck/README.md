@@ -92,8 +92,6 @@ This section includes three common use cases for authenticating a North American
 In this use case, the customer scans the back of a driver’s license. 
 * In **Document Type**, select **Driver’s License**
 * In **Signals**, select **ID Check**.
-  
-[Connector GENERAL tab screenshot TBD]
 
 ### Results 
 Results are provided in the ID Check response for the barcode data.
@@ -105,8 +103,6 @@ In this use case, the customer scans the back of a driver’s license and then t
 * In **Document Type**, select **Driver’s License**
 * In **Signals**, select **ID Check** and **OCR Scan**.
 
-[Connector GENERAL tab screenshot TBD] 
-
 ### Results 
 Results are provided in the ID Check response for the barcode data, and in the OCR response for the front-side data. 
 In the response data, look for the following properties: 
@@ -117,8 +113,6 @@ In the response data, look for the following properties:
 In this use case, the customer scans the back of a driver’s license and then takes a picture of the front of the license. Intellicheck compares the OCR text from the front of the license to the decoded text from the barcode. 
 * In **Document Type**, select **Driver’s License**
 * In **Signals**, select **ID Check**, **OCR Scan**, and **OCR Match**.
-
-[Connector GENERAL tab screenshot TBD]
 
 ### Results 
 Results are provided in the ID Check response for the barcode data, in the OCR response for the front-side data, and in the OCR Match response for the front-back comparison. 
