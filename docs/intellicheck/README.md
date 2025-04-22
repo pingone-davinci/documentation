@@ -35,12 +35,15 @@ This [DaVinci flow snippet](https://support.pingidentity.com/s/marketplace-integ
 **Important note**: The TTL setting within the Start Transaction capability must match the ```skpolling``` Poll Interval component time found within the "Polling" connector on the above flow. The Poll Interval field is represented in seconds, while the TTL field on the Start Transaction capability is minutes, so a conversion will have to take place to ensure they match (IE: 5 minutes = 300 seconds).
 
 Polling connector in Flow:
+
 ![intellicheckFlowPolling.png](intellicheckFlowPolling.png)
 
 ```skpolling``` component in Polling connector (You must click on the skpolling pill to launch this window:
+
 ![intellicheckPolling.png](intellicheckPolling.png)
 
 TTL field in connector:
+
 ![intellicheckTTL.png](intellicheckTTL.png)
 
 
