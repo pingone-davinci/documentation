@@ -83,6 +83,8 @@ The Intellicheck connector requires three bits of information to configure:
 * **Customer ID**: Unique Customer ID from your Intellicheck tenant.
 * **API Key**: API Key from your Intellicheck tenant.
 
+![intellicheckConfig.png](intellicheckConfig.png)
+
 # Use Cases 
 This section includes three common use cases for authenticating a North American driver’s license.
 
