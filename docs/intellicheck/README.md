@@ -25,11 +25,17 @@ To use the connector, you will need the following:
 * Your Intellicheck API key
 * Your unique Intellicheck customer ID 
 
-Contact your Intellicheck account executive or visit https://www.intellicheck.com/support 
+Contact your Intellicheck account executive or visit https://www.intellicheck.com/support
+
+### Standard DaVinci Flow
+This [DaVinci flow snippet](https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet) is **required** in order to use the Intellicheck connector as it properly handles the API responses, Webhook and challenge components. On this listing, select "Download Integration" in the left menu bar and import it into your DaVinci environment under the Flows tab.
+
+**Important note**: The TTL setting within the Start Transaction capability must match the ```skpolling``` Poll Interval component time found within the "Polling" connector on the above flow. The Poll Interval field is represented in seconds, while the TTL field on the Start Transaction capability is minutes, so a conversion will have to take place to ensure they match (IE: 5 minutes = 300 seconds).
+
+If there is a discrepancy in these values, the timeout won't behave properly between the Intellicheck API's and the DaVinci flow.
 
 # Setting up the connector 
 Add the connector in DaVinci as shown in [Adding a connector](https://docs.pingidentity.com/davinci/connectors/davinci_adding_a_connector.html). 
-
 
 # Start a Transaction 
 The connector submits a request to the Intellicheck API /start endpoint. The connector makes it easy to submit parameters such as document type, signals, and a redirect URL. Results are returned for use in your DaVinci flow.
@@ -57,9 +63,12 @@ To start a transaction, click the Intellicheck connector, and then select the **
 # Connector Settings
 
 ## Configuration Settings 
-TBD
+The Intellicheck connector requires three bits of information to configure:
+* **Base URL**: Base URL from your Intellicheck tenant. Note, please include the Protocol (https://), otherwise the connector will error.
+* **Customer ID**: Unique Customer ID from your Intellicheck tenant.
+* **API Key**: API Key from your Intellicheck tenant.
 
-# Use cases 
+# Use Cases 
 This section includes three common use cases for authenticating a North American driver’s license.
 
 ## Use case: Driver’s license barcode analysis 
@@ -1063,3 +1072,6 @@ Output Schema:
 ## Webhook Capability
 
 There is no configuration for this capability, however, you will need to download the standard [DaVinci flow](https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet) here (Select "Download Integration" on this listing and import it into your DaVinci environment). This flow MUST be used with the Intellicheck connector as it handles the polling and Challenge components for the webhook.
+
+# Support
+Please contact tap-global@pingidentity.com for support on the Intellicheck connector.
