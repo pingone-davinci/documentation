@@ -216,6 +216,7 @@ Output Schema:
 ```
 
 ## Get Result Capability
+Description: Polling mechanism for obtaining resultes within 10 minutes of end user completing Capture process.
 
 Input Schema:
 ```
@@ -1055,3 +1056,7 @@ Output Schema:
   }
 }
 ```
+
+## Webhook Capability
+
+There is no configuration for this capability, however, you will need to download the standard [DaVinci flow](https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet) here (Select "Download Integration" on this listing and import it into your DaVinci environment). This flow MUST be used with the Intellicheck connector as it handles the polling and Challenge components for the webhook.
