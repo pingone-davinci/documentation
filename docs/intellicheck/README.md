@@ -41,11 +41,13 @@ To start a transaction, click the Intellicheck connector, and then select the **
 * **Error Redirect URL**: An error redirect can occur if the end user does not complete the capture process, for example, if the end user declines camera access. Another example is if the end user does not complete the capture process in time, as defined by the time-to-live (TTL) parameter. After an error, this URL loads in the browser, redirecting the end user. Use HTTPS in the URL with a fully qualified domain.
 * **TTL**: Time-to-live, also known as the timeout value. Values are in minutes. The default is 10 minutes. The maximum is 30 minutes. IMPORTANT: Ensure that this TTL value matches the Poll Interval in the DaVinci polling component, which is part of the templated Intellicheck flow.
 * **Document Type**. Required. The three Document Type values (Driver’s License, Passport, and Other) are categories for most federal, state, and international documents used as primary identification. You can select one Document Type per transaction.
+  
   * **Driver’s License**: Select this for a North American driver's license, including REAL ID, enhanced ID, learner permit, US military ID, and non-driver state identity card. This can include the United States, Canada, and Mexico identification.
   * **Passport**: Select this for a passport booklet or visa.
   * **Other**: Select this for an international passport card, a trusted traveler card, or a permanent resident card. 
 * **Device Validation**: If toggled off (default), no device validation results are returned. If toggled on, device validation results are returned. Device validation includes customer quality checks such as device fingerprint, IP address, and phone validation.
-* **Signals**: Required. Signals are the distinct validation checks to be performed. Each signal represents one check. Select one or more signals to customize an identity verification workflow. Signals and document types share some dependencies. You must understand which ones go together. See Document Types and Signals. If you select more than one signal, only certain combinations are allowed. See Multi-Signal Requests for more information. 
+* **Signals**: Required. Signals are the distinct validation checks to be performed. Each signal represents one check. Select one or more signals to customize an identity verification workflow. Signals and document types share some dependencies. You must understand which ones go together. See Document Types and Signals. If you select more than one signal, only certain combinations are allowed. See Multi-Signal Requests for more information.
+  
   * **ID Check**: Barcode analysis on North American driver's licenses, including real IDs and extended IDs.
   * **Document Liveness**: Document probability checks for on-screen presentation, printed copy, and portrait substitution.
   * **OCR Scan**: OCR scan on passport books, passport cards, and other forms of identification.
