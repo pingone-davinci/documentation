@@ -27,18 +27,18 @@ To use the connector, you will need the following:
 
 Contact your Intellicheck account executive or visit https://www.intellicheck.com/support
 
-### Standard DaVinci Flow
+### Standard DaVinci Flow Snippet
 This [DaVinci flow snippet](https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet) is **required** in order to use the Intellicheck connector as it properly handles the API responses, Webhook and challenge components. On this listing, select "Download Integration" in the left menu bar and import it into your DaVinci environment under the Flows tab.
 
 ![intellicheckFlowImage.png](intellicheckFlowImage.png)
 
 **Important note**: The TTL setting within the Start Transaction capability must match the ```skpolling``` Poll Interval component time found within the "Polling" connector on the above flow. The Poll Interval field is represented in seconds, while the TTL field on the Start Transaction capability is minutes, so a conversion will have to take place to ensure they match (IE: 5 minutes = 300 seconds).
 
-Polling connector in Flow:
+Polling connector in Flow snippet:
 
 ![intellicheckFlowPolling.png](intellicheckFlowPolling.png)
 
-```skpolling``` component in Polling connector (You must click on the skpolling pill to launch this window:
+```skpolling``` component in Polling connector (You must click on the skpolling pill to launch this window):
 
 ![intellicheckPolling.png](intellicheckPolling.png)
 
