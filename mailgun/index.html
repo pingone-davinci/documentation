@@ -1,0 +1,683 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/mailgun/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Mailgun Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mailgun-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mailgun Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="mailgun-connector">Mailgun Connector<a class="headerlink" href="#mailgun-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Matthew Teets</p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h1>
+<p>The Mailgun connector allows users to send emails, configure mailing lists, and retrieve domain event statistics within a flow.</p>
+<h3 id="capabilities">Capabilities:<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h3>
+<h5 id="message-capabilities">Message Capabilities:<a class="headerlink" href="#message-capabilities" title="Permanent link"> ¶</a></h5>
+<ul>
+<li><code>Send Message</code></li>
+</ul>
+<h5 id="mailing-list-capabilities">Mailing List Capabilities:<a class="headerlink" href="#mailing-list-capabilities" title="Permanent link"> ¶</a></h5>
+<ul>
+<li><code>Create Mailing List</code></li>
+<li><code>View Mailing List</code></li>
+<li><code>Update Mailing List</code></li>
+<li><code>Delete Mailing List</code></li>
+</ul>
+<h5 id="mailing-list-member-capabilities">Mailing List Member Capabilities:<a class="headerlink" href="#mailing-list-member-capabilities" title="Permanent link"> ¶</a></h5>
+<ul>
+<li><code>Create Mailing List Member</code></li>
+<li><code>View Mailing List Member</code></li>
+<li><code>Update Mailing List Member</code></li>
+<li><code>Delete Mailing List Member</code></li>
+</ul>
+<h5 id="statistic-capabilities">Statistic Capabilities:<a class="headerlink" href="#statistic-capabilities" title="Permanent link"> ¶</a></h5>
+<ul>
+<li><code>Domain Stats</code></li>
+</ul>
+<h5 id="custom-capability">Custom Capability:<a class="headerlink" href="#custom-capability" title="Permanent link"> ¶</a></h5>
+<ul>
+<li><code>Make Custom API Call</code></li>
+</ul>
+<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h1>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h2>
+<h4 id="for-information-and-additional-help-see-the-following-sections-of-the-mailgun-api-documentation">For information and additional help, see the following sections of the Mailgun API documentation:<a class="headerlink" href="#for-information-and-additional-help-see-the-following-sections-of-the-mailgun-api-documentation" title="Permanent link"> ¶</a></h4>
+<p>Mailgun Capabilities API Documentation:</p>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/api_reference.html">Mailgun API Reference</a></li>
+</ul>
+<p>Message Capabilities:</p>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/api-sending.html#sending">Send Message</a></li>
+</ul>
+<p>Mailing List Capabilities:</p>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=POST%20/lists-,Creates,-a%20new%20mailing">Create Mailing List</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=/%3Caddress%3E-,Returns,-a%20single%20mailing">View Mailing List</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=PUT%20/lists/%3Caddress%3E-,Update,-mailing%20list%20properties">Update Mailing List</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=DELETE%20/lists/%3Caddress%3E-,Deletes,-a%20mailing%20list">Delete Mailing List</a></li>
+</ul>
+<p>Mailing List Member Capabilities:</p>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=lists/%3Caddress%3E/members-,Adds,-a%20member%20to">Create Contact</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=address%3E/members/%3Cmember_address%3E-,Retrieves,-a%20mailing%20list">View Contact</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=address%3E/members/%3Cmember_address%3E-,Updates,-a%20mailing%20list">Update Contact</a></li>
+<li><a href="https://documentation.mailgun.com/en/latest/api-mailinglists.html#mailing-lists:~:text=address%3E/members/%3Cmember_address%3E-,Delete,-a%20mailing%20list">Delete Contact</a></li>
+</ul>
+<p>Statistics Capabilities:</p>
+<ul>
+<li><a href="https://documentation.mailgun.com/en/latest/api-stats.html#stats:~:text=domain%3E/stats/total-,Returns,-total%20stats%20for">Domain Stats</a></li>
+</ul>
+<p>DaVinci Documentation:</p>
+<ul>
+<li><a href="https://portal.singularkey.com/dashboard">Login to DaVinci</a></li>
+<li><a href="https://docs.pingidentity.com/bundle/davinci/page/kaf1643656046958.html">Import a flow from the Flow Library</a></li>
+<li><a href="https://docs.pingidentity.com/bundle/davinci/page/srw1637101394177.html">Add Desired connector</a></li>
+</ul>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<h4 id="to-use-the-mailgun-connector">To use the Mailgun connector:<a class="headerlink" href="#to-use-the-mailgun-connector" title="Permanent link"> ¶</a></h4>
+<ul>
+<li>You must have access to the Mailgun dashboard.</li>
+<li>Sign up for an account <a href="https://signup.mailgun.com/new/signup">here</a></li>
+<li>You must have a valid API key in order to make any calls to the Mailgun API.</li>
+<li>Find your Mailgun API key <a href="https://app.mailgun.com/app/account/security/api_keys">here</a><ul>
+<li>The API key is also called the <b> Private API Key.</li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-the-connector">Setting up the connector<a class="headerlink" href="#setting-up-the-connector" title="Permanent link"> ¶</a></h2>
+<h4 id="mailgun-connector-general-settings">Mailgun Connector General Settings:<a class="headerlink" href="#mailgun-connector-general-settings" title="Permanent link"> ¶</a></h4>
+<ul>
+<li>Navigate to the Mailgun connector via the <em><strong>Connections</strong></em> tab in DaVinci.</li>
+<li>Select <em><strong>New Connection</strong></em> in the upper right-hand corner.</li>
+<li>Search for the desired connector (in this case, Mailgun).</li>
+<li>Select the Mailgun connector.</li>
+<li>Once the Mailgun connector has been added the <em><strong>Your Connections</strong></em> list, click on the connector.</li>
+<li>From here you will see three text fields labeled <strong>Domain</strong>, <strong>API Key</strong>, and <strong>API Version</strong>.</li>
+<li><strong>Domain</strong>:<ul>
+<li>This text field is for your custom Mailgun domain.</li>
+<li>E.g. <code>DOMAIN_NAME.mailgun.org</code></li>
+<li>To create/verify your own custom domain follow the steps provided <a href="https://help.mailgun.com/hc/en-us/articles/203637190-How-Do-I-Add-or-Delete-a-Domain-">here</a></li>
+</ul>
+</li>
+<li><strong>Mailgun API Key</strong>:<ul>
+<li>Before pasting your API key into the text field you must first base64 encode the key with 'api'</li>
+<li>E.g. <code>echo -n 'api:qnbxdMY444lF2gwM3fDx'| base64</code> = <code>YXBpOnFuYnhkTVk0NDRsRjJnd00zZkR4</code><ul>
+<li>The above command is for the Mac Terminal</li>
+</ul>
+</li>
+<li>Copy and paste your base64 encoded API Key into the text field.</li>
+</ul>
+</li>
+<li><strong>Mailgun API Version</strong>:<ul>
+<li>This field will already be filled out.</li>
+<li>Only change this if the API version is out of date.</li>
+</ul>
+</li>
+<li><code>Click Apply</code></li>
+</ul>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<h3 id="some-mailgun-connector-use-cases">Some Mailgun connector use cases:<a class="headerlink" href="#some-mailgun-connector-use-cases" title="Permanent link"> ¶</a></h3>
+<ul>
+<li>Send a message with multiple recipients from a flow.</li>
+<li>Creating a new member inside of a specified mailing list.</li>
+<li>Retrieve all mailing statistics for a specified event and time frame.</li>
+<li>Create a custom API Call to Mailgun.</li>
+</ul>
+<h3 id="mailgun-api-request-requirements">Mailgun API Request Requirements:<a class="headerlink" href="#mailgun-api-request-requirements" title="Permanent link"> ¶</a></h3>
+<ul>
+<li>You must have a fully functioning and configured Mailgun account and control panel.</li>
+<li>Your Domain must be fully verified with Mailgun.</li>
+<li>You must have a base64 encoded API key</li>
+<li>This API key will be ≈ 36 bytes long</li>
+<li>The <strong>Domain</strong>, <strong>Mailgun API Key</strong>, and <strong>Mailgun API Version</strong> text fields must be filled in the connector settings.</li>
+</ul>
+<hr />
+<h3 id="simple-use-case-send-a-message-with-multiple-recipients-from-a-flow">Simple Use Case - send a message with multiple recipients from a flow:<a class="headerlink" href="#simple-use-case-send-a-message-with-multiple-recipients-from-a-flow" title="Permanent link"> ¶</a></h3>
+<ul>
+<li>Navigate to the flow studio and in the upper right-hand corner select <em><strong>Create New Flow</strong></em></li>
+<li>Select <code>Blank Flow</code>.</li>
+<li>Insert the desired name and description and click <code>Create</code>.</li>
+<li>Once inside the flow sandbox add the Mailgun connector and select the <code>Send Message</code> capability.</li>
+<li>This Mailgun capability has eight capability level properties that can be filled out 1 of 2 ways:</li>
+<li>Manually inserting the desired values into the respective text fields.</li>
+<li>Selecting the appropriate output variables from a previous connector via the angle bracket button ( <strong>{}</strong> ).<ul>
+<li>E.g. an HTTP connector with an HTML form that prompts the user for the desired values.</li>
+</ul>
+</li>
+<li><strong>Capability Level Properties:</strong></li>
+<li><code>Sender Name</code> is simply the name of the sender.</li>
+<li><code>From Address</code> is the email address of the sender.<ul>
+<li>This email address must contain the verified mailgun domain, e.g. <code>davinci@YOUR_DOMAIN.mailgun.com</code></li>
+</ul>
+</li>
+<li><code>To Address</code> is the email address of the recipient(s).<ul>
+<li>This can contain multiple email addresses.</li>
+<li>If multiple emails are used each email must be separated by a comma.</li>
+</ul>
+</li>
+<li><code>Subject</code> is the subject if the message being sent.</li>
+<li><code>Message</code> is the text body of the message.</li>
+<li><code>Tag</code> is a user-defined outgoing message identifier.<ul>
+<li><strong>This property is optional</strong></li>
+</ul>
+</li>
+<li><code>BCC</code> same as <code>To</code> but with typical bcc functionality.<ul>
+<li>This can contain multiple email addresses.</li>
+<li>If multiple emails are used each email must be separated by a comma.</li>
+<li><strong>This property is optional</strong></li>
+</ul>
+</li>
+<li><code>CC</code> same as <code>To</code> but with typical cc functionality.<ul>
+<li>This can contain multiple email addresses.</li>
+<li>If multiple emails are used each email must be separated by a comma.</li>
+<li><strong>This property is optional</strong></li>
+</ul>
+</li>
+<li>Click <code>Apply</code></li>
+<li>The Mailgun connector does not generate any output on its own.</li>
+<li>To see the HTTP response object returned by the Mailgun API you can do the following:<ul>
+<li>Attach an HTTP block after your Mailgun connector.</li>
+<li>Click on the Custom HTML Message capability.</li>
+<li>In the <em><strong>Message</strong></em> text area select the circular angel bracket button ( <strong>{}</strong> )</li>
+<li>From the dropdown, select the Mailgun connector option with the <code>Send Message</code> capability listed.</li>
+<li>Choose the <code>output (object)</code> by clicking <code>(+)</code>.</li>
+<li>Click <code>Apply</code></li>
+</ul>
+</li>
+<li>In the upper right hand corner click Save, Deploy, and Run.</li>
+</ul>
+<hr />
+<h3 id="simple-use-case-creating-a-new-member-inside-of-a-specified-mailing-list">Simple Use Case - creating a new member inside of a specified mailing list.:<a class="headerlink" href="#simple-use-case-creating-a-new-member-inside-of-a-specified-mailing-list" title="Permanent link"> ¶</a></h3>
+<ul>
+<li>Add the Mailgun connector to the desired flow and select the <code>Create Mailing List Member</code> capability.</li>
+<li>This Mailgun capability has six capability level properties that can be filled out 1 of 2 ways:</li>
+<li>Manually inserting the desired values into the respective text fields.</li>
+<li>Selecting the appropriate output variables from a previous connector via the angle bracket button ( <strong>{}</strong> ).<ul>
+<li>E.g. an HTTP connector with an HTML form that prompts the user for the desired values.</li>
+</ul>
+</li>
+<li><strong>Capability Level Properties:</strong></li>
+<li><code>Mailing List Address</code> is the email address for the desired mailing list.</li>
+<li><code>Member Address</code> is the valid email address for the new member being added.</li>
+<li><code>Member Name</code> is the name of the new member.<ul>
+<li><strong>This property is optional</strong></li>
+</ul>
+</li>
+<li><code>Member Attributes</code> is a set of arbitrary attributes that can be assigned to the new member.
+      | Key|Value|
+      |---|---|
+      | age| 21|
+      | gender| male|
+      | company| Ping Identity|<ul>
+<li><strong>This property is optional</strong></li>
+</ul>
+</li>
+<li><code>Member Subscription Status</code> is used to set the member as subscribed or unsubscribed by typing <strong>yes</strong> or <strong>no</strong>.<ul>
+<li>If left blank the default is <strong>yes</strong>.</li>
+</ul>
+</li>
+<li><code>Member Upsert Permissions</code> if set to <strong>yes</strong> it allows updating/inserting new info if the member being added already
+      exists. If set to <strong>no</strong> it raises a duplication error.<ul>
+<li>If left blank the default is <strong>no</strong>.</li>
+</ul>
+</li>
+<li>Click <code>Apply</code></li>
+<li>The Mailgun connector does not generate any output on its own.</li>
+<li>To see the HTTP response object returned by the Mailgun API you can do the following:<ul>
+<li>Add an HTTP block after your Mailgun connector.</li>
+<li>Click on the Custom HTML Message capability.</li>
+<li>In the <em><strong>Message</strong></em> text area select the circular angel bracket button ( <strong>{}</strong> )</li>
+<li>From the dropdown, select the Mailgun connector option with the <code>Create Mailing List Member</code> capability listed.</li>
+<li>Choose the <code>output (object)</code> by clicking <code>(+)</code>.</li>
+<li>Click <code>Apply</code></li>
+</ul>
+</li>
+<li>In the upper right hand corner click Save, Deploy, and Run.</li>
+</ul>
+<hr />
+<h3 id="use-case-create-custom-api-call">Use Case - create custom API call:<a class="headerlink" href="#use-case-create-custom-api-call" title="Permanent link"> ¶</a></h3>
+<ul>
+<li>Add the Mailgun connector to the desired flow and select the <code>Make Custom API Call</code> capability.</li>
+<li>This Mailgun capability has 5 capability level properties that can be filled out 1 of 2 ways:</li>
+<li>Manually inserting the desired values into the respective text fields.</li>
+<li>Selecting the appropriate output variables from a previous connector via the angle bracket button ( <strong>{}</strong> ).<ul>
+<li>E.g. an HTTP connector with an HTML form that prompts the user for the desired values.</li>
+</ul>
+</li>
+<li><strong>Capability Level Properties:</strong></li>
+<li><strong>Endpoint</strong>:<ul>
+<li>Used to call a specific operation from inside the Mailgun API.<ul>
+<li>E.g. <code>/lists, /DOMAIN/stats, /DOMAIN/messages, etc.</code></li>
+<li>Visit the <a href="https://documentation.mailgun.com/en/latest/api_reference.html">Mailgun API Documentation</a> for more endpoints.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Method</strong>:<ul>
+<li>Specifies the HTTP CRUD request.<ul>
+<li>E.g. <code>GET, POST, PUT, DELETE, PATCH.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Query Parameters</strong>:<ul>
+<li>The key-value pairs that appear after the question mark in the URL.<ul>
+<li>E.g. <code>event=delivered&amp;duration=1h</code>, <code>address=mailing.list@domain.com</code>, <code>address=customer@email.com</code>, etc...</li>
+</ul>
+</li>
+<li><strong>This property is optional if not required</strong></li>
+</ul>
+</li>
+<li><strong>Headers</strong>:<ul>
+<li>Key-value pairs that represent the meta-data associated with the Mailgun API request and response.<ul>
+<li>E.g. <code>Content-Type: application/json</code></li>
+</ul>
+</li>
+<li><strong>This property is optional if not required</strong></li>
+</ul>
+</li>
+<li><strong>Body</strong>:<ul>
+<li>Used to manually craft the raw JSON request body for the Mailgun API.</li>
+<li><strong>This property is optional if not required</strong></li>
+</ul>
+</li>
+<li>The Mailgun connector does not generate any output on its own.</li>
+<li>To see the information retrieved by the Mailgun connector you can do the following:<ul>
+<li>Add an HTTP block after your Mailgun connector.</li>
+<li>Click on the Custom HTML Message capability.</li>
+<li>In the <em><strong>Message</strong></em> text area select the circular angel bracket button ( <strong>{}</strong> )</li>
+<li>From the dropdown, select the Mailgun connector.</li>
+<li>Choose from any of the offered successful response output variables.<ul>
+<li>rawResponse</li>
+<li>statusCode</li>
+<li>headers</li>
+</ul>
+</li>
+<li><code>Click apply</code></li>
+</ul>
+</li>
+<li>In the upper right hand corner click Save, Deploy, and Run.</li>
+</ul>
+<hr />
+<h1 id="capabilities_1">Capabilities<a class="headerlink" href="#capabilities_1" title="Permanent link"> ¶</a></h1>
+<p>Leave this section blank: it will be generated automatically</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

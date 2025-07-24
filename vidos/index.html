@@ -1,0 +1,936 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/vidos/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Vidos Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vidos-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vidos Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Use Cases:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-preparing-for-integration-in-davinci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Preparing for Integration in DaVinci
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-adding-the-vidos-connector-in-davinci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Adding the Vidos Connector in DaVinci
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-the-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the connector
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring the connector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-the-vidos-connector-in-davinci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the Vidos Connector in DaVinci
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-setting-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector Setting Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-connector-in-a-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the connector in a flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the connector in a flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vidos-resolver-decentralized-identifier-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vidos Resolver: Decentralized Identifier Resolution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vidos Resolver: Decentralized Identifier Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-successful-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Successful Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vidos-verifier-verifiable-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vidos Verifier: Verifiable Credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vidos-verifier-verifiable-presentations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vidos Verifier: Verifiable Presentations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing capabilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="vidos-connector">Vidos Connector<a class="headerlink" href="#vidos-connector" title="Permanent link"> ¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h2>
+<p>The Vidos Connector is a powerful tool designed to integrate Vidos' decentralized identity services with PingOne DaVinci's no-code orchestration. This connector helps enterprises to seamlessly incorporate Vidos Verifier and Universal Resolver services into identity management workflows, enabling a broad set of credential use cases. Enhance security and privacy by leveraging decentralized identity and verifiable credentials in your flows while delivering improved user experience.</p>
+<h2 id="main-use-cases">Main Use Cases:<a class="headerlink" href="#main-use-cases" title="Permanent link"> ¶</a></h2>
+<ul>
+<li><strong>Verifiable Credential Verification:</strong> Integrate the Vidos Verifier to check with the issuer that the credentials are valid credentials in line with W3C standards and Anoncreds, ensuring that credentials are legitimate and unaltered.</li>
+<li><strong>Decentralized Identity Resolution:</strong> Use the Vidos Universal Resolver to resolve DIDs across <a href="https://go.vidos.id/did-methods">multiple methods</a>, enabling secure and decentralized identity verification within enterprise systems.</li>
+<li><strong>Extending PingOne Neo:</strong> Extend the capabilities of PingOne Neo to accept verifiable credentials from Ping Identity and many other issuers from any supported Vidos DID Method.</li>
+<li><strong>Futureproof Flows with Vidos Services:</strong> The connector is built to support future feature releases, meaning new service capabilities and versions are instantly available in the Vidos Connector.</li>
+</ul>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h2>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h3>
+<p>For detailed information and assistance with setup, refer to the following sections of the Vidos documentation:</p>
+<ul>
+<li><a href="https://go.vidos.id/ping-get-started-with-the-universal-resolver">Getting Started with Vidos Universal Resolver</a></li>
+<li><a href="https://go.vidos.id/ping-using-the-vidos-verifier">Using the Vidos Verifier</a></li>
+</ul>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h3>
+<p>To use the Vidos Connector, you'll need:</p>
+<ul>
+<li><strong>Ping Identity DaVinci Account:</strong> A valid account with access to DaVinci's flow creation and management features.</li>
+<li><strong>Vidos API Access:</strong> API keys with permissions for accessing the Vidos Universal Resolver or Verifier services. You can create an account <a href="https://dashboard.vidos.id/register">here</a> for free. Learn more about <a href="https://go.vidos.id/ping-iam-configuration">IAM configuration</a>.</li>
+<li><strong>Basic Knowledge of DIDs and VCs:</strong> Familiarity with decentralized identifiers and verifiable credentials is recommended.</li>
+</ul>
+<h3 id="step-1-preparing-for-integration-in-davinci">Step 1: Preparing for Integration in DaVinci<a class="headerlink" href="#step-1-preparing-for-integration-in-davinci" title="Permanent link"> ¶</a></h3>
+<p>Before adding the Vidos Connector in DaVinci, ensure the following prerequisites are met:</p>
+<ol>
+<li><strong>Obtain Vidos API Credentials:</strong><ul>
+<li>Log in to your Vidos account.</li>
+<li>Navigate to the API keys section and generate a new key for use with the Universal Resolver and/or Verifier services.</li>
+<li>Enable the appropriate policies to ensure the API key is authorized to access the resolver or verifier services.</li>
+<li>(Optional) You can add or edit inline permissions to configure additional permissions to be able resolve and verify.</li>
+<li>Save the API key securely. This will be needed during the Connector configuration.</li>
+</ul>
+</li>
+<li><strong>Set Up Your Vidos Services:</strong><ul>
+<li>Ensure that you have configured the resolver and/or verifier services you intend to use in the Vidos dashboard.</li>
+<li>Obtain the verifier and/or resolver instance endpoints. These will be needed in your flows.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-adding-the-vidos-connector-in-davinci">Step 2: Adding the Vidos Connector in DaVinci<a class="headerlink" href="#step-2-adding-the-vidos-connector-in-davinci" title="Permanent link"> ¶</a></h3>
+<p>Follow these steps to integrate the Vidos Connector in DaVinci:</p>
+<ol>
+<li><strong>Log in to DaVinci:</strong> Access your <a href="https://console.pingone.com/davinci/index.html">DaVinci dashboard</a>.</li>
+<li><strong>Navigate to the Connectors Section:</strong> Go to the <a href="https://console.pingone.com/davinci/index.html#/connections">"Connectors" tab</a>.</li>
+<li><strong>Add the Vidos Connector:</strong></li>
+<li>Click "Add Connector" and search for "Vidos" or locate the Vidos Connector in the Service Connectors section.</li>
+<li>Click to view the Connector capabilities and add it to you Connectors.</li>
+<li>Accept the default name or rename the connection as required, then click Create.</li>
+<li>The Vidos Connector should now be visible in your Connectors list.</li>
+<li><strong>Review the Vidos Connector:</strong> Go to the "Connectors" tab and search for "Vidos".</li>
+</ol>
+<h2 id="configuring-the-connector">Configuring the connector<a class="headerlink" href="#configuring-the-connector" title="Permanent link"> ¶</a></h2>
+<p>In DaVinci, after adding the Vidos Connector, you’ll need to configure it by setting the following parameters:</p>
+<h3 id="configuring-the-vidos-connector-in-davinci">Configuring the Vidos Connector in DaVinci<a class="headerlink" href="#configuring-the-vidos-connector-in-davinci" title="Permanent link"> ¶</a></h3>
+<p>Follow these steps to configure the Vidos Connector in DaVinci:</p>
+<ol>
+<li><strong>Log in to DaVinci:</strong> Access your <a href="https://console.pingone.com/davinci/index.html">DaVinci dashboard</a>.</li>
+<li><strong>Navigate to the Connectors Section:</strong> Go to the <a href="https://console.pingone.com/davinci/index.html#/connections">"Connectors" tab</a> and search for "Vidos". Note: If you have not yet added the connector, see Setup instructions above.</li>
+<li><strong>Configure General Settings:</strong></li>
+<li>Vidos API Key: Enter your Vidos API Key obtained from <a href="https://dashboard.vidos.id/iam/api-keys">Vidos</a> with appropriate resolver or verifier permissions.</li>
+<li>Verifier Version: Select the verifier version to use when verifying credentials and presentations, or accept default.</li>
+<li><strong>Apply Your Settings:</strong> Click Apply to save your settings.
+   You can now add the Connector in a flow to verify credentials and presentations or resolve DIDs.</li>
+</ol>
+<h3 id="connector-setting-details">Connector Setting Details<a class="headerlink" href="#connector-setting-details" title="Permanent link"> ¶</a></h3>
+<p>The following settings are configurable in the Connector Settings:</p>
+<ul>
+<li>Vidos API Key: The Vidos API Key can be obtained from <a href="https://dashboard.vidos.id/iam/api-keys">Vidos</a>. It should have appropriate resolver or verifier permissions.</li>
+<li>Verifier Version: Select the verifier version to use when verifying credentials and presentations, or accept default.
+  Note: The Vidos Connector can be configured to use Vidos Resolver and Verifier services individually or together. You can also configure multiple instances of the Connector to use different configurations or instance endpoints, or to separate functionality.</li>
+</ul>
+<h2 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h2>
+<p>Once the Vidos Connector is configured, it can be used in various identity management flows within DaVinci:</p>
+<h3 id="vidos-resolver-decentralized-identifier-resolution">Vidos Resolver: Decentralized Identifier Resolution<a class="headerlink" href="#vidos-resolver-decentralized-identifier-resolution" title="Permanent link"> ¶</a></h3>
+<p>To integrate the Universal Resolver, for example, to verify the authenticity of a user’s DID during the login process, follow these steps:</p>
+<ol>
+<li>Add the Vidos Connector to your flow.</li>
+<li>Select the connector to edit the configuration.</li>
+<li>Select the capability to use in your flow: “Universal Resolver - Resolve DID" capability as the action.</li>
+<li>Configure the following fields, preferably using global or flow variables obtained in your flow:</li>
+<li><strong>Resolver Instance URL:</strong> This field should contain a Vidos Resolver endpoint value (e.g. <code>https://&lt;resolver-name&gt;.resolver.service.&lt;region&gt;.vidos.id</code>) for an instance that the API Key has permission to access. The instance permissions and configuration policies and can be managed via the Vidos Dashboard. It is recommended to obtain this value from a Global or Flow Instance Variable.</li>
+<li><strong>Decentralized Identifier:</strong> This field should contain a DID in the format <code>did:&lt;did-method&gt;:&lt;method-specific-id&gt;</code> (e.g. <code>did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK</code>.</li>
+<li>Apply the configuration to the connector.</li>
+<li>The connector outputs can be used in subsequent connectors in your flow.
+   The key output fields are:</li>
+<li><strong>success</strong> (boolean): Indicates if the resolution was successful</li>
+<li><strong>output</strong> (object): Contains the resolver response<ul>
+<li><strong>rawResponse</strong> (object): The DID resolution result</li>
+<li><strong>didResolutionMetadata</strong>: Resolution metadata including content type and query details</li>
+<li><strong>didDocument</strong>: The resolved DID document containing identity information (null if resolution fails)</li>
+<li><strong>didDocumentMetadata</strong>: Additional metadata about the DID document</li>
+<li><strong>statusCode</strong> (number): HTTP status code (e.g., 200 for success)</li>
+<li><strong>headers</strong> (object): Response headers</li>
+</ul>
+</li>
+<li><strong>error</strong> (object): Present when resolution fails<ul>
+<li><strong>code</strong> (string): Error code (e.g., "resolverInstanceResponseError")</li>
+<li><strong>message</strong> (string): Human-readable error description</li>
+<li><strong>details</strong> (array): Detailed error information including raw response</li>
+<li><strong>httpResponseCode</strong> (number): HTTP error code</li>
+</ul>
+</li>
+</ol>
+<h4 id="example-successful-response">Example Successful Response<a class="headerlink" href="#example-successful-response" title="Permanent link"> ¶</a></h4>
+<p>The success field will be true and didDocument will contain the resolved identity information:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;rawResponse&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;didDocument&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;service&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;statusCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>More examples of the Universal Resolver can be found at <a href="https://go.vidos.id/ping-connector-use-cases">PingOne DaVinci Connector Use Cases</a></p>
+<h3 id="vidos-verifier-verifiable-credentials">Vidos Verifier: Verifiable Credentials<a class="headerlink" href="#vidos-verifier-verifiable-credentials" title="Permanent link"> ¶</a></h3>
+<p>To integrate the Vidos Verifier to validate verifiable credentials, follow these steps:</p>
+<ol>
+<li>Add the Vidos Connector to your flow.</li>
+<li>Select the connector to edit the configuration.</li>
+<li>Select the capability "Verifier - Verify Credential" as the action.</li>
+<li>Configure the following fields, preferably using global or flow variables obtained in your flow:</li>
+<li><strong>Verifier Endpoint</strong> This field should contain a Vidos Verifier endpoint value (e.g., <code>https://&lt;verifier-name&gt;.verifier.service.&lt;region&gt;.vidos.id</code>) for an instance that the API Key has permission to access. The instance permissions and configuration policies can be managed via the Vidos Dashboard. It is recommended to obtain this value from a Global or Flow Instance Variable.</li>
+<li><strong>Verifiable Credential:</strong> This field should contain a verifiable credential object (usually passed in from a flow variable or input value), conforming to the W3C Verifiable Credentials Data Model.</li>
+<li><strong>Fields</strong>: These are additional options to send to the Vidos Verifier API, for example:<ul>
+<li>Key: <code>returnCredential</code></li>
+<li>Value: <code>true</code>
+   See <a href="https://go.vidos.id/docs-api-verifier">Vidos Verifier API docs</a> for more information.</li>
+</ul>
+</li>
+<li>Apply the configuration to the connector.</li>
+<li>The connector outputs can be used in subsequent connectors in your flow.
+   The key output fields are:</li>
+<li><strong>success</strong> (boolean): Indicates if verification was successful</li>
+<li><strong>output</strong> (object):<ul>
+<li><strong>results</strong> (array): Detailed check results</li>
+<li><strong>checks</strong> (array): List of verification checks performed</li>
+<li><strong>statusCode</strong> (number | null): HTTP status code</li>
+</ul>
+</li>
+<li><strong>error</strong> (object): Present when verification fails<ul>
+<li><strong>code</strong> (string): Error code</li>
+<li><strong>message</strong> (string): Error description</li>
+<li><strong>httpResponseCode</strong> (number): HTTP error code</li>
+</ul>
+</li>
+</ol>
+<h3 id="vidos-verifier-verifiable-presentations">Vidos Verifier: Verifiable Presentations<a class="headerlink" href="#vidos-verifier-verifiable-presentations" title="Permanent link"> ¶</a></h3>
+<p>To integrate the Vidos Verifier to validate verifiable credentials, follow these steps:</p>
+<ol>
+<li>Add the Vidos Connector to your flow.</li>
+<li>Select the connector to edit the configuration.</li>
+<li>Select the capability "Verifier - Verify Presentation" as the action.</li>
+<li>Configure the following fields, preferably using global or flow variables obtained in your flow:</li>
+<li><strong>Verifier Endpoint</strong> This field should contain a Vidos Verifier endpoint value (e.g., <code>https://&lt;verifier-name&gt;.verifier.service.&lt;region&gt;.vidos.id</code>) for an instance that the API Key has permission to access. The instance permissions and configuration policies can be managed via the Vidos Dashboard. It is recommended to obtain this value from a Global or Flow Instance Variable.</li>
+<li><strong>Verifiable Presentation:</strong> This field should contain a verifiable presentation object (usually passed in from a flow variable or input value), conforming to the W3C Verifiable Credentials Data Model.</li>
+<li><strong>Fields</strong>: These are additional options to send to the Vidos Verifier API, for example:<ul>
+<li>Key: <code>returnPresentation</code></li>
+<li>Value: <code>true</code></li>
+</ul>
+</li>
+<li>Other available options include<ul>
+<li>challenge (optional): A unique string to prevent replay attacks.</li>
+<li><strong>domain</strong> (optional): The domain to scope the verification to.
+   See <a href="https://go.vidos.id/docs-api-verifier">Vidos Verifier API docs</a> for more information.</li>
+</ul>
+</li>
+<li>Apply the configuration to the connector.</li>
+<li>The connector outputs can be used in subsequent connectors in your flow.
+   The key output fields are:</li>
+<li><strong>success</strong> (boolean): Indicates if verification was successful</li>
+<li><strong>output</strong> (object):<ul>
+<li><strong>results</strong> (array): Detailed check results</li>
+<li><strong>checks</strong> (array): List of verification checks performed</li>
+<li><strong>statusCode</strong> (number | null): HTTP status code</li>
+</ul>
+</li>
+<li><strong>error</strong> (object): Present when verification fails<ul>
+<li><strong>code</strong> (string): Error code</li>
+<li><strong>message</strong> (string): Error description</li>
+<li><strong>httpResponseCode</strong> (number): HTTP error code</li>
+</ul>
+</li>
+<li><strong>Options</strong>:</li>
+<li><strong>challenge</strong> (optional): A unique string to prevent replay attacks.</li>
+<li><strong>domain</strong> (optional): The domain to scope the verification to.
+     5.Apply the configuration to the connector.
+     6.The connector outputs can be used in subsequent connectors in your flow.</li>
+</ol>
+<h3 id="additional-information">Additional Information<a class="headerlink" href="#additional-information" title="Permanent link"> ¶</a></h3>
+<p><strong>Documentation Links</strong>:</p>
+<ul>
+<li><a href="https://go.vidos.id/universal-resolver-docs">Vidos Universal Resolver Documentation</a></li>
+<li><a href="https://go.vidos.id/docs-api-verifier">Vidos Verifier API Documentation</a></li>
+</ul>
+<p><strong>Support</strong>:</p>
+<ul>
+<li>For any issues or questions, contact <a href="https://support.vidos.id">Vidos Support</a>.
+  This integration ensures seamless handling of decentralized identifiers and verifiable credentials within Ping Identity DaVinci, offering robust security and interoperability with W3C standards.</li>
+</ul>
+<hr />
+<h2 id="testing-capabilities">Testing capabilities<a class="headerlink" href="#testing-capabilities" title="Permanent link"> ¶</a></h2>
+<p>You can test each capability of the Vidos Connector individually by running test flows within DaVinci. Use sample DIDs, verifiable credentials or presentations to verify that each action (e.g., Resolve DID, Verify Credential, Verify Presentation) functions correctly.</p>
+<p>Here are examples that can be pasted into the code editor view of the fields in the Vidos Connector to test your flow:
+<strong>DID Method</strong></p>
+<div class="highlight"><pre><span></span><code>did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK
+</code></pre></div>
+<p>Expected response for the DID method above:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;didDocument&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/did-resolution/v1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;didResolutionMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;contentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;application/did+ld+json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;did&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;key&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;didUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;didDocument&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JsonWebKey2020&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;controller&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;publicKeyJwk&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ed25519&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OKP&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lm_M42cB3HkUiODQsXRcweM6TByfzEHGO9ND274JcOY&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;authentication&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;assertionMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;capabilityInvocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;capabilityDelegation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://www.w3.org/ns/did/v1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://w3id.org/security/suites/jws-2020/v1&quot;</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;didDocumentMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Verifiable Credential</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;https://w3id.org/security/suites/ed25519-2020/v1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;https://w3id.org/security/data-integrity/v2&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:z6MkhTNL7i2etLerDK8Acz5t528giE5KA4p75T6ka1E1D74r&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;urn:uuid:758311b4-61a2-4620-b491-147eda764c1c&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zDnaeRpdr3KkQ1NtBhLAWFp76epvaU1spZzGH7AvKtY9KqjZr&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;proof&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-06-03T16:13:45Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cryptosuite&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ecdsa-jcs-2019&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;z5Auc6t3vbPbtLKW1esS4Btp98RGJGDd4bDRYzwBgekYDcAye3zyvzgaFS5b3Q2MyYW5A3dwmks6gFLGB67SnQz1M&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DataIntegrityProof&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zDnaeRpdr3KkQ1NtBhLAWFp76epvaU1spZzGH7AvKtY9KqjZr#zDnaeRpdr3KkQ1NtBhLAWFp76epvaU1spZzGH7AvKtY9KqjZr&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VerifiableCredential&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Expected response for the credential above:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;checks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;credentialStatus&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;format&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;notAfter&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;notBefore&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;proof&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;warnings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;tag:missing-required-field-Optional field &#39;/issuanceDate&#39; missing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;tag:missing-required-field-Optional field &#39;/expirationDate&#39; missing&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;errors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Verifiable Presentation</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;https://w3id.org/security/data-integrity/v2&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;VerifiablePresentation&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;verifiableCredential&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;AlumniCredential&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org#AlumniCredential&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;alumniOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org#alumniOf&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="s2">&quot;https://w3id.org/security/data-integrity/v2&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.edu/credentials/1872&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;AlumniCredential&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zDnaekGZTbQBerwcehBSXLqAg6s55hVEBms1zFy89VHXtJSa9&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2010-01-01T19:23:24Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.edu/students/alice&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;alumniOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example University&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;proof&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DataIntegrityProof&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-03-01T21:29:24Z&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zDnaekGZTbQBerwcehBSXLqAg6s55hVEBms1zFy89VHXtJSa9#zDnaekGZTbQBerwcehBSXLqAg6s55hVEBms1zFy89VHXtJSa9&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;cryptosuite&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ecdsa-rdfc-2019&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zNqtAbEWenMxFDB8omdCSzY5S1GGNAQjWibDycCnJMkHeLF5apDje6QxSgqsjn5AMqDRkX7dsh9BnVpbAnnkzTX1&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;id:test&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;proof&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DataIntegrityProof&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-03-01T21:29:24Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zDnaekGZTbQBerwcehBSXLqAg6s55hVEBms1zFy89VHXtJSa9#zDnaekGZTbQBerwcehBSXLqAg6s55hVEBms1zFy89VHXtJSa9&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cryptosuite&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ecdsa-rdfc-2019&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zkhFb45dDtvpxfu21fyAMxi4tqRnNKDSouckj24JG9AAKKa2wpoq9RUvACP6kmJmZUrjrP4GVvRLyFJQNhRDCgfS&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Expected response for the presentation above:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;checks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;format&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;proof&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;warnings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">  </span><span class="nt">&quot;errors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link"> ¶</a></h2>
+<ul>
+<li><strong>Service Availability:</strong> The Vidos Connector support Vidos Resolver and Verifier services.</li>
+<li><strong>Region-Specific Configurations:</strong> Ensure that the selected region in the connector settings correspond with your organizational data compliance requirements.</li>
+</ul>
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link"> ¶</a></h1>
+<p>Please see <a href="https://go.vidos.id/pingone-davinci-connector-troubleshooting">PingOne DaVinci Vidos Connector Troubleshooting</a> for common issues and steps to resolve them.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

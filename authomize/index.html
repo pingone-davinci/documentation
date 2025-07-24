@@ -1,0 +1,511 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/authomize/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Authomize Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#authomize-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authomize Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="authomize-connector">Authomize Connector<a class="headerlink" href="#authomize-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Steven Riley</p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h1>
+<p>The Authomize connector is based on the Incident API framework outlined in the Authomize documentation. This framework allows for incident processing and management based on policies identefying issues within your IAM/IdP infratsructure framework. Authomize continuously monitors your identities, access privileges, assets, and activities to secure all your apps, cloud services, and IdPs. Authomize allows organizations to mitigate IAM risk with visibility and granular control across all apps and cloud services (IaaS, SaaS, and Data).</p>
+<p>Authomize is a leading provider of Identity Threat Detection and Response (ITDR). ITDR focuses specifically on monitoring and securing IAM solutions. As Identity has become the key to access in the modern workspace, attackers are increasingly targeting SSO, IdP, and IGA solutions, which manage access. With its comprehensive coverage across IaaS, SaaS, and IAM solutions, Authomize is the only solution that can identify and mitigate discrepancies in access privileges across systems, uncover potential vulnerabilities in IAM solutions, and detect threats. Authomize also integrates with IAM solutions to facilitate response and automate remediation.</p>
+<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h1>
+<p>The connector requires a tenant from <a href="https://www.authomize.com/">Authomize</a> before you can start using the connector. The user will need admin rights or have the Authomize admin create a token that will enable them to access the <a href="https://api.authomize.com">Incident API framework</a>. Ensure that you have your <a href="https://support.authomize.com/hc/en-us/articles/11587652293649-PingOne-Integration-Guide">PingOne connector integration</a> complete on the Authomize tenant to best utilize the provided Davinci connector. This will ensure you can maximise on any ping policies that create incidents for the workflow you are building.</p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h2>
+<p>This initial component leverages a couple of simple APIs for use with your workflows, the first is <a href="https://api.authomize.com/documentation#tag/Status/operation/is_alive_is_alive_get"><em>Check server access</em></a>. This simply ensures you can currently reach the server infrastructure. A per the documentation it returns a "True" value if you can reach the API.</p>
+<p>The second implementation is <a href="https://api.authomize.com/documentation#tag/Incident/operation/retrieve_incident_v2_incidents__incident_id__get"><em>Get a single incident</em></a>, this enables you to pull all the details about a specific incident, things such as the incident type, the policy it is assigned to and the recommendations along with the descriptions. The following returned JSON demonstrates a partial offboarding event and helps you understand what is happening in your environment which then allows you to build actionable orchestration for identity:</p>
+<div class="highlight"><pre><span></span><code>{
+            &quot;id&quot;: &quot;&quot;,
+            &quot;createdAt&quot;: &quot;2023-01-15T09:44:10.235Z&quot;, 
+            &quot;modifiedAt&quot;: &quot;2023-01-15T09:44:10.235Z&quot;, 
+            &quot;entities&quot;: 
+            [
+                {
+                    &quot;id&quot;: &quot;a43f28ae7266ddbe95a3dedacebc1d75d7ed0521&quot;, 
+                    &quot;name&quot;: &quot;John Doe&quot;,
+                    &quot;email&quot;: &quot;john.doe@acme.com&quot;
+                    &quot;object&quot;: &quot;identity&quot;
+                }
+            ], 
+            &quot;apps&quot;: 
+            [
+                {
+                    &quot;id&quot;: &quot;1441bd5dcf06ddc16a2215fe005fd11365e9e3ce&quot;, 
+                    &quot;name&quot;: &quot;Microsoft Active Directory&quot;
+                }
+            ], 
+            &quot;category&quot;: &quot;Change Management&quot;, 
+            &quot;tactics&quot;: 
+            [
+                &quot;Initial Access&quot;, 
+                &quot;Defense Evasion&quot;
+            ], 
+            &quot;compliance&quot;: 
+            [
+                {
+                    &quot;id&quot;: &quot;isoIec27001&quot;, 
+                    &quot;name&quot;: &quot;ISO/IEC 27001&quot;, 
+                    &quot;values&quot;: 
+                    [
+                        &quot;A.9.2.1&quot;, 
+                        &quot;A.9.2.2&quot;, 
+                        &quot;A.9.2.6&quot;, 
+                        &quot;A.7.3.1&quot;, 
+                        &quot;A.8.1.4&quot;
+                    ]
+                }
+            ], 
+            &quot;techniques&quot;: 
+            [
+                &quot;Valid Accounts&quot;, 
+                &quot;Trusted Relationship&quot;
+            ], 
+            &quot;status&quot;: &quot;Open&quot;, 
+            &quot;severity&quot;: &quot;Critical&quot;, 
+            &quot;policy&quot;:
+                {
+                    &quot;id&quot;: &quot;1776235428&quot;, 
+                    &quot;name&quot;: &quot;Partial Offboarding Event, Close All Accounts&quot;, 
+                    &quot;templateId&quot;: &quot;3775535988&quot;
+                }, 
+                &quot;assigneeId&quot;: null, 
+            &quot;recommendation&quot;: &quot;If this is a case which requires the employee to be Disabled in all systems, make sure the process is completed.&quot;, 
+            &quot;description&quot;: &quot;User John Doe was Disabled in Microsoft, but still enabled in PING_ONE&quot;, 
+            &quot;isResolved&quot;: false, 
+            &quot;url&quot;: &quot;https://blankdev.authomize.com/incidents/602178f9dfd3335c94a4600a9eb1489d6580466e&quot;
+        }
+</code></pre></div>
+<p>Important elements that you would be interested in working with:
+  - name: John Doe
+  - email: <code>john.doe@acme.com</code>
+  - Policy
+    - id: 1776235428
+    - name: Partial Offboarding Event, Close All Accounts
+  - recommendation: If this is a case which requires the employee to be Disabled in all systems, make sure the process is completed.
+  - description: User John Doe was Disabled in Microsoft, but still enabled in PING_ONE
+  - url: <code>https://blankdev.authomize.com/incidents/602178f9dfd3335c94a4600a9eb1489d6580466e</code></p>
+<p>Lets look at the specifics:
+  - First you need to identfy the policy you are looking for, so the name of the policy is important here. In any sort of flow you will base the action on the policy name. In this case the partial offboarding event would cause maybe one of two actions, first might be to notify the correct people that there is an issue that needs their attention. The second option would be to attempt to disable the user account within Ping One as indicated should be done in the JSON.
+  - Recommendation and Description are really just useful display fields to help human beings understand what is going on.
+  - URL provides the ability to point back into your Authomize tenant and accesss the incident directly so other activities such as open and close of the incident can be performed.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<p>So what is needed, as indicated before you will need a token to access the API stack within Authomize. Create a token by logging into the Authomize tenant with an admin privelege, then follow these steps:</p>
+<ul>
+<li>click on the <strong>settings</strong> icon found top right of your screen</li>
+<li>On the far left under <em>Organization Settings</em> click on <strong>API Tokens</strong></li>
+<li>Top right click <strong>Create Token</strong> then give it a <strong>name</strong></li>
+<li>then check the radio button <strong>Platform Token</strong> </li>
+</ul>
+<p>Once you click on <strong>Create</strong> you will be presented with the <strong>Token</strong>. Copy the token and save it in a safe place until you are ready to use it. If you make a mistake you can just delete the token key then create another one. The name of the key is not used anywhere, only the actual token ID is used.</p>
+<h2 id="setting-up-the-connector-configuration">Setting up the connector configuration<a class="headerlink" href="#setting-up-the-connector-configuration" title="Permanent link"> ¶</a></h2>
+<p>Once you have added the Authomize Connector to your flow within Ping-Davinci you must enter the required global configuration which is the token you previously created in Auhomize. Simply grab a copy of that Token ID and click <strong>Configuration</strong> within the connecter and enter the token id value. At this point you can also select the trigger or action from the menu. If you select <em>Get a single incident</em> then you will need the incident id. A simple way to get that for testing is to copy one from your Authomize tenant enviroment. You can do this by logging into Authomize tenant and then from the menu on the left drilling down until you find incidents. Then click on an incident an copy the incident number from the URL. Following is an example of what this looks like and the peice you need to copy, its the value between the [ ] brackets:</p>
+<div class="highlight"><pre><span></span><code>https://blankdev.authomize.com/incidents/[1ec844535eb59cacbaca61d6ddb3678321cdf7ff]?sort=severity&amp;order=desc&amp;filters=%7B%22statuses%22%3A%7B%22values%22%3A%5B%22Open%22%2C%22InProgress%22%2C%22WaitingForInput%22%5D%7D%2C%22isResolved%22%3A%7B%22values%22%3A%5B%22False%22%5D%7D%7D
+</code></pre></div>
+<h3 id="connector-configuration">Connector configuration<a class="headerlink" href="#connector-configuration" title="Permanent link"> ¶</a></h3>
+<p>This connector has a minimal interface to ensure that a customer has the best experience as Authomize is updating its Incident API stack. If while developing you need additional features, please email our support team who will gladly assist and engage the correct team to further add to the code as per any requests made. Please send requests to our support team <a href="mailto:support@authomize.com?subject=[Authomize-Connector]%20Ping%20Davinci">Authomize Support</a>.</p>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<p>Only a simple flow is supported currently by Authomize, again if you wish to have more features please email us. We will continue to enhance this over time. Using the following design you can make simple decisions on what to do with your Incident data when it arrives. You should work with your Authomize Administrator to determine your Ping policies enabled within Authomize, this will allow you to determine what exact actions you will create.</p>
+<div class="highlight"><pre><span></span><code>graph LR;
+    A[HTTP - Grab Incident ID] --&gt; B((This is the text in the circle))
+    B((Authomize Connector)) --&gt; C{Correct PolicyID}
+    C -- Yes --&gt; D[HTTP - Display Details]
+    D --&gt; E[Update-Identity]
+    E --&gt; F[PingIdentity]
+    G --&gt; A
+    C -- No ----&gt; G[Discard-JSON]
+</code></pre></div>
+<p>A specific use case that supports the above proces is leveraging the new /<a href="https://apidocs.pingidentity.com/pingone/main/v1/api/#using-start-with-the-api-integration-method">start with API Integration Method</a>, as this can be leveraged to automatically fire the workflow you create. To do this you will leverage webhooks within Authomize. You must work with your Ping-Davinci contact and request the appropriate components to ensure that this works for your organization. Essentially you will process the incoming JSON as shown <a href="#resources">above</a>. If needed please also contact <a href="mailto:support@authomize.com?subject=[Authomize-Connector]%20Ping%20Davinci">Authomize Support</a> so they can help you congfigure your environment to support this work.</p>
+<h1 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h1>
+<p>The Authomize connector provides the ability to pull a specific incident from Authomize. At the moment there isn't any ability to search for a specific event, hence you need to ask the user or collect the incident from another external process. We would expect you to initially build a process that works directly with Authomize from a user perspective and your flow would have an interface to recieve the incident. You can then use that incident to perform some work.</p>
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link"> ¶</a></h1>
+<p>The following are the main problems that could occur:
+ - Check the Token used and ensure it is applied to the Authomize Connector (<em>Remember once you create a token you will not see it again</em>).
+ - Ensure you capture the correct Incident ID from the URL as <a href="#setting-up-the-connector-configuration">shown above</a>.</p>
+<p>Any issues with the Authomize Connector please reach out to <a href="mailto:support@authomize.com?subject=[Authomize-Connector]%20Ping%20Davinci">Authomize Support</a>.</p>
+<h1 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link"> ¶</a></h1>
+<p>There are no known limitations with the current implementation, however feel free to reach out with more suggestions.</p>
+<h1 id="release-notes">Release notes<a class="headerlink" href="#release-notes" title="Permanent link"> ¶</a></h1>
+<p>This is release 1.0 and includes the <a href="https://api.authomize.com/documentation#tag/Incident/operation/retrieve_incident_v2_incidents__incident_id__get">retrieve incident API</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

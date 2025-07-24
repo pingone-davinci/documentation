@@ -1,0 +1,547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/privateid/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Private Identity® Credential Service Provider “PrivateID® Connector” - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#private-identity-credential-service-provider-privateid-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Private Identity® Credential Service Provider “PrivateID® Connector”
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="private-identity-credential-service-provider-privateid-connector">Private Identity® Credential Service Provider “PrivateID® Connector”<a class="headerlink" href="#private-identity-credential-service-provider-privateid-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Srie Raam Mohan, Private ID</p>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"> ¶</a></h1>
+<p>Private Identity’s passwordless, Kantara-certified compliant NIST 800-63 IAL2 Remote Digital Onboarding, NIST 800-3 AAL2 Encrypted Biometric Authenticator, and MFA “PrivateID® Connector” provides the strongest identity security solutions to support global businesses, nonprofit, education, US state/local/Federal Governments, and allied governments. </p>
+<p>This solution eliminates the friction of passwords and allows seamless integration into enterprise and US Government systems including OS, VPN and SSO solutions.</p>
+<p>Below, we describe the procedure to configure the Private Identity Credential Service Provider’s “PrivateID Connector” to support Kantara-certified NIST 800-63 secure digital onboarding and passwordless authentication using PingFederate or PingOne DaVinci. </p>
+<p>This allows users to onboard using up to Identity Assurance Level 2 (IAL2), the most secure digital onboarding available worldwide, and sign-in using up to Authentication Assurance Level 2 (AAL2), the most secure 1:N encrypted, privacy-preserving facial biometric log in available worldwide, for applications that use PingFederate. </p>
+<h1 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"> ¶</a></h1>
+<p>You will need the following resources and privileges to complete this integration:</p>
+<ul>
+<li>Private Identity software or a tenant URL. Your organization should have Private Identity software installed on your private or public compute infrastructure, or subscribed to use a Private Identity tenant. Contact us (sales@privateid.com) to enroll your organization.</li>
+<li>After account creation access your:</li>
+<li>Login Credentials: These are essential for authentication purposes.</li>
+<li>Orchestration Hub: Administration Login</li>
+<li>OIDC Client Details: These details are required for OpenID Connect (OIDC) configuration.</li>
+<li>Product Group ID (productGroupId): This identifier facilitates organization and management within the dashboard.</li>
+<li>Terraform installation scripts for onsite installation (if required). </li>
+<li>PingFederate or PingOne DaVinci with the Private Identity Connector. 
+Developers must possess a valid PingOne DaVinci account to establish the integration successfully.</li>
+</ul>
+<h2 id="key-features">Key Features:<a class="headerlink" href="#key-features" title="Permanent link"> ¶</a></h2>
+<h3 id="privateid-1n-biometric-face-recognition-w-age-estimation-50ms-processing-perform-facial-recognition-and-computations-on-encrypted-images-without-decryption-preserves-user-privacy-and-limits-corporate-risk-from-data-breaches-as-no-biometric-is-ever-captured-processed-or-stored-exempt-from-global-privacy-law-obligations-like-gdpr-bipa-ccpa-and-hipaa-by-only-processing-anonymized-data-and-follows-ieee-2410-standards">PrivateID 1:N Biometric Face Recognition w/ Age Estimation - 50ms processing. Perform facial recognition and computations on encrypted images without decryption. Preserves user privacy and limits corporate risk from data breaches as no biometric is ever captured, processed or stored. Exempt from global privacy law obligations like GDPR, BIPA, CCPA and HIPAA by only processing anonymized data and follows IEEE 2410 standards.<a class="headerlink" href="#privateid-1n-biometric-face-recognition-w-age-estimation-50ms-processing-perform-facial-recognition-and-computations-on-encrypted-images-without-decryption-preserves-user-privacy-and-limits-corporate-risk-from-data-breaches-as-no-biometric-is-ever-captured-processed-or-stored-exempt-from-global-privacy-law-obligations-like-gdpr-bipa-ccpa-and-hipaa-by-only-processing-anonymized-data-and-follows-ieee-2410-standards" title="Permanent link"> ¶</a></h3>
+<ol>
+<li>Can be combined with companies  existing FIDO2® Passkey to provide the ultimate 2FA FIDO 2 authenticator that provides reduction in OpEx costs associated with account recovery, increases fraud prevention, as well as streamlines user experience. Configurations include…</li>
+<li>Face (1FA)</li>
+<li>Face + FIDO2 Passkey (Strong 2FA)</li>
+<li>Face + PIN (2FA)</li>
+<li>Face + Barcode or MRZ  (2FA)</li>
+<li>Face + Credit or Debit Card (FIDO2 Passkey on Credit Card)</li>
+<li>Any combination of above</li>
+</ol>
+<h3 id="privateid-face-recognition-photo-id-verification-customer-identification-assurance-complete-white-labeled-and-customizable-identity-proofing-for-customers-and-employees-with-on-device-government-photo-id-extraction-and-fhe-encrypted-photo-to-selfie-matching-with-liveness-anti-spoofing-detection">PrivateID Face Recognition + Photo ID Verification (customer identification assurance) - Complete white labeled and customizable identity proofing for customers and employees with on-device government Photo ID extraction and FHE-encrypted photo to selfie matching with liveness anti-spoofing detection.<a class="headerlink" href="#privateid-face-recognition-photo-id-verification-customer-identification-assurance-complete-white-labeled-and-customizable-identity-proofing-for-customers-and-employees-with-on-device-government-photo-id-extraction-and-fhe-encrypted-photo-to-selfie-matching-with-liveness-anti-spoofing-detection" title="Permanent link"> ¶</a></h3>
+<ol>
+<li>On Device - Capture Face via selfie</li>
+<li>On Device - ScanID (Doc Capture) </li>
+<li>On Device - Document data extraction</li>
+<li>On Device - Match Selfie to ID portrait</li>
+<li>On Device - Selfie Liveness / Anti-Spoofing</li>
+<li>On Server - Forensic document authentication</li>
+<li>On Server - DMV System of Record check</li>
+<li>On Server - Additional 3rd party data validation checks (credit bureau, mobile carrier, open sanctions, PEP’s/sanctions, adverse media, email, address, etc.)</li>
+</ol>
+<h3 id="nist-800-63-identity-assurance-level-2-aal2-workflow-to-achieve-up-to-nist-800-63a-identity-assurance-level-2-ial-2-companies-may-incorporate-the-following-solutions-in-the-private-id-identity-orchestration-layer-additional-workflows-may-also-be-configured">NIST 800-63 Identity Assurance Level 2 / AAL2 Workflow - To achieve (up to) NIST 800-63a Identity Assurance Level 2 (IAL 2), companies may incorporate the following solutions in the Private ID Identity Orchestration Layer. Additional workflows may also be configured.<a class="headerlink" href="#nist-800-63-identity-assurance-level-2-aal2-workflow-to-achieve-up-to-nist-800-63a-identity-assurance-level-2-ial-2-companies-may-incorporate-the-following-solutions-in-the-private-id-identity-orchestration-layer-additional-workflows-may-also-be-configured" title="Permanent link"> ¶</a></h3>
+<ol>
+<li>Forensic document verification</li>
+<li>DMV System of Record Check </li>
+<li>Credit Bureau - SNN4, DOB, Address, First &amp; Last Name</li>
+<li>Mobile Carrier - Phone validation through carrier </li>
+<li>Email verification</li>
+<li>Open Sanctions - OFAC, Criminal Watchlist, etc</li>
+</ol>
+<h3 id="verified-credential-vcs-with-web-wallet-or-mobile-wallet-organizations-may-use-a-combination-of-mobile-and-web-wallets-to-create-access-and-share-secure-verifiable-credentials-users-can-access-and-manage-the-sharing-of-their-secure-verified-credentials-from-any-browser-with-face-or-face-fido2-passkey">Verified Credential (VCs) with web wallet or mobile wallet - Organizations may use a combination of mobile and web wallets to create, access and share secure Verifiable Credentials. Users can access and manage the sharing of their secure verified credentials from any browser with Face, or Face + FIDO2 Passkey.<a class="headerlink" href="#verified-credential-vcs-with-web-wallet-or-mobile-wallet-organizations-may-use-a-combination-of-mobile-and-web-wallets-to-create-access-and-share-secure-verifiable-credentials-users-can-access-and-manage-the-sharing-of-their-secure-verified-credentials-from-any-browser-with-face-or-face-fido2-passkey" title="Permanent link"> ¶</a></h3>
+<p>PrivateID Verified Credentials provide secure management and sharing of customer and workforce data for fast checkout and sign up. </p>
+<h3 id="privateid-identity-orchestration-layer-customizable-identity-hub-hosted-in-companies-infrastructure-to-set-endless-workflows-rules-and-waterfalls-for-kycamlcft-customer-remote-digital-onboarding-nist-800-63a-ial-2-and-authentication-workflows-with-privateid-1n-facial-biometrics-combined-with-your-existing-fido2-passkeys-aal2">PrivateID Identity Orchestration Layer - Customizable identity hub hosted in companies infrastructure to set endless workflows, rules and waterfalls for KYC/AML/CFT, customer remote digital onboarding (NIST 800-63A IAL 2) and authentication workflows with PrivateID 1:N facial biometrics combined with (your existing) FIDO2® Passkeys (AAL2).<a class="headerlink" href="#privateid-identity-orchestration-layer-customizable-identity-hub-hosted-in-companies-infrastructure-to-set-endless-workflows-rules-and-waterfalls-for-kycamlcft-customer-remote-digital-onboarding-nist-800-63a-ial-2-and-authentication-workflows-with-privateid-1n-facial-biometrics-combined-with-your-existing-fido2-passkeys-aal2" title="Permanent link"> ¶</a></h3>
+<h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"> ¶</a></h1>
+<p>To integrate the PrivateID connector with PingOne DaVinci, follow these steps. 
+For additional assistance, see the Ping Identity documentation Adding a connector.</p>
+<h2 id="start-with-pingone-davinci">Start with PingOne DaVinci<a class="headerlink" href="#start-with-pingone-davinci" title="Permanent link"> ¶</a></h2>
+<ol>
+<li>Log in to your PingOne DaVinci account. Once logged in, navigate to the Connectors page within the DaVinci platform.Click on the "Add Connector" button to initiate the process of adding a new connector</li>
+</ol>
+<p><img alt="privateid1" src="privateid1.png" /></p>
+<ol>
+<li>
+<p>Look for the PrivateID Connector option in the list of available connectors. Click + to add the connector.</p>
+</li>
+<li>
+<p>Follow the on-screen instructions to configure the PrivateID Connector according to your requirements. Enter a name for the new connector, such as PrivateID OIDC, and click Create.</p>
+</li>
+<li>
+<p>Identify the connector created for the integration with PrivateID from the list of connectors. Click on the "Edit" option from the actions menu associated with the created connector.</p>
+</li>
+</ol>
+<p><img alt="privateid2" src="privateid2.png" /></p>
+<ol>
+<li>Once in the edit mode, locate the Redirect URL field. Copy the Redirect URL provided. This URL will be used in the Orchestration module during the setup process. Save the Redirect URL for later use in the Orchestration module.</li>
+</ol>
+<h2 id="orchestration-hub">Orchestration Hub<a class="headerlink" href="#orchestration-hub" title="Permanent link"> ¶</a></h2>
+<p>Follow these instructions to configure the integration in the Orchestration Hub:</p>
+<ol>
+<li>Use the provided credentials to log in to the Orchestration module.</li>
+</ol>
+<p><img alt="privateid3" src="privateid3.png" /></p>
+<ol>
+<li>Once logged in, navigate to the OIDC Clients section within the Orchestration module. Click on the Create Client button to initiate the process of creating a new OIDC client.</li>
+</ol>
+<p><img alt="privateid4" src="privateid4.png" /></p>
+<ol>
+<li>Choose the appropriate organization from the available list for which the integration is being configured.</li>
+</ol>
+<p><img alt="privateid5" src="privateid5.png" /></p>
+<ol>
+<li>Fill in the necessary details such as Name, Description, and select "client_secret_basic" as the token endpoint authentication method. Paste the Redirect URI obtained from Step 5 of the DaVinci setup into the respective field. After filling in the required fields, click on the "Save" button to save the configuration.</li>
+</ol>
+<p><img alt="privateid6" src="privateid6.png" /></p>
+<ol>
+<li>Once the client is created, navigate to the details page. Note down the client_id and client_secret provided for later use in the integration process.</li>
+</ol>
+<p><img alt="privateid7" src="privateid7.png" /></p>
+<h2 id="pingone-davinci">PingOne Davinci<a class="headerlink" href="#pingone-davinci" title="Permanent link"> ¶</a></h2>
+<ul>
+<li>Access the configuration settings of the connector previously created for the integration.</li>
+<li>Locate the fields for Client ID and Client Secret within the connector configuration settings.</li>
+<li>After pasting the Client ID and Client Secret, ensure to save the changes made to the connector configuration.</li>
+<li>With all other fields populated with default values, your setup will be complete.</li>
+</ul>
+<p><img alt="privateid8" src="privateid8.png" /></p>
+<p>By following these steps, you'll successfully integrate the Client ID and Client Secret obtained from the Orchestration module into PingOne DaVinci. This completes the setup process, and your integration should now be configured to communicate seamlessly between DaVinci and the Orchestration module. If you encounter any difficulties, refer to the documentation or contact the support team for assistance.</p>
+<p>Connector settings
+To configure the connector settings for seamless integration, ensure the following parameters are set accordingly:</p>
+<p>Provider Name: Custom Name describing the name of the provider
+Auth Type: OpenId
+Redirect URL: Davinci Redirect URL on which the callback is received
+User Info Endpoint: https://oidc.privateid.com/me
+App ID: Client ID created in orchestration portal
+Client Secret: Client Secret created in orchestration portal
+Scope: openid privateid</p>
+<h1 id="using-the-connector-in-a-flow">Using the connector in a flow<a class="headerlink" href="#using-the-connector-in-a-flow" title="Permanent link"> ¶</a></h1>
+<p>After successfully creating the connector, you can proceed to create flows in PingOne DaVinci to execute tasks leveraging the connector's capabilities. For more information on how to create flows, please refer to the documentation on Davinci Flows</p>
+<p>Here are the mandatory parameters required during flow creation to enable the PrivateID connector to perform tasks:</p>
+<ul>
+<li>
+<p>productGroupId: This parameter is received as part of the Private Identity onboarding process in the Orchestration module. It helps identify the specific product group associated with the task.</p>
+</li>
+<li>
+<p>actionFlow: This parameter determines the action to be performed by the PrivateID connector. The following actions are supported:</p>
+</li>
+<li>
+<p>register:     Redirects the UI to perform Remote Digital Onboarding up to Identity Assurance Level 2 (IAL2)  (“registration”).</p>
+</li>
+<li>login:    Redirects  the UI to perform encrypted biometric Authentication Assurance Level 2 (AAL2) face authentication with FIDO2 Passkey.</li>
+<li>forget_me:    Redirects the UI to remove the account.</li>
+</ul>
+<h1 id="use-cases">Use Cases:<a class="headerlink" href="#use-cases" title="Permanent link"> ¶</a></h1>
+<p>The PrivateID connector can be utilized in various use cases, including but not limited to:</p>
+<h2 id="use-case-register-remote-digital-onboarding-ial2">Use Case: “Register” - Remote Digital Onboarding (IAL2)<a class="headerlink" href="#use-case-register-remote-digital-onboarding-ial2" title="Permanent link"> ¶</a></h2>
+<p>In the register use case flow, the PrivateID OIDC returns a UUID upon successful registration/authentication. This flow can be integrated with the Userpool associated with DaVinci. Here's how the flow operates:</p>
+<ul>
+<li>
+<p>Flow Trigger: Upon triggering the flow, connect with the User Policy &gt; Create Users capabilities.</p>
+</li>
+<li>
+<p>User Creation: Utilize the UUID returned from the userinfo endpoint to create a user within the Userpool associated with PingOne DaVinci.</p>
+</li>
+</ul>
+<h2 id="use-case-login-authentication-assurance-level-2-aal2">Use Case: login - Authentication Assurance Level 2 (AAL2)<a class="headerlink" href="#use-case-login-authentication-assurance-level-2-aal2" title="Permanent link"> ¶</a></h2>
+<p>In the “login” use case flow, the PrivateID OIDC returns a UUID upon successful authentication. This flow can be integrated with the Userpool associated with DaVinci. Here's how the flow operates:</p>
+<ul>
+<li>Flow Trigger: Upon triggering the flow, connect with the User Policy &gt; Get Users capabilities.</li>
+<li>User Verification: Use the UUID returned from the userinfo endpoint to check whether the user already exists in the Userpool associated with DaVinci.</li>
+<li>Registration Action: If the user is not registered, trigger a registration actionFlow to initiate the registration process</li>
+</ul>
+<h2 id="use-case-forget_me-fulfills-the-required-gdpr-forget_me-functionality">Use Case: forget_me - Fulfills the required GDPR “forget_me” functionality<a class="headerlink" href="#use-case-forget_me-fulfills-the-required-gdpr-forget_me-functionality" title="Permanent link"> ¶</a></h2>
+<p>In the “forget_me” use case flow, the PrivateID Connector performs a deletion from the server upon successful authentication. OIDC will throw in-built OIDC error and error description once the flow is complete. Here's how the flow operates:</p>
+<ul>
+<li>Flow Trigger: Upon triggering the flow, connect with the User Policy &gt; Get Users capabilities.</li>
+<li>Custom UI Response: OIDC returns “Account Deleted” response on successful deletion.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1444 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pingone-davinci.github.io/connector-docs/intellicheck/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Intellicheck Connector - PingOne DaVinci Partner Connectors</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/overrides/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#intellicheck-connector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-header__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PingOne DaVinci Partner Connectors
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Intellicheck Connector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PingOne DaVinci Partner Connectors" class="md-nav__button md-logo" aria-label="PingOne DaVinci Partner Connectors" data-md-component="logo">
+      <!-- Logo -->
+  
+    </a>
+    PingOne DaVinci Partner Connectors
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pingone-davinci/connector-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pingone-davinci/connector-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="intellicheck-connector">Intellicheck Connector<a class="headerlink" href="#intellicheck-connector" title="Permanent link"> ¶</a></h1>
+<p>Author: Intellicheck </p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"> ¶</a></h1>
+<p>Intellicheck is the only identity validation platform that uses a unique and proprietary analysis of DMV-issued IDs to create trusted, real-time customer identity verification experiences. To make the process easier, Intellicheck provides a PingOne DaVinci connector. The connector integrates the Intellicheck Capture solution. Intellicheck Capture sends a text to your customer’s mobile phone, and then the customer completes the identity validation process on the phone. Intellicheck Capture can be a one, two, or three-step process depending on the use case. Intellicheck Capture validates the identity document. It can also handle facial liveness, risk scoring, international documents, and additional checks for regulatory needs. Results are delivered back to the connector for your associate. The customer does not see results.</p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"> ¶</a></h2>
+<p>Before you begin, take a few moments to familiarize yourself with the developer documentation for Intellicheck Capture.</p>
+<h3 id="intellicheck-capture-documentation">Intellicheck Capture documentation<a class="headerlink" href="#intellicheck-capture-documentation" title="Permanent link"> ¶</a></h3>
+<ul>
+<li><a href="https://idn-capture.readme.io/docs/capture">About Capture</a></li>
+<li><a href="https://idn-capture.readme.io/reference/mvp_start_api_v1_start_post">API Reference: Start Endpoint</a></li>
+<li><a href="https://idn-capture.readme.io/docs/document-type-descriptions-1">Document Type Descriptions</a></li>
+<li><a href="https://idn-capture.readme.io/docs/signal-descriptions">Signal Descriptions</a></li>
+</ul>
+<h3 id="davinci-documentation">DaVinci Documentation<a class="headerlink" href="#davinci-documentation" title="Permanent link"> ¶</a></h3>
+<ul>
+<li><a href="https://docs.pingidentity.com/davinci/connectors/davinci_adding_a_connector.html">Adding a connector</a></li>
+<li><a href="https://docs.pingidentity.com/davinci/connectors/davinci_using_connectors_securely.html">Using connectors securely</a></li>
+<li><a href="https://docs.pingidentity.com/davinci/flows/davinci_using_davinci_flow_templates.html">Using DaVinci flow templates</a></li>
+</ul>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"> ¶</a></h2>
+<p>To use the connector, you will need the following: </p>
+<ul>
+<li>Your Intellicheck API key</li>
+<li>Your unique Intellicheck customer ID </li>
+</ul>
+<p>Contact your Intellicheck account executive or visit https://www.intellicheck.com/support</p>
+<h3 id="standard-davinci-flow-snippet">Standard DaVinci Flow Snippet<a class="headerlink" href="#standard-davinci-flow-snippet" title="Permanent link"> ¶</a></h3>
+<p>This <a href="https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet">DaVinci flow snippet</a> is <strong>required</strong> in order to use the Intellicheck connector as it properly handles the API responses, Webhook and challenge components. On this listing, select "Download Integration" in the left menu bar and import it into your DaVinci environment under the Flows tab.</p>
+<p><img alt="intellicheckFlowImage.png" src="intellicheckFlowImage.png" /></p>
+<p><strong>Important note</strong>: The TTL setting within the Start Transaction capability must match the <code>skpolling</code> Poll Interval component time found within the "Polling" connector on the above flow. The Poll Interval field is represented in seconds, while the TTL field on the Start Transaction capability is minutes, so a conversion will have to take place to ensure they match (IE: 5 minutes = 300 seconds).</p>
+<p>Polling connector in Flow snippet:</p>
+<p><img alt="intellicheckFlowPolling.png" src="intellicheckFlowPolling.png" /></p>
+<p><code>skpolling</code> component in Polling connector (You must click on the skpolling pill to launch this window):</p>
+<p><img alt="intellicheckPolling.png" src="intellicheckPolling.png" /></p>
+<p>TTL field in connector:</p>
+<p><img alt="intellicheckTTL.png" src="intellicheckTTL.png" /></p>
+<p>If there is a discrepancy in these values, the timeout won't behave properly between the Intellicheck API's and the DaVinci flow.</p>
+<h1 id="setting-up-the-connector">Setting up the connector<a class="headerlink" href="#setting-up-the-connector" title="Permanent link"> ¶</a></h1>
+<p>Add the connector in DaVinci as shown in <a href="https://docs.pingidentity.com/davinci/connectors/davinci_adding_a_connector.html">Adding a connector</a>. </p>
+<h1 id="start-a-transaction">Start a Transaction<a class="headerlink" href="#start-a-transaction" title="Permanent link"> ¶</a></h1>
+<p>The connector submits a request to the Intellicheck API /start endpoint. The connector makes it easy to submit parameters such as document type, signals, and a redirect URL. Results are returned for use in your DaVinci flow.</p>
+<p>To start a transaction, click the Intellicheck connector, and then select the <strong>GENERAL</strong> tab. Here are descriptions of the parameters you can provide to the connector:</p>
+<ul>
+<li><strong>Phone Number</strong>: Required. This field is prepopulated. It is the phone number of your end user (customer or applicant). Prefix the phone number with a plus sign, for example, +1. Do not include separators.</li>
+<li><strong>Redirect URL</strong>: A redirect can occur at the completion of the capture process. For example, this redirect URL could load your company's webpage into the end user's browser. Use HTTPS in the URL with a fully qualified domain. </li>
+<li><strong>Error Redirect URL</strong>: An error redirect can occur if the end user does not complete the capture process, for example, if the end user declines camera access. Another example is if the end user does not complete the capture process in time, as defined by the time-to-live (TTL) parameter. After an error, this URL loads in the browser, redirecting the end user. Use HTTPS in the URL with a fully qualified domain.</li>
+<li><strong>TTL</strong>: Time-to-live, also known as the timeout value. Values are in minutes. The default is 10 minutes. The maximum is 30 minutes. IMPORTANT: Ensure that this TTL value matches the Poll Interval in the DaVinci polling component, which is part of the templated Intellicheck flow.</li>
+<li>
+<p><strong>Document Type</strong>. Required. The three Document Type values (Driver’s License, Passport, and Other) are categories for most federal, state, and international documents used as primary identification. You can select one Document Type per transaction.</p>
+</li>
+<li>
+<p><strong>Driver’s License</strong>: Select this for a North American driver's license, including REAL ID, enhanced ID, learner permit, US military ID, and non-driver state identity card. This can include the United States, Canada, and Mexico identification.</p>
+</li>
+<li><strong>Passport</strong>: Select this for a passport booklet or visa.</li>
+<li><strong>Other</strong>: Select this for an international passport card, a trusted traveler card, or a permanent resident card. </li>
+<li><strong>Device Validation</strong>: If toggled off (default), no device validation results are returned. If toggled on, device validation results are returned. Device validation includes customer quality checks such as device fingerprint, IP address, and phone validation.</li>
+<li>
+<p><strong>Signals</strong>: Required. Signals are the distinct validation checks to be performed. Each signal represents one check. Select one or more signals to customize an identity verification workflow. Signals and document types share some dependencies. You must understand which ones go together. See Document Types and Signals. If you select more than one signal, only certain combinations are allowed. See Multi-Signal Requests for more information.</p>
+</li>
+<li>
+<p><strong>ID Check</strong>: Barcode analysis on North American driver's licenses, including real IDs and extended IDs.</p>
+</li>
+<li><strong>Document Liveness</strong>: Document probability checks for on-screen presentation, printed copy, and portrait substitution.</li>
+<li><strong>OCR Scan</strong>: OCR scan on passport books, passport cards, and other forms of identification.</li>
+<li><strong>OCR Match</strong>: Compare the OCR scan to the barcode or MRZ data.</li>
+<li><strong>Selfie</strong>: Facial matching and liveness.</li>
+</ul>
+<h1 id="connector-settings">Connector Settings<a class="headerlink" href="#connector-settings" title="Permanent link"> ¶</a></h1>
+<h2 id="configuration-settings">Configuration Settings<a class="headerlink" href="#configuration-settings" title="Permanent link"> ¶</a></h2>
+<p>The Intellicheck connector requires three bits of information to configure:
+* <strong>Base URL</strong>: Base URL from your Intellicheck tenant. Note, please include the Protocol (https://), otherwise the connector will error.
+* <strong>Customer ID</strong>: Unique Customer ID from your Intellicheck tenant.
+* <strong>API Key</strong>: API Key from your Intellicheck tenant.</p>
+<p><img alt="intellicheckConfig.png" src="intellicheckConfig.png" /></p>
+<h1 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link"> ¶</a></h1>
+<p>This section includes three common use cases for authenticating a North American driver’s license.</p>
+<h2 id="use-case-drivers-license-barcode-analysis">Use case: Driver’s license barcode analysis<a class="headerlink" href="#use-case-drivers-license-barcode-analysis" title="Permanent link"> ¶</a></h2>
+<p>In this use case, the customer scans the back of a driver’s license. 
+* In <strong>Document Type</strong>, select <strong>Driver’s License</strong>
+* In <strong>Signals</strong>, select <strong>ID Check</strong>.</p>
+<h3 id="results">Results<a class="headerlink" href="#results" title="Permanent link"> ¶</a></h3>
+<p>Results are provided in the ID Check response for the barcode data.
+In the response data, look for the following properties: 
+* ID Check <code>processResult</code> to see if the ID passed (<code>DocumentProcessOK</code>) or failed (<code>DocumentUnknown</code>). </p>
+<h2 id="use-case-drivers-license-barcode-analysis-with-ocr-capture">Use case: Driver’s license barcode analysis with OCR capture<a class="headerlink" href="#use-case-drivers-license-barcode-analysis-with-ocr-capture" title="Permanent link"> ¶</a></h2>
+<p>In this use case, the customer scans the back of a driver’s license and then takes a picture of the front of the license. 
+* In <strong>Document Type</strong>, select <strong>Driver’s License</strong>
+* In <strong>Signals</strong>, select <strong>ID Check</strong> and <strong>OCR Scan</strong>.</p>
+<h3 id="results_1">Results<a class="headerlink" href="#results_1" title="Permanent link"> ¶</a></h3>
+<p>Results are provided in the ID Check response for the barcode data, and in the OCR response for the front-side data. 
+In the response data, look for the following properties: 
+* ID Check <code>processResult</code> to see if the ID passed (<code>DocumentProcessOK</code>) or failed (<code>DocumentUnknown</code>).
+* OCR <code>documentRecognized</code> to see if the front-side passed. </p>
+<h2 id="use-case-drivers-license-barcode-analysis-with-ocr-capture-and-ocr-matching">Use case: Driver’s license barcode analysis with OCR capture and OCR matching<a class="headerlink" href="#use-case-drivers-license-barcode-analysis-with-ocr-capture-and-ocr-matching" title="Permanent link"> ¶</a></h2>
+<p>In this use case, the customer scans the back of a driver’s license and then takes a picture of the front of the license. Intellicheck compares the OCR text from the front of the license to the decoded text from the barcode. 
+* In <strong>Document Type</strong>, select <strong>Driver’s License</strong>
+* In <strong>Signals</strong>, select <strong>ID Check</strong>, <strong>OCR Scan</strong>, and <strong>OCR Match</strong>.</p>
+<h3 id="results_2">Results<a class="headerlink" href="#results_2" title="Permanent link"> ¶</a></h3>
+<p>Results are provided in the ID Check response for the barcode data, in the OCR response for the front-side data, and in the OCR Match response for the front-back comparison. 
+In the response data, look for the following properties: 
+* ID Check <code>processResult</code> to see if the ID passed (<code>DocumentProcessOK</code>) or failed (<code>DocumentUnknown</code>).
+* OCR <code>documentRecognized</code> to see if the front-side passed.
+* OCR Match <code>success</code> to see if the front matches the barcode. </p>
+<h1 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link"> ¶</a></h1>
+<h2 id="start-transaction-capability">Start Transaction Capability<a class="headerlink" href="#start-transaction-capability" title="Permanent link"> ¶</a></h2>
+<p>Description: Starts a transaction. For Capture, you begin and end the transaction with a single call to the <code>/start</code> endpoint.
+Functionality: Sends a text message to the end user that includes a link to </p>
+<p>Input Schema
+<div class="highlight"><pre><span></span><code>{
+  &quot;default&quot;: {
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;properties&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;intellicheckRedirectUrl&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A redirect can occur at the completion of the capture process. For example, this redirect URL could load your company&#39;s webpage to the end user browser. Use HTTPS in the URL with a fully qualified domain.&quot;
+          },
+          &quot;intellicheckErrorRedirectUrl&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;An error redirect can occur if the end user does not complete the capture process, for example, if the end user declines camera access. Another example is if the end user does not complete the capture process in time, as defined by the ttl property of the private_data object. The default ttl value is 10 minutes. After an error, this URL loads in the browser, redirecting the end user. Use HTTPS in the URL with a fully qualified domain.&quot;
+          },
+          &quot;documentTypeSelection&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;Identification type. Values: na_dl, passport, other. Select only one. If you specify na_dl, then at a minimum, you must include the idcheck signal. Likewise, if you select passport or other, then at a minimum, you must include the ocr_scan signal. If these minimum signal requirements are not specified in your request body, then they will be used by default.&quot;
+          },
+          &quot;signals&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;description&quot;: &quot;Array of Signals to run for this transaction that is verified against the subscribed list. Possible values include document_liveness_idrnd, idcheck, ocr_match, ocr_scan, and selfie. Leave blank to request all signals to which you are subscribed.&quot;
+          },
+          &quot;ttl&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;description&quot;: &quot;Override of the default minutes to complete. Maximum value is 30.&quot;
+          },
+          &quot;phoneNumber&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;End user&#39;s phone number&quot;
+          },
+          &quot;deviceValidation&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;If enabled, device fingerprinting and IP address validation fields are returned in the results. If disabled, they are not.&quot;
+          }
+        },
+        &quot;required&quot;: [
+          &quot;phoneNumber&quot;,
+          &quot;signals&quot;
+        ]
+      }
+    },
+    &quot;example&quot;: {
+      &quot;properties&quot;: {
+        &quot;intellicheckRedirectUrl&quot;: &quot;https://redirect.com&quot;,
+        &quot;intellicheckErrorRedirectUrl&quot;: &quot;https://error.redirect.com&quot;,
+        &quot;documentTypeSelection&quot;: &quot;na_dl&quot;,
+        &quot;signals&quot;: &quot;idcheck&quot;,
+        &quot;ttl&quot;: &quot;15&quot;,
+        &quot;phoneNumber&quot;: &quot;+1xxxxxxxxxx&quot;,
+        &quot;deviceValidation&quot;: true
+      }
+    }
+  }
+}
+</code></pre></div></p>
+<p>Output Schema:
+<div class="highlight"><pre><span></span><code>{
+  &quot;output&quot;: {
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;rawResponse&quot;: {
+        &quot;type&quot;: &quot;object&quot;
+      },
+      &quot;statusCode&quot;: {
+        &quot;type&quot;: &quot;number&quot;
+      },
+      &quot;headers&quot;: {
+        &quot;type&quot;: &quot;object&quot;
+      },
+      &quot;endpoint&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;The requested endpiont.&quot;
+      },
+      &quot;version&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;Version of the API&quot;
+      },
+      &quot;transaction_id&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;ID issued at the beginning of a transaction to associate all subsequent processes within the transaction until ended.&quot;
+      },
+      &quot;capture_url&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;A URL address for the capture session.&quot;
+      },
+      &quot;signals&quot;: {
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;description&quot;: &quot;Confirmed list of signals to run.&quot;
+      },
+      &quot;ttl&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;Minutes user will have to complete the capture process. Defaults to 10 minutes unless overridden.&quot;
+      },
+      &quot;capture_expiration_utc&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;A UTC date and time when the transaction expires. Format is mm-dd-yyyy hh:mm:ss. It is calculated based on the current date and time plus the ttl value, which is in minutes.&quot;
+      },
+      &quot;challengeId&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;description&quot;: &quot;Maps to InteractionId, which is a unique identifer per flow execution&quot;
+      }
+    }
+  }
+}
+</code></pre></div></p>
+<h2 id="get-result-capability">Get Result Capability<a class="headerlink" href="#get-result-capability" title="Permanent link"> ¶</a></h2>
+<p>Description: Polling mechanism for obtaining resultes within 10 minutes of end user completing Capture process.</p>
+<p>Input Schema:
+<div class="highlight"><pre><span></span><code>{
+  &quot;default&quot;: {
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;properties&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;transactionId&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;ID issued at the beginning of a transaction to associate all subsequent processes within the transaction until ended.&quot;
+          }
+        },
+        &quot;required&quot;: [
+          &quot;transactionId&quot;
+        ]
+      }
+    },
+    &quot;example&quot;: {
+      &quot;properties&quot;: {
+        &quot;transactionId&quot;: &quot;3fb21ac1-eb92-4705-8fcb-40eed01cb369&quot;
+      }
+    }
+  }
+}
+</code></pre></div></p>
+<p>Output Schema:
+<div class="highlight"><pre><span></span><code>{
+  &quot;output&quot;: {
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;rawResponse&quot;: {
+        &quot;type&quot;: &quot;object&quot;
+      },
+      &quot;statusCode&quot;: {
+        &quot;type&quot;: &quot;number&quot;
+      },
+      &quot;headers&quot;: {
+        &quot;type&quot;: &quot;object&quot;
+      },
+      &quot;idcheck&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;Barcode check signal (`idcheck`) response.&quot;,
+        &quot;properties&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;Contains the idcheck signal elements returned as a JSON object.&quot;,
+            &quot;properties&quot;: {
+              &quot;weightPounds&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the weight in pounds as specified on the ID.&quot;
+              },
+              &quot;heightFeetInches&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the height in feet and inches for areas that use customary units, for example, 5’2”.&quot;
+              },
+              &quot;age&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;description&quot;: &quot;Contains the age based on the date of birth and the current system date. The age will be  1 if the age is unknown. The age will be  1 if either no date of birth or a partial date of birth is encoded.&quot;
+              },
+              &quot;driverClass&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the driver class codes encoded on the document.&quot;
+              },
+              &quot;address1&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains line one of the residence address.&quot;
+              },
+              &quot;socialSecurity&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;This field is intentionally blank.&quot;
+              },
+              &quot;city&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the city of residence.&quot;
+              },
+              &quot;processResult&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Processing result status code. See [ID Verification processResult Definitions](doc:id-verification-processresult-definitions)&quot;
+              },
+              &quot;eyeColor&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the eye color. If the jurisdiction code for eye color is known, the color’s name is returned, for example, brown, blue, hazel. If the code is not recognized, the code that is encoded on the document is returned.&quot;
+              },
+              &quot;hairColor&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the hair color. If the jurisdiction code for hair color is known, the color’s name is returned, for example, brown, black, blonde. If the code is not recognized, the code that is encoded on the document is returned.&quot;
+              },
+              &quot;docCategory&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the document category acronym from the barcode. The value is typically one of the following: DL (driver license), HC (health card), ID (identification card), MIL (military identification). Rarely, certain other values are possible: WPN (weapon), HCP (handicap), WV (water vehicle), EMP (employee), OID (other). An empty value means the category is not identifiable.&quot;
+              },
+              &quot;stateIssuerMismatch&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains a status of whether the address state compared to the document issuer are mismatched. Values are Yes, No, or Unknown. Yes means the state and issuer do not match. No means the state and issuer match. Unknown means the match status is not known.&quot;
+              },
+              &quot;heightCentimeters&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the height in centimeters for areas that use metric units.&quot;
+              },
+              &quot;dLIDNumberFormatted&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the formatted driver license or ID (DL/ID) value. This will contain the formatting characters, such as spaces and hyphens, as it appears on the printed document.&quot;
+              },
+              &quot;state&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the jurisdiction of residence.&quot;
+              },
+              &quot;postalCode&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the postal code (zip code) of residence.&quot;
+              },
+              &quot;dateOfBirth&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of birth in MM/DD/YYYY format. When a partial birth date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example: 01/12/???? will be returned for a document that does not encode the birth date year.&quot;
+              },
+              &quot;isRealID&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the document REAL ID status. Values are Yes, No, or empty. Yes means the document was issued in compliance with United States Department of Homeland Security (DHS) requirements for the REAL ID Act passed by Congress in 2005. No means it was not. An empty value means the document did not have enough information to determine a result.&quot;
+              },
+              &quot;testCard&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if the document is an Intellicheck test card; false otherwise. Intellicheck can provide test cards that produce different responses for system testing and demonstration.&quot;
+              },
+              &quot;weightKilograms&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the weight in kilograms as specified on the ID.&quot;
+              },
+              &quot;uniqueID&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;description&quot;: &quot;Contains a unique ID to identify the document format. All jurisdiction document formats are assigned a unique ID by Intellicheck.&quot;
+              },
+              &quot;restrictions&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the restriction codes encoded on the document.&quot;
+              },
+              &quot;dLIDNumberRaw&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the raw driver license or ID (DL/ID) value. This will not contain any formatting characters, such as spaces and hyphens. It will contain only the alphanumeric characters that make up the DL/ID.&quot;
+              },
+              &quot;endorsements&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the endorsement codes encoded on the document.&quot;
+              },
+              &quot;address2&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains line two of the residence address.&quot;
+              },
+              &quot;organDonor&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains Yes or No indicating if the document owner is an organ donor.&quot;
+              },
+              &quot;issueDate&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of issuance of the document in MM/DD/YYYY format.&quot;
+              },
+              &quot;transactionIdentifier&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains a transaction ID.&quot;
+              },
+              &quot;gender&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the gender. Either Male or Female.&quot;
+              },
+              &quot;isDuplicate&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the document duplication status. Values are Yes, No, or empty. An empty value means the duplicate status is unknown.&quot;
+              },
+              &quot;firstName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the first name.&quot;
+              },
+              &quot;middleName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the middle name.&quot;
+              },
+              &quot;issuingJurisdictionAbbrv&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the name of the issuing jurisdiction as an abbreviation. This value will always be two letters, for example, NY.&quot;
+              },
+              &quot;expired&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the expiration status of the document. Values are Yes, No, or Unknown.&quot;
+              },
+              &quot;docType&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the type of document (if available) from the barcode, for example, Driver&#39;s License, Learner&#39;s Permit, Operator License, and so on. Values vary by issuing jurisdiction. An empty value means the type is not identifiable.&quot;
+              },
+              &quot;expirationDate&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the expiration date of the processed document in MM/DD/YYYY format or the word NEVER for documents that do not expire. When a partial expiration date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example, 01/12/???? will be returned for a document that does not encode the expiration year.&quot;
+              },
+              &quot;extendedResultCode&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Processing result diagnostic code. Values are Y, U, B, IUX, F, 1, UEE. See [Extended Result Codes](doc:id-verification-processresult-definitions#extended-result-codes).&quot;
+              },
+              &quot;lastName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the last name with suffix if present.&quot;
+              },
+              &quot;duplicateDate&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date the duplicate document was issued in MM/DD/YYYY format.&quot;
+              },
+              &quot;issuingJurisdictionCvt&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the full name of the issuing jurisdiction, for example, New York.&quot;
+              },
+              &quot;mediaType&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the media type of the processed document. Examples include MAG and 2D.&quot;
+              }
+            }
+          },
+          &quot;result&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if data was returned in the data object; false otherwise.&quot;
+          },
+          &quot;success&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if the API call was successful; false otherwise.&quot;
+          },
+          &quot;message&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A description of the result output, for example, \&quot;success\&quot; or an error message.&quot;
+          }
+        }
+      },
+      &quot;document_liveness&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;Document liveness signal (document_liveness_idrnd) response&quot;,
+        &quot;properties&quot;: {
+          &quot;result&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if data was returned in the data object; false otherwise.&quot;
+          },
+          &quot;message&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A description of the result output, for example, \&quot;success\&quot; or an error message.&quot;
+          },
+          &quot;imageQualityFindings&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;description&quot;: &quot;Array of image quality detection response codes with messages. Each member contains one code and one message.&quot;
+          },
+          &quot;success&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if the API call was successful; false otherwise.&quot;
+          },
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;Contains the document_liveness_idrnd signal elements returned as a JSON object.&quot;,
+            &quot;properties&quot;: {
+              &quot;front&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Results from the front side of the document. Returns null if the front side of the document was not submitted.&quot;
+              }
+            }
+          }
+        }
+      },
+      &quot;ocr_scan&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;Optical character recognition (OCR) signal (`ocr`) response.&quot;,
+        &quot;properties&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;weightKilograms&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the weight in kilograms as specified on the ID.&quot;
+              },
+              &quot;errorMessage&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Indicates the cause of failed OCR. Either unable to recognize license or unable to parse data from license.&quot;
+              },
+              &quot;countryCode&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Three-letter code of the document issuing country (from third to fifth characters in the first MRZ string).&quot;
+              },
+              &quot;dlClass&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the driver class codes encoded on the document.&quot;
+              },
+              &quot;address&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Address printed on the front of the identification or driver license document.&quot;
+              },
+              &quot;documentNumber&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Identification number printed on the front of the identification or driver license document.&quot;
+              },
+              &quot;eyeColor&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the eye color. If the jurisdiction code for eye color is known, the color’s name is returned, for example, brown, blue, hazel. If the code is not recognized, the code that is encoded on the document is returned.&quot;
+              },
+              &quot;dateOfBirth&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of birth, typically in yyyy-mm-dd format. When a partial birth date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example: ????-01-12 will be returned for a document that does not encode the birth date year.&quot;
+              },
+              &quot;dateOfBirthFormatted&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of birth in mm/dd/yyyy format. When a partial birth date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example: 01/12/???? will be returned for a document that does not encode the birth date year.&quot;
+              },
+              &quot;dlRestrictions&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the restriction codes encoded on the document.&quot;
+              },
+              &quot;isRealID&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the document REAL ID status. Values are Yes, No, or empty. Yes means the document was issued in compliance with United States Department of Homeland Security (DHS) requirements for the REAL ID Act passed by Congress in 2005. No means it was not. An empty value means the document did not have enough information to determine a result.&quot;
+              },
+              &quot;sex&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the gender. Either Male or Female.&quot;
+              },
+              &quot;dateOfExpiry&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the expiration date of the processed document, typically in yyyy-mm-dd format or the word NEVER for documents that do not expire. When a partial expiration date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example: ????-01-12 will be returned for a document that does not encode the expiration year.&quot;
+              },
+              &quot;fullDocumentImageBase64&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Deprecated. Currently not populated. Set /start return_images to true, and then see the images object in get-results.&quot;
+              },
+              &quot;age&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the age.&quot;
+              },
+              &quot;lastName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Last name printed on the front of the identification or driver license document.&quot;
+              },
+              &quot;nationality&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the nationality of the person. Results depend on the document.&quot;
+              },
+              &quot;height&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the height in centimeters.&quot;
+              },
+              &quot;firstName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;First name printed on the front of the identification or driver license document.&quot;
+              },
+              &quot;dlEndorsement&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the endorsement codes encoded on the document.&quot;
+              },
+              &quot;faceImageBase64&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Deprecated. Currently not populated. Set /start return_images to true, and then see the images object in get-results.&quot;
+              },
+              &quot;dateOfExpiryFormatted&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the expiration date of the processed document in mm/dd/yyyy format or the word NEVER for documents that do not expire. When a partial expiration date is encoded on the document, the fields that are unknown will be filled in with ? characters. For example: 01/12/???? will be returned for a document that does not encode the expiration year.&quot;
+              },
+              &quot;dateOfIssue&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of issuance of the document, typically in yyyy-mm-dd format.&quot;
+              },
+              &quot;placeOfBirth&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the name of the country or state where the person was born. Results depend on the document.&quot;
+              },
+              &quot;dateOfIssueFormatted&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the date of issuance of the document in MM/DD/YYYY format.&quot;
+              },
+              &quot;fullName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;fullName is derived from the front of the identification or driver license document. Certain documents, such as a Michigan State driver license, may not return values in the firstName and lastName name fields for OCR results. The API instead returns a fullName field, which can be used to process the name. The fullName field is the entire name. This change is required because the OCR scan cannot separate names as they appear on certain IDs (for example, Michigan issued driver licenses).&quot;
+              },
+              &quot;documentRecognized&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;description&quot;: &quot;0 = not recognized. 1 = recognized. 2 = not processed.&quot;
+              },
+              &quot;issuerName&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Contains the name of the issuing jurisdiction state, for example, New York.&quot;
+              }
+            }
+          },
+          &quot;success&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if the API call was successful; false otherwise.&quot;
+          },
+          &quot;message&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A description of the result output. For example, \&quot;success\&quot; or and error message.&quot;
+          },
+          &quot;result&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if data was returned in the data object; false otherwise.&quot;
+          }
+        }
+      },
+      &quot;ocr_match&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;OCR mismatch signal (ocr_match) response&quot;,
+        &quot;properties&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;Contains the ocr_match signal elements returned as a JSON object.&quot;,
+            &quot;properties&quot;: {
+              &quot;addressMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;dlRestrictionsMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;documentNumberMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isIssueDateMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if issue date matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;dlEndorsementMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;dlClassMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;expirationDateMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;nameMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;weightMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;sexMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isDlClassMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if driver license class matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;issuerNameMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isEyeColorMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if eye color matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isDobMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if date of birth matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;dobMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isIssuerNameMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if issuer name matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;eyeColorMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isDlRestrictionsMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if driver license restrictions matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isNationalityMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if nationality matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isRealIdMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if real ID matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;realIdMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;heightMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isHeightMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if height matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isDocumentNumberMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if document number matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isWeightMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if weight matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isSexMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if sex matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;issueDateMatchDetails&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;description&quot;: &quot;Contains `details` to explain the match decision along with a `similarityScore` value and a `similarityThreshold` value.&quot;,
+                &quot;properties&quot;: {
+                  &quot;details&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;A brief explanation of whether the comparison was a match, a match with a slight discrepancy, a mismatch, or an indeterminate result.&quot;
+                  },
+                  &quot;similarityScore&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence estimate between 0 and 100 that OCR data matched the barcode or the MRZ data. A null value means this data was not available for the match comparison.&quot;
+                  },
+                  &quot;similarityThreshold&quot;: {
+                    &quot;type&quot;: &quot;number&quot;,
+                    &quot;description&quot;: &quot;A confidence cutoff that applies to `similarityScore`. For the issuer name, this value is 100 because the issuer must be an exact match. Otherwise, this value is typically 70. The `similarityScore` must be greater than or equal to this `similarityThreshold` to produce a match. The match result determines a true or false value for the corollary object. For example, if this object is `nameMatchDetails`, then its corollary object is `isNameMatch`.&quot;
+                  }
+                }
+              },
+              &quot;isNameMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if name matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isAddressMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if address matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isCountryCodeMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if country code matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isDlEndorsementMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if driver license endorsement matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              },
+              &quot;isExpirationDateMatch&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;True if expiration date matched; false otherwise. A null value means this data was not available for the match comparison.&quot;
+              }
+            }
+          },
+          &quot;success&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if the API call was successful; false otherwise.&quot;
+          },
+          &quot;message&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A description of the result output, for example, \&quot;success\&quot; or an error message.&quot;
+          },
+          &quot;result&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if data was returned in the data object; false otherwise.&quot;
+          }
+        }
+      },
+      &quot;selfie&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;Facial matching and liveness detection signal (`facial`) response.&quot;,
+        &quot;properties&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;Contains the facial signal elements returned as a JSON object.&quot;,
+            &quot;properties&quot;: {
+              &quot;photoFace&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Deprecated. Refer to [Submitted Images Response](doc:submitted-images-response). Selfie image in base64 format. This is optional and will only be returned if you subscribe to return of selfie image.&quot;
+              },
+              &quot;errorMessage&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;Indicates the cause of failed liveness detection. Either unable to recognize license or unable to parse data from license.&quot;
+              },
+              &quot;livenessProbability&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;description&quot;: &quot;Likelihood the image is a live person. Value is rounded to two decimal places.&quot;
+              },
+              &quot;matchProbability&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;description&quot;: &quot;Likelihood is selfie matches the document facial image. Value is rounded to two decimal places.&quot;
+              },
+              &quot;matchScore&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;description&quot;: &quot;Numeric representation of the degree to which the selfie matches the document facial image. Based on the comparison between the current facial image (selfie) and the document facial image. Value is rounded to two decimal places.&quot;
+              },
+              &quot;matched&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;Indicates if the current facial image is matched with the document facial image.&quot;
+              },
+              &quot;livenessScore&quot;: {
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;description&quot;: &quot;Numeric representation of the degree to which the selfie image is that of a live person based on livenessProbability. Value is rounded to two decimal places.&quot;
+              },
+              &quot;isLive&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;,
+                &quot;description&quot;: &quot;Whether image is a live person.&quot;
+              }
+            }
+          },
+          &quot;success&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if the API call was successful; false otherwise.&quot;
+          },
+          &quot;result&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;description&quot;: &quot;True if data was returned in the data object; false otherwise.&quot;
+          },
+          &quot;message&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;A description of the result output, for example, \&quot;success\&quot; or an error message.&quot;
+          }
+        }
+      },
+      &quot;ipqs&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;description&quot;: &quot;Returns device fingerprinting and IP address validation fields if Device Validation field is toggled ON in Start Transaction capability&quot;,
+        &quot;properties&quot;: {
+          &quot;addressDetails&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;JSON object containing address details&quot;
+          },
+          &quot;fraudDetails&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;JSON object containing fraud details&quot;
+          },
+          &quot;phoneDetails&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;JSON object containing phone details&quot;
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre></div></p>
+<h2 id="webhook-capability">Webhook Capability<a class="headerlink" href="#webhook-capability" title="Permanent link"> ¶</a></h2>
+<p>There is no configuration for this capability, however, you will need to download the standard <a href="https://support.pingidentity.com/s/marketplace-integration/a7iUJ0000002AEbYAM/intellicheck-flow-snippet">DaVinci flow</a> here (Select "Download Integration" on this listing and import it into your DaVinci environment). This flow MUST be used with the Intellicheck connector as it handles the polling and Challenge components for the webhook.</p>
+<h1 id="support">Support<a class="headerlink" href="#support" title="Permanent link"> ¶</a></h1>
+<p>Please contact tap-global@pingidentity.com for technical support on the Intellicheck connector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © Copyright 2022 Ping Identity
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "instant"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
